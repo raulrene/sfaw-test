@@ -1,0 +1,1 @@
+//Variabilele sunt elemente ce au o anumita valoare la un moment dat. Valoare unei variabile se poate schimba de-a lungul executiei unui script. 
