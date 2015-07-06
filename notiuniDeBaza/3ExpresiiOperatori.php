@@ -45,5 +45,5 @@ print "<br>";
 # in ambele situatii de mai jos este afisat continutul directrului curent
 $output = `ls -al`;
 echo "<pre>$output</pre>";
-print "<br>"; 
+ 
 ?>
