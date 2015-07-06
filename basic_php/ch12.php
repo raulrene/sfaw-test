@@ -49,7 +49,35 @@ echo '<h3>DEFAULT_INCLUDE_PATH</h3>';
 echo '<p>contine locatiile unde sunt cautate scripturile atunci cand sunt incluse cu include sau require; de obicei, aceasta constanta contine directorul curent si alte cateva locatii</p>';    
 
 echo '<h3>E_ERROR, E_WARNING</h3>';
-echo '<p>contin codurile diverselor tipuri de erori ce pot sa apara</p>';     
+echo '<p>contin codurile diverselor tipuri de erori ce pot sa apara</p>';   
 
+echo '<h3>Constante magice </h3>';
+echo '<p>imbajul PHP dispune de o serie de expresii numite "constante magice" care au valori diferite in functie de anumiti parametri 
+	(cum ar fi momentul si codul-sursa in care sunt folosite). Denumirea de "constanta" este improprie, pentru ca, asa cum stiti deja, o constanta nu-si poate schimba valoarea. Nici "variabile" nu pot fi numite deoarece nu au nevoie de declarare sau initializare, asa ca s-a recurs la un compromis: denumirea "constante magice" (magic constants).
 
+Cele mai uzuale sunt __LINE__, __FILE__, __FUNCTION__ si __CLASS__. Mai noile __DIR__, __METHOD__, __NAMESPACE__ sau __TRAIT__ sunt mai rar folosite datorita faptului ca au nevoie de o versiune mai noua a interpretorului PHP (cel putin versiunea 5.0 sau chiar 5.4)
+</p>';
+echo '<h3> LINE</h3>';
+echo '<p>Returneaza linia curenta a scriptului PHP.</p>';
+    echo __LINE__; // 187
+echo '<h3>FILE</h3>';
+echo '<p>Contine calea completa catre scriptul PHP care se executa. Daca este folosita intr-un fisier inclus atunci numele acestui fisier este returnat.</p>';
+    echo __FILE__; // numescript.php
+
+echo '<h3>FUNCTION</h3>';
+echo '<p>Returneaza numele functie din interiorul careia se foloseste constanta.</p>';   
+
+echo '<h3> CLASS</h3>';
+echo '<p>returneaza numele clasei curente.</p>';
+
+echo '<h3> DIR</h3>';
+echo '<p>Contine numele directorului in case este salvat scriptul curent. Aceasta constanta este echivalenta cu dirname(__FILE__).</p>';  
+echo '<h3>METHOD</h3>';
+echo '<p>Contine numele metodei de clasa din care se foloseste constanta. Se poate folosi numai cu clase.</p>';
+   
+echo '<h3>NAMESPACE</h3>';
+echo '<p>Contine numele spatiului de lucru curent (name-space).</p>';
+
+echo '<h3>TRAIT</h3>';
+echo '<p>Contine numele trasaturii curente (trait)</p>';     
 ?>
