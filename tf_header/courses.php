@@ -8,7 +8,7 @@
 				<!-- course first section img -->
 				<div class="col-img">
 					<a href="#">
-						<img alt="cook" src="img/cook.jpg">
+						<img alt="cook" src="assets/img/cook.jpg">
 					</a>
 				</div>
 				<div class="crs-price">
@@ -28,13 +28,13 @@
 						<a class="author" href="#">Steven Granger</a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="img/user_icon.png" alt="user"/> 12</div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user"/> 12</div>
 						<div class="crs-star">
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-off.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-off.png" alt="star"/>
 						</div>
 					</footer>
 					<div class="clear"></div>
@@ -48,7 +48,7 @@
 				<!-- course second section image  -->
 				<div class="col-img">
 					<a href="#">
-						<img  alt="fittness" src="img/fitt.jpg">
+						<img  alt="fittness" src="assets/img/fitt.jpg">
 					</a>
 				</div>
 				<!-- course second section price div  -->
@@ -69,13 +69,13 @@
 						<a class="author" href="#">Mark Blackwood</a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="img/user_icon.png" alt="user"/> 12</div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user"/> 12</div>
 						<div class="crs-star">
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-off.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-off.png" alt="star"/>
 						</div>
 					</footer>
 					<div class="clear"></div>
@@ -89,7 +89,7 @@
 				<!-- course third section image  -->
 				<div class="col-img">
 					<a href="#">
-						<img  alt="picture" src="img/picc.jpg">
+						<img  alt="picture" src="assets/img/picc.jpg">
 					</a>
 				</div>
 				<!-- course third section price div  -->
@@ -110,13 +110,13 @@
 						<a class="author" href="#">Michael Lawson</a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="img/user_icon.png" alt="user" /> 12</div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user" /> 12</div>
 						<div class="crs-star">
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-off.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-off.png" alt="star"/>
 						</div>
 					</footer>
 					<div class="clear"></div>
@@ -130,7 +130,7 @@
 				<!-- course last section image  -->
 				<div class="col-img">
 					<a href="#">
-						<img alt="architect" src="img/arch.jpg">
+						<img alt="architect" src="assets/img/arch.jpg">
 					</a>
 				</div>
 				<!-- course last section price div  -->
@@ -151,13 +151,13 @@
 						<a class="author" href="#">Steven Granger</a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="img/user_icon.png" alt="user"/> 12</div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user"/> 12</div>
 						<div class="crs-star">
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-off.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-off.png" alt="star"/>
 						</div>
 					</footer>
 					<div class="clear"></div>
