@@ -1,3 +1,5 @@
+
+    <div class="clear"></div>
 	<!-- courses section header  -->
 	<h1>Popular courses</h1>
 	<!-- courses section  -->
