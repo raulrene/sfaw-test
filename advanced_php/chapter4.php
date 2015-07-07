@@ -57,5 +57,93 @@ echo "Linia a 3a din fisier este: ", $linii[ 2 ]; <br/>
 echo '<p style="background:magenta;"></p>';
 echo '<p style="background:magenta;"></p>';
 echo '<p style="background:magenta;"></p>';
+$dir = dirname(__FILE__);
+echo $dir.'<br/>';
 
+$file_id = fopen('/var/www/html/test1/sfaw-test/advanced_php/text.txt','r');
+$read = fread($file_id,200);
+echo $read.'<br/>';
+//fclose($file_id);
+$file_id = fopen('/var/www/html/test1/sfaw-test/advanced_php/text.txt','w');
+fwrite($file_id, 'new added text,will overwrite the previous one');
+
+$file_id = fopen('/var/www/html/test1/sfaw-test/advanced_php/text.txt','a');
+$add = fwrite($file_id,'text to be added to existing one');
+echo $add;
+
+
+echo "<p style = 'background:pink;'>
+// verificare daca un fisier exista<br/>
+echo file_exists( 'fisier.txt' );<br/><br/>
+ 
+// copiere fisier<br/>
+copy( 'sursa.txt', 'destinatie.txt' );<br/><br/>
+ 
+// stergere fisier<br/>
+unlink( 'fisier.txt' );<br/><br/>
+ 
+// redenumire sau mutare<br/>
+rename( 'vechi.txt', 'nou.txt' );<br/><br/>
+ 
+// afisarea numelui unui fisier<br/>
+echo basename( 'c:\\cale\\catre\\fisier.txt' ); // afiseaza fisier.txt<br/><br/>
+ 
+// afisarea folderului unui fisier<br/>
+echo dirname( 'c:\\cale\\catre\\fisier.txt' ); // afiseaza c:\cale\catre<br/><br/>
+ 
+// afisarea dimensiunii unui fisier in octeti<br/>
+echo filesize( 'fisier.txt' );<br/><br/>
+ 
+// verificare daca numele specificat este un fisier<br/>
+echo is_file( 'c:\\cale\\catre\\fisier.txt' ); // afiseaza true<br/><br/>
+ 
+// verificare daca un fisier poate fi citit<br/>
+echo is_readable( 'fisier.txt' );<br/><br/>
+ 
+// verificare daca un fisier poat<br/>
+</p>";
+
+echo '<h3>Directoare</h3>';
+echo "<p style = 'background:magenta;'>Manipularea directoarelor (folderelor) folosind PHP se face la fel de usor ca in cazul fisierelor. Majoritatea functiilor folosite pentru fisiere se pot aplica si la foldere (de exemplu copy, rename, is_file, etc), dar exista o serie de alte instructiuni specifice dosarelor. </p>";
+echo "<p style = 'background:yellow;'>
+// afiseaza directorul curent (current working directory)<br/>
+// de obicei este folderul in care se afla scriptul ce se executa<br/>
+echo getcwd(); // ex. c:\scripturi<br/><br/>
+ 
+// schimba directorul curent<br/>
+chdir( 'exemple' ); // ex. c:\scripturi\exemple<br/><br/>
+ 
+// returneaza un vector ce contine numele fisierelor si directoarelor dintr-un folder<br/>
+$vector = scandir( getcwd() );<br/>
+print_r( $vector );<br/><br/>
+ 
+// verifica daca un element este director (folder)<br/>
+echo is_dir( 'c:\\cale\\fisier.txt' );    // afiseaza false<br/>
+</p>";
+echo "<p style = 'background:magenta;'>Limbajul PHP dispune de o serie de functii ce permit citire continutului unui folder intr-un mod similar cu preluarea continutului unui fisier. Astfel, exista functii pentru deschiderea unui director (opendir), citirea continutului, adica a fisierelor sau folderelor existente in acel director (readdir) si inchiderea lui (closedir). O situatie in care aceste functii pot fi folosite este aceea cand se doreste afisarea unei liste a elementelor continute intr-un folder si se doreste efectuarea unor calcule sau procesari pe baza fiecaruia dintre aceste elemente. </p>";
+echo '<p style="background:yellow">
+$folder = getcwd();             // va lista folderul curent<br/>
+$handle = opendir( $folder );   // deschid folderul<br/><br/>
+ 
+if ( !empty( $handle ) ) {<br/>
+    echo "Fisiere si directoare:\n";<br/><br/>
+ 
+    $terminat = false;<br/>
+    while ($terminat == false) {<br/>
+        $file = readdir($handle);   // citesc urmatorul fisier<br/>
+        if( $file === false ) {<br/>
+            // atentie la operatorul de exactitate ===<br/>
+            // daca nu mai sunt alte fisiere/foldere trebuie sa ies din bucla<br/>
+            $terminat = true;<br/>
+        } else {<br/>
+            // aici pot face orice procesare, de exemplu sa redenumesc fisierul/subdirectorul<br/>
+            // doar afisez numele fisierului/subdirectorului<br/>
+            echo "$file\n";<br/>
+            echo "<br />";<br/>
+        }<br/>
+    }<br/><br/><br/>
+ 
+    closedir($handle);   // inchei citirea din folder<br/>
+}<br/>
+</p>';
 ?>
