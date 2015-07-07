@@ -5,7 +5,7 @@
         <div class="expert-preview">
             <div class="expert-meta">
                 <div class="expert-image bordered-image">
-                    <img src="main-content/img/expAvatar.jpg" class="avatar" width="96" alt="">
+                    <img src="assets/img/expAvatar.jpg" class="avatar" width="96" alt="">
                 </div>
 
                 <div class="user-links">
@@ -26,7 +26,7 @@
         <div class="expert-preview">
             <div class="expert-meta">
                 <div class="expert-image bordered-image">
-                    <img src="main-content/img/expAvatar.jpg" class="avatar" width="96" alt="">
+                    <img src="assets/img/expAvatar.jpg" class="avatar" width="96" alt="">
                 </div>
 
                 <div class="user-links">
@@ -53,7 +53,7 @@
         <article class="testimonial">
             <div class="testimonial-image">
                 <div class="bubble-image">
-                    <img width="264" height="264" src="main-content/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
+                    <img width="264" height="264" src="assets/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
                     <div class="substrate">
                         <img src="http://themextemplates.com/demo/academy/wp-content/themes/academy/images/bgs/testimonial_bg.png" alt="">
                     </div>
@@ -68,7 +68,7 @@
         <article class="testimonial">
             <div class="testimonial-image">
                 <div class="bubble-image">
-                    <img width="264" height="264" src="main-content/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
+                    <img width="264" height="264" src="assets/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
                     <div class="substrate">
                         <img src="http://themextemplates.com/demo/academy/wp-content/themes/academy/images/bgs/testimonial_bg.png" alt="">
                     </div>
@@ -83,7 +83,7 @@
         <article class="testimonial">
             <div class="testimonial-image">
                 <div class="bubble-image">
-                    <img width="264" height="264" src="main-content/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
+                    <img width="264" height="264" src="assets/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
                     <div class="substrate">
                         <img src="http://themextemplates.com/demo/academy/wp-content/themes/academy/images/bgs/testimonial_bg.png" alt="">
                     </div>

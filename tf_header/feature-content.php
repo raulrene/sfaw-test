@@ -9,7 +9,7 @@ Academy is a perfect theme for sharing and selling your knowledge online. It’s
                 </p>
 
                 <a href=" " target="_self" class="button large primary">
-                    <img class="alignnone" alt="" src="carouselSlider/img/bookImg.png">
+                    <img class="alignnone" alt="" src="assets/img/bookImg.png">
 
     Get Started
 
@@ -17,7 +17,7 @@ Academy is a perfect theme for sharing and selling your knowledge online. It’s
             </div>
 
             <div class="sevencol column last">
-                <img class="alignnone" alt="" src="carouselSlider/img/slide_1.png">
+                <img class="alignnone" alt="" src="assets/img/slide_1.png">
             </div>
         </div>
 
@@ -30,7 +30,7 @@ Academy is a perfect theme for sharing and selling your knowledge online. It’s
 
             <div class="fourcol column">
                 <div class="three-col">
-                    <img class="alignnone float-left" alt="" src="main-content/img/book.jpg">
+                    <img class="alignnone float-left" alt="" src="assets/img/book.jpg">
                     <h3>Learn anything online</h3>
                 </div>
                 <div class="clear"></div>
@@ -40,7 +40,7 @@ Academy is a perfect theme for sharing and selling your knowledge online. It’s
 
             <div class="fourcol column">
                 <div class="three-col">
-                    <img class="alignnone float-left" alt="" src="main-content/img/book.jpg">
+                    <img class="alignnone float-left" alt="" src="assets/img/book.jpg">
                     <h3>Talk to Our Experts</h3>
                 </div>
                 <div class="clear"></div>
@@ -50,7 +50,7 @@ Academy is a perfect theme for sharing and selling your knowledge online. It’s
 
             <div class="fourcol column last">
                 <div class="three-col">
-                    <img class="alignnone float-left" alt="" src="main-content/img/book.jpg">
+                    <img class="alignnone float-left" alt="" src="assets/img/book.jpg">
                     <h3>Communicate with People</h3>
                 </div>
                 <div class="clear"></div>
