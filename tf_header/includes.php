@@ -1,5 +1,6 @@
 <?php
-include("head.php");
+
+include('head.php');
 include('header.php');
 include('feature-content.php');
 include('courses.php');

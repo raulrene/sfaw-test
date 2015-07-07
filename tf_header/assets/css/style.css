@@ -104,7 +104,6 @@ h1{
 }
 /***   course list    ***/
 .course-list{
-	padding:0px 30px;
 	overflow: auto;
 }
 /**   course list  columns  **/
