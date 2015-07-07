@@ -5,7 +5,7 @@
     height: 485px;
     position: relative;
     overflow: hidden;
-    background: url("../assets/img/site_bg.jpg");
+    background: url("../img/site_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -80,7 +80,7 @@ img, object, embed, iframe {
 .button:after {
     content: " ";
     display: block;
-    background: url(assets/img/button_bg.png) 0 0 repeat-x;
+    background: url(../img/button_bg.png) 0 0 repeat-x;
     position: absolute;
     left: 0;
     top: 0;
@@ -99,7 +99,7 @@ img, object, embed, iframe {
     margin-top: -12px;
     width: 13px;
     height: 23px;
-    background: url(assets/img/arrow.png) -13px 0 no-repeat;
+    background: url(../img/arrow.png) -13px 0 no-repeat;
     cursor: pointer;
 }
 
