@@ -114,7 +114,7 @@ print htmlspecialchars("<a href='test'>Test</a>", ENT_QUOTES);
 
 print "<br />";
 print strip_tags( "<p>E <b>bold</b></p>" );
-print strip_tags( "<p>E <b>bold</b></p>", '<b>' ); 
+print strip_tags( "<p>E <b>bold</b></p>", '<b>' );
 
 
 ?>
