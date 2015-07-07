@@ -23,4 +23,13 @@ if ( !empty( $handle ) ) {
  
     closedir($handle);   // inchei citirea din folder
 }
+
+$output = `pwd`;
+echo "<pre>$output</pre>";
+# deschiderea unui fisier si citirea din el
+$id_fisier = fopen("\\var\\www\\html\\sfaw-test\\notiuniDeBaza\\14GetVsPost.php", 'r');   // deschidere
+fread( $id_fisier, 10 );   // citire 10 octeti din fisier
+fclose($id_fisier);   // inchidere
+
+
 ?>
