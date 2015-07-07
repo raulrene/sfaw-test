@@ -4,7 +4,7 @@
 		<div id="header_content">
 			<div id="logo">
 				<a href="#">
-					<img src="img/logo.png" alt="logo"/>
+					<img src="assets/img/logo.png" alt="logo"/>
 				</a>
 			</div>
 			<div id="option">
