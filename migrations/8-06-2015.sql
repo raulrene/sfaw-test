@@ -48,3 +48,17 @@ CREATE TABLE `siteDB`.`Content` (
     REFERENCES `siteDB`.`SubSubCapitol` (`idSubSubCapitol`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
+CREATE TABLE `siteDB`.`Coding` (
+  `idCoding` INT NOT NULL AUTO_INCREMENT,
+  `idParentSubSubCapitol` INT NOT NULL,
+  `codingText` VARCHAR(1500) NULL,
+  PRIMARY KEY (`idCoding`),
+  INDEX `fk_codingSubSubCapitol_idx` (`idParentSubSubCapitol` ASC),
+  CONSTRAINT `fk_codingSubSubCapitol`
+    FOREIGN KEY (`idParentSubSubCapitol`)
+    REFERENCES `siteDB`.`SubSubCapitol` (`idSubSubCapitol`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
