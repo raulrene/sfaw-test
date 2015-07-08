@@ -8,3 +8,7 @@ CREATE TABLE `primarydb`.`capitol` (
   `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
   `capitol` VARCHAR(255) NULL COMMENT '',
   PRIMARY KEY (`id`)  COMMENT '');
+CREATE TABLE `primarydb`.`subcapitol` (
+  `idsubcapitol` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `subcapitol` VARCHAR(255) NULL COMMENT '',
+  PRIMARY KEY (`idsubcapitol`)  COMMENT '');
