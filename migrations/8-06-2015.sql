@@ -24,3 +24,15 @@ CREATE TABLE `siteDB`.`SubCapitol` (
     REFERENCES `siteDB`.`Capitol` (`idCapitol`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
+CREATE TABLE `siteDB`.`SubSubCapitol` (
+  `idSubSubCapitol` INT NOT NULL AUTO_INCREMENT,
+  `idParentSubCapitol` INT NOT NULL,
+  `numeSubSubCapitol` VARCHAR(1500) NOT NULL,
+  PRIMARY KEY (`idSubSubCapitol`),
+  INDEX `fk_subsubcapitolSubcapitol_idx` (`idParentSubCapitol` ASC),
+  CONSTRAINT `fk_subsubcapitolSubcapitol`
+    FOREIGN KEY (`idParentSubCapitol`)
+    REFERENCES `siteDB`.`SubCapitol` (`idSubCapitol`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
