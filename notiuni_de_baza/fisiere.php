@@ -52,7 +52,7 @@ if ( !empty( $handle ) ) {
         }
     }
 
-    closedir($handle);  
+    closedir($handle);
 }
 
 

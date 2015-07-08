@@ -39,7 +39,7 @@ if( empty( $istoric ) ) {
         echo "<li>$termen</li>";
     }
 
-  
+
     echo '</ul><p>', 'Cautari efectuate: ', count( $istoric ), '</p>';
 }
 ?>
