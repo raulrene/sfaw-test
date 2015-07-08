@@ -6,3 +6,7 @@ CREATE TABLE `site`.`config` (
   `site-fontFam` VARCHAR(1500) NULL,
   `site-fontSize` VARCHAR(1500) NULL,
   PRIMARY KEY (`idconfig`));
+CREATE TABLE `site`.`Chapters` (
+  `idChapters` INT NOT NULL AUTO_INCREMENT,
+  `ChapterName` VARCHAR(1500) NOT NULL,
+  PRIMARY KEY (`idChapters`));
