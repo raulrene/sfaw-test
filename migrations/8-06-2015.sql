@@ -61,4 +61,16 @@ CREATE TABLE `siteDB`.`Coding` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
+CREATE TABLE `siteDB`.`Comentarii` (
+  `idComentarii` INT NOT NULL AUTO_INCREMENT,
+  `idParentSubSubCapitol` INT NOT NULL,
+  `commentText` VARCHAR(1500) NULL,
+  `dateAdded` DATETIME NOT NULL,
+  PRIMARY KEY (`idComentarii`),
+  INDEX `fk_comentariiSubSubCapitol_idx` (`idParentSubSubCapitol` ASC),
+  CONSTRAINT `fk_comentariiSubSubCapitol`
+    FOREIGN KEY (`idParentSubSubCapitol`)
+    REFERENCES `siteDB`.`SubSubCapitol` (`idSubSubCapitol`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
 
