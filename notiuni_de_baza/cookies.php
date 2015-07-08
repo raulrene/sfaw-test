@@ -27,7 +27,7 @@ function testCookie() {
         header( 'Location: ' . $paginaCurenta . '?creat=1' );
         exit;
     } else {
-       
+
         if( isset( $_COOKIE[ 'ctest' ] ) && !empty( $_COOKIE[ 'ctest' ] ) ) {
             return true;
         } else {
