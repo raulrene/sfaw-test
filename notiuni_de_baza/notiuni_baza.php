@@ -9,7 +9,7 @@ print " un text din ";
 print 4;
 print  " bucati";
 printf( "<br />Am %4.2f lei", 102.123456 );
-print "<br />";
+f
 print "Salut";
 print "Acesta este un script simplu";
 print "<br />";
