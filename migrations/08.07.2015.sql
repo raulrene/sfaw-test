@@ -11,4 +11,4 @@ CREATE TABLE `primarydb`.`capitol` (
 CREATE TABLE `primarydb`.`subcapitol` (
   `idsubcapitol` INT NOT NULL AUTO_INCREMENT COMMENT '',
   `subcapitol` VARCHAR(255) NULL COMMENT '',
-  PRIMARY KEY (`idsubcapitol`)  COMMENT '');
+  PRIMARY KEY (`idsubcapitol`)  COMMENT '');git@github.com:raulrene/sfaw-test.git
