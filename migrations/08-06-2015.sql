@@ -1,66 +1,32 @@
 CREATE SCHEMA `site` ;
 CREATE TABLE `site`.`config` (
-  `idconfig` INT NULL AUTO_INCREMENT,
-  `site-logo` VARCHAR(1500) NULL,
-  `site-background` VARCHAR(1500) NULL,
-  `site-fontFam` VARCHAR(1500) NULL,
-  `site-fontSize` VARCHAR(1500) NULL,
-  PRIMARY KEY (`idconfig`));
-CREATE TABLE `site`.`Chapters` (
-  `idChapters` INT NOT NULL AUTO_INCREMENT,
-  `ChapterName` VARCHAR(1500) NOT NULL,
-  PRIMARY KEY (`idChapters`));
-  CREATE TABLE `site`.`Subchapters` (
-  `idSubchapters` INT NOT NULL AUTO_INCREMENT,
-  `chapter` INT NOT NULL,
-  `Subchapterscol` VARCHAR(45) NULL,
-  PRIMARY KEY (`idSubchapters`));
-  CREATE TABLE `site`.`Subsubch` (
-  `idSubsubch` INT NOT NULL AUTO_INCREMENT,
-  `Subch` INT NOT NULL,
-  `Subsubchname` VARCHAR(1500) NOT NULL,
-  PRIMARY KEY (`idSubsubch`));
+  `id` INT NULL AUTO_INCREMENT,
+  `site_logo` VARCHAR(1500) NULL,
+  `site_background` VARCHAR(1500) NULL,
+  `site_font_fam` VARCHAR(1500) NULL,
+  `site_font_size` VARCHAR(1500) NULL,
+  PRIMARY KEY (`id`));
+CREATE TABLE `site`.`chapters` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `chapter_name` VARCHAR(1500) NOT NULL,
+  PRIMARY KEY (`id`));
+  CREATE TABLE `site`.`sub_chapters` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `chapter_id` INT NOT NULL,
+  `sub_ch_name` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+  CREATE TABLE `site`.`sub_sub_ch` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `sub_ch` INT NOT NULL,
+  `sub_sub_ch_name` VARCHAR(1500) NOT NULL,
+  PRIMARY KEY (`id`));
   CREATE TABLE `site`.`content` (
-  `idcontent` INT NOT NULL AUTO_INCREMENT,
-  `subsubch` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `sub_sub_ch` INT NOT NULL,
   `text` VARCHAR(1500) NOT NULL,
-  PRIMARY KEY (`idcontent`));
+  PRIMARY KEY (`id`));
   CREATE TABLE `site`.`comments` (
-  `idcomments` INT NOT NULL AUTO_INCREMENT,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `content` INT NOT NULL,
-  `commentscontent` VARCHAR(1500) NOT NULL,
-  PRIMARY KEY (`idcomments`));
-  ALTER TABLE `site`.`comments` 
-ADD INDEX `fk_comments_1_idx` (`content` ASC);
-ALTER TABLE `site`.`comments` 
-ADD CONSTRAINT `fk_comments_1`
-  FOREIGN KEY (`content`)
-  REFERENCES `site`.`content` (`idcontent`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
-  ALTER TABLE `site`.`content` 
-ADD INDEX `fk_content_2_idx` (`subsubch` ASC);
-ALTER TABLE `site`.`content` 
-ADD CONSTRAINT `fk_content_2`
-  FOREIGN KEY (`subsubch`)
-  REFERENCES `site`.`Subsubch` (`idSubsubch`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
-
-  ALTER TABLE `site`.`Subsubch` 
-ADD INDEX `fk_Subsubch_1_idx` (`Subch` ASC);
-ALTER TABLE `site`.`Subsubch` 
-ADD CONSTRAINT `fk_Subsubch_1`
-  FOREIGN KEY (`Subch`)
-  REFERENCES `site`.`Subchapters` (`idSubchapters`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
-
-  ALTER TABLE `site`.`Subchapters` 
-ADD INDEX `fk_Subchapters_4_idx` (`chapter` ASC);
-ALTER TABLE `site`.`Subchapters` 
-ADD CONSTRAINT `fk_Subchapters_4`
-  FOREIGN KEY (`chapter`)
-  REFERENCES `site`.`Chapters` (`idChapters`)
-  ON DELETE NO ACTION
-  ON UPDATE NO ACTION;
+  `comments_content` VARCHAR(1500) NOT NULL,
+  PRIMARY KEY (`id`));
