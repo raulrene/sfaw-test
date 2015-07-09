@@ -38,3 +38,15 @@ FOREIGN KEY (`idsubcapitol`)
 REFERENCES `primarydb`.`subcapitol` (`idsubcapitol`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
+
+CREATE TABLE `primarydb`.`content` (
+  `idcontent` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `content` VARCHAR(1500) NULL COMMENT '',
+  `idsubsubcapitol` INT NOT NULL COMMENT '',
+  PRIMARY KEY (`idcontent`)  COMMENT '',
+  INDEX `key3_idx` (`idsubsubcapitol` ASC)  COMMENT '',
+  CONSTRAINT `key3`
+  FOREIGN KEY (`idsubsubcapitol`)
+  REFERENCES `primarydb`.`subsubcapitol` (`idsubsubcapitol`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
