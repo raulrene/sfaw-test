@@ -12,22 +12,22 @@ CREATE TABLE `site`.`Chapters` (
   PRIMARY KEY (`idChapters`));
   CREATE TABLE `site`.`Subchapters` (
   `idSubchapters` INT NOT NULL AUTO_INCREMENT,
-  `chapter` VARCHAR(1500) NOT NULL,
+  `chapter` INT NOT NULL,
   `Subchapterscol` VARCHAR(45) NULL,
   PRIMARY KEY (`idSubchapters`));
   CREATE TABLE `site`.`Subsubch` (
   `idSubsubch` INT NOT NULL AUTO_INCREMENT,
-  `Subch` VARCHAR(1500) NOT NULL,
+  `Subch` INT NOT NULL,
   `Subsubchname` VARCHAR(1500) NOT NULL,
   PRIMARY KEY (`idSubsubch`));
   CREATE TABLE `site`.`content` (
   `idcontent` INT NOT NULL AUTO_INCREMENT,
-  `subsubch` VARCHAR(1500) NOT NULL,
+  `subsubch` INT NOT NULL,
   `text` VARCHAR(1500) NOT NULL,
   PRIMARY KEY (`idcontent`));
   CREATE TABLE `site`.`comments` (
   `idcomments` INT NOT NULL AUTO_INCREMENT,
-  `content` VARCHAR(1500) NOT NULL,
+  `content` INT NOT NULL,
   `commentscontent` VARCHAR(1500) NOT NULL,
   PRIMARY KEY (`idcomments`));
   ALTER TABLE `site`.`comments` 
