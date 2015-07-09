@@ -18,3 +18,23 @@ CREATE TABLE `primarydb`.`subcapitol` (
 
 ALTER TABLE `primarydb`.`capitol`
 CHANGE COLUMN `id` `idcapitol` INT(11) NOT NULL COMMENT '' ;
+
+ALTER TABLE `primarydb`.`subcapitol`
+ADD CONSTRAINT `key 1`
+FOREIGN KEY (`idcapitol`)
+REFERENCES `primarydb`.`capitol` (`idcapitol`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+CREATE TABLE `primarydb`.`subsubcapitol` (
+  `idsubsubcapitol` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `subsubcapitol` VARCHAR(45) NULL COMMENT '',
+  `idsubcapitol` INT NOT NULL COMMENT '',
+  PRIMARY KEY (`idsubsubcapitol`)  COMMENT '');
+
+ALTER TABLE `primarydb`.`subsubcapitol`
+ADD CONSTRAINT `key 2`
+FOREIGN KEY (`idsubcapitol`)
+REFERENCES `primarydb`.`subcapitol` (`idsubcapitol`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
