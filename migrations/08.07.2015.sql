@@ -152,3 +152,7 @@ DROP FOREIGN KEY `capitol_id`;
 
 ALTER TABLE `primarydb`.`sub_sub_capitol`
 DROP FOREIGN KEY `sub_capitol_id`;
+
+ALTER TABLE `primarydb`.`capitol`
+ADD COLUMN `order` INT NULL COMMENT '' AFTER `capitol`,
+ADD COLUMN `url` VARCHAR(1500) NULL COMMENT '' AFTER `order`;
