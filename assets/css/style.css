@@ -105,12 +105,13 @@ body{
 	margin-right: 43px;
 	float: left;
 	width: 22%;
-	height: auto;
+    z-index: 3;
 }
 #col-last{
 	margin:0px;
 }
 .column-content{
+    background: #fff;
 	position: relative;
 	margin-bottom: 39px;
 	float: left;
@@ -191,4 +192,8 @@ body{
 }
 .corner_red .corner{
     border-color: #f3715d #f3715d #fff #fff;
+}
+
+.ech_col{
+    margin:55px 0px 0px 60px;
 }

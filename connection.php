@@ -4,9 +4,12 @@ $host = 'localhost';
 $user = 'root';
 $pass = '6636';
 $db = 'site';
-$conn = mysqli_connect($host,$user,$pass,$db);
 
-if (!$conn){
-	die(mysql_error());
+$conn = new mysqli($host, $user, $pass,$db);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+
+
 ?>

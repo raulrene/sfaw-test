@@ -15,7 +15,7 @@
         <div class="column-content">
             <!-- course first section img -->
             <div class="col-img">
-                <a href="#">
+                <a href="course_info.php">
                     <img src="<?php echo $row['course_img']; ?>" alt="<?php echo $row['img_alt']; ?>" />
                 </a>
             </div>

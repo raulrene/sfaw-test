@@ -9,7 +9,7 @@
 <div class="site-wrap">
     <div class="main-content">
         <div class="row">
-            <?php include('includes/course_loop.php'); ?>
+            <?php include('includes/course_loop1.php'); ?>
         </div>
     </div>
     <?php require('includes/footer.php'); ?>
