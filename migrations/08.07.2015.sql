@@ -156,3 +156,10 @@ DROP FOREIGN KEY `sub_capitol_id`;
 ALTER TABLE `primarydb`.`capitol`
 ADD COLUMN `order` INT NULL COMMENT '' AFTER `capitol`,
 ADD COLUMN `url` VARCHAR(1500) NULL COMMENT '' AFTER `order`;
+
+ALTER TABLE `primarydb`.`comentarii`
+DROP COLUMN `sub_sub_capitol_id`;
+
+ALTER TABLE `primarydb`.`content`
+DROP COLUMN `sub_sub_capitol_id`,
+DROP INDEX `key3_idx` ;
