@@ -1,7 +1,6 @@
 body{
 	margin:0;
 	color:#444;
-	font-family: "Open Sans",​Arial,​Helvetica,​sans-serif;
 }
 /* clear class */
 .clear{clear:both;}
@@ -105,7 +104,7 @@ body{
 	position: relative;
 	margin-right: 43px;
 	float: left;
-	width: 22%;	
+	width: 22%;
 	height: auto;
 }
 #col-last{
@@ -161,6 +160,7 @@ body{
 .crs-star{
 	float:right;
 }
+
 /**   price div    **/
 .crs-price{
     background-color: #5ea5d7;
@@ -186,9 +186,9 @@ body{
     top: 33px;
 }
 /**   diff color price div and corner    **/    
-#corner_red{
-   background-color: #f3715d;
+.corner_red{
+   background-color: #f3715d; !important;
 }
-#corner_red .corner{
+.corner_red .corner{
     border-color: #f3715d #f3715d #fff #fff;
 }
