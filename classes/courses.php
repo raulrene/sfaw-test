@@ -8,7 +8,7 @@
         public function __construct($obj){
             $this->conn = $obj;
         }
-
+        //retrieve table object using prepared statements
         public function viewAll(){
             $sql = "SELECT * FROM $this->table";
             $stmt = $this->conn->prepare($sql);
