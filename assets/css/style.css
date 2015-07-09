@@ -171,6 +171,17 @@ body{
     top: 24px;
     left:-5px;
 }
+
+.crs-price-red{
+    background-color:  #f3715d;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 7px 10px;
+    position: absolute;
+    top: 24px;
+    left:-5px;
+}
+/**  price div corner   **/
 /**  price div corner   **/
 .corner{
   	-moz-border-bottom-colors: none;
@@ -183,12 +194,26 @@ body{
     border-width: 2px;
     left: -1px;
     position: absolute;
-    top: 33px;
+    top: 32px;
+}
+
+.corner-red{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #f3715d #f3715d #fff #fff;
+    border-image: none;
+    border-style: solid;
+    border-width: 2px;
+    left: -1px;
+    position: absolute;
+    top: 32px;
 }
 /**   diff color price div and corner    **/    
-#corner_red{
+.corner_red{
    background-color: #f3715d;
 }
-#corner_red .corner{
+.corner_red .corner{
     border-color: #f3715d #f3715d #fff #fff;
 }
