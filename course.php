@@ -17,7 +17,7 @@ include('includes/header.php');
     <div class="main-content">
         <div class="row">
             <?php
-            include('courses-loop.php');
+            include('includes/courses-loop.php');
             ?>
         </div>
     </div>
