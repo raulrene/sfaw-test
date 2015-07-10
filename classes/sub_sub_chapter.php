@@ -2,7 +2,21 @@
 class SubSUbChapter{
 
     private $id, $sub_ch_id, $sub_sub_ch_name,$order;
+    private $table = 'sub_sub_ch';
 
+
+    public function getSubSubCH(){
+        global $db;
+        $q = 'SELECT * FROM $this->table';
+        $data = $db->fetch_all($q);
+        return $data;
+    }
+    public function getSSChById($id){
+        global $db;
+        $q = 'SELECT * FROM $this->table WHERE id =$id';
+        $data = $db->fetch_row($q);
+        return $data;
+    }
     /**
      * @param mixed $id
      */

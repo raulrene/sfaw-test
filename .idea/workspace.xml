@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f251bc04-0e67-416a-b078-244a1a72df0a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/comments.php" afterPath="$PROJECT_DIR$/classes/comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/content.php" afterPath="$PROJECT_DIR$/classes/content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/sub_chapter.php" afterPath="$PROJECT_DIR$/classes/sub_chapter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/sub_sub_chapter.php" afterPath="$PROJECT_DIR$/classes/sub_sub_chapter.php" />
     </list>
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,13 +40,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sub_chapter.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sub_chapter.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/sub_chapter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="40" selection-start="376" selection-end="376" vertical-scroll-proportion="0.41795665" vertical-offset="0" max-vertical-offset="1674">
+            <state line="13" column="28" selection-start="307" selection-end="307" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1674">
               <folding>
-                <marker date="1436522157112" expanded="true" signature="183:209" placeholder="SELECT * FRO..$this..." />
-                <marker date="1436522157112" expanded="true" signature="350:390" placeholder="SELECT * FRO..$this..." />
+                <marker date="1436522293892" expanded="true" signature="186:212" placeholder="SELECT * FRO..$this..." />
+                <marker date="1436522293892" expanded="true" signature="352:392" placeholder="SELECT * FRO..$this..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sub_sub_chapter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/sub_sub_chapter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="27" selection-start="308" selection-end="308" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1638">
+              <folding>
+                <marker date="1436522329832" expanded="true" signature="188:214" placeholder="SELECT * FRO..$this..." />
+                <marker date="1436522329832" expanded="true" signature="353:393" placeholder="SELECT * FRO..$this..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="62" selection-end="438" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="1368">
+              <folding>
+                <marker date="1436522386816" expanded="true" signature="164:190" placeholder="SELECT * FRO..$this..." />
+                <marker date="1436522386816" expanded="true" signature="332:372" placeholder="SELECT * FRO..$this..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes/comments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="35" selection-start="252" selection-end="252" vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="1908">
+              <folding>
+                <marker date="1436522434500" expanded="true" signature="188:214" placeholder="SELECT * FRO..$this..." />
+                <marker date="1436522434500" expanded="true" signature="357:397" placeholder="SELECT * FRO..$this..." />
               </folding>
             </state>
           </provider>
@@ -111,6 +150,9 @@
         <option value="$PROJECT_DIR$/course.php" />
         <option value="$PROJECT_DIR$/classes/courses.php" />
         <option value="$PROJECT_DIR$/classes/sub_chapter.php" />
+        <option value="$PROJECT_DIR$/classes/sub_sub_chapter.php" />
+        <option value="$PROJECT_DIR$/classes/content.php" />
+        <option value="$PROJECT_DIR$/classes/comments.php" />
       </list>
     </option>
   </component>
@@ -494,16 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="178" selection-end="557" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2772">
-          <folding>
-            <marker date="1436521864568" expanded="true" signature="258:279" placeholder="SELECT * FRO..courses..." />
-            <marker date="1436521864568" expanded="true" signature="444:479" placeholder="SELECT * FRO..courses..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/course_loop.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="60" selection-start="603" selection-end="603" vertical-scroll-proportion="-10.851851" vertical-offset="13" max-vertical-offset="1134">
@@ -520,12 +552,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classes/courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="178" selection-end="557" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2772">
+          <folding>
+            <marker date="1436521864568" expanded="true" signature="258:279" placeholder="SELECT * FRO..courses..." />
+            <marker date="1436521864568" expanded="true" signature="444:479" placeholder="SELECT * FRO..courses..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/sub_chapter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="376" selection-end="376" vertical-scroll-proportion="0.41795665" vertical-offset="0" max-vertical-offset="1674">
+        <state line="13" column="28" selection-start="307" selection-end="307" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1674">
           <folding>
-            <marker date="1436522157112" expanded="true" signature="183:209" placeholder="SELECT * FRO..$this..." />
-            <marker date="1436522157112" expanded="true" signature="350:390" placeholder="SELECT * FRO..$this..." />
+            <marker date="1436522293892" expanded="true" signature="186:212" placeholder="SELECT * FRO..$this..." />
+            <marker date="1436522293892" expanded="true" signature="352:392" placeholder="SELECT * FRO..$this..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/sub_sub_chapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="27" selection-start="308" selection-end="308" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1638">
+          <folding>
+            <marker date="1436522329832" expanded="true" signature="188:214" placeholder="SELECT * FRO..$this..." />
+            <marker date="1436522329832" expanded="true" signature="353:393" placeholder="SELECT * FRO..$this..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="62" selection-end="438" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="1368">
+          <folding>
+            <marker date="1436522386816" expanded="true" signature="164:190" placeholder="SELECT * FRO..$this..." />
+            <marker date="1436522386816" expanded="true" signature="332:372" placeholder="SELECT * FRO..$this..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="252" selection-end="252" vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="1908">
+          <folding>
+            <marker date="1436522434500" expanded="true" signature="188:214" placeholder="SELECT * FRO..$this..." />
+            <marker date="1436522434500" expanded="true" signature="357:397" placeholder="SELECT * FRO..$this..." />
           </folding>
         </state>
       </provider>

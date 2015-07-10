@@ -5,13 +5,13 @@ class SubChapter{
     private $table = 'sub_chapters';
 
 
-    public function subChapter(){
+    public function getsubChapter(){
         global $db;
         $q = 'SELECT * FROM $this->table';
         $data = $db->fetch_all($q);
         return $data;
     }
-    public function getCourseById($id){
+    public function getSubCHById($id){
         global $db;
         $q = 'SELECT * FROM $this->table WHERE id =$id';
         $data = $db->fetch_row($q);

@@ -2,7 +2,21 @@
 class Content{
 
     private $id, $sub_sub_ch_id, $text;
+    private $table = 'content';
 
+
+    public function getContent(){
+        global $db;
+        $q = 'SELECT * FROM $this->table';
+        $data = $db->fetch_all($q);
+        return $data;
+    }
+    public function getContentById($id){
+        global $db;
+        $q = 'SELECT * FROM $this->table WHERE id =$id';
+        $data = $db->fetch_row($q);
+        return $data;
+    }
     /**
      * @param mixed $id
      */

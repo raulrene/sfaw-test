@@ -1,7 +1,21 @@
 <?php
 class Comments{
     private $id, $content_id, $comments_content, $date, $tag;
+    private $table = 'comments';
 
+
+    public function getComments(){
+        global $db;
+        $q = 'SELECT * FROM $this->table';
+        $data = $db->fetch_all($q);
+        return $data;
+    }
+    public function getCommentsById($id){
+        global $db;
+        $q = 'SELECT * FROM $this->table WHERE id =$id';
+        $data = $db->fetch_row($q);
+        return $data;
+    }
     /**
      * @param mixed $comments_content
      */
