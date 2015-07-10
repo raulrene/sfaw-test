@@ -16,7 +16,7 @@
 		   <div class="main-content">
 			<?php
 				include('includes/three-col.php');
-				include('includes/courses.php');
+				include('includes/courses_class.php');
 				include('includes/main-content.php');
 			?>
 			</div>
