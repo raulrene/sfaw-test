@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e535b670-16bf-4c4f-9c88-a7b6aabb0318" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/comentarii.php" afterPath="$PROJECT_DIR$/classes/comentarii.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/configurare.php" afterPath="$PROJECT_DIR$/classes/configurare.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/content.php" afterPath="$PROJECT_DIR$/classes/content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/sub_capitol.php" afterPath="$PROJECT_DIR$/classes/sub_capitol.php" />
     </list>
     <ignored path="site-radu.iws" />
@@ -74,23 +71,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sub_capitol.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sub_capitol.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/sub_capitol.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="1241">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.9136808" vertical-offset="102" max-vertical-offset="1241">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
-                <marker date="1436526574605" expanded="true" signature="173:194" placeholder="Select * fro..capitol..." />
-                <marker date="1436526574605" expanded="true" signature="311:343" placeholder="Select * fro..capitol..." />
+                <marker date="1436526665677" expanded="true" signature="176:201" placeholder="Select * fro..sub_capitol..." />
+                <marker date="1436526665677" expanded="true" signature="321:357" placeholder="Select * fro..sub_capitol..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courses_class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="courses_class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/courses_class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38762215" vertical-offset="0" max-vertical-offset="2414">
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="2414">
               <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <marker date="1436520469011" expanded="true" signature="185:206" placeholder="Select * fro..courses..." />
@@ -170,10 +167,10 @@
         <option value="$PROJECT_DIR$/includes/courses.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/classes/coding.php" />
-        <option value="$PROJECT_DIR$/classes/sub_capitol.php" />
         <option value="$PROJECT_DIR$/classes/comentarii.php" />
         <option value="$PROJECT_DIR$/classes/configurare.php" />
         <option value="$PROJECT_DIR$/classes/content.php" />
+        <option value="$PROJECT_DIR$/classes/sub_capitol.php" />
       </list>
     </option>
   </component>
@@ -342,7 +339,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1296" height="776" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -351,7 +348,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -531,17 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/sub_capitol.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="1241">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <marker date="1436526574605" expanded="true" signature="173:194" placeholder="Select * fro..capitol..." />
-            <marker date="1436526574605" expanded="true" signature="311:343" placeholder="Select * fro..capitol..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/coding.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="952">
@@ -589,11 +575,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/courses_class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38762215" vertical-offset="0" max-vertical-offset="2414">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="2414">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <marker date="1436520469011" expanded="true" signature="185:206" placeholder="Select * fro..courses..." />
             <marker date="1436520469011" expanded="true" signature="329:361" placeholder="Select * fro..courses..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/sub_capitol.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9136808" vertical-offset="102" max-vertical-offset="1241">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <marker date="1436526665677" expanded="true" signature="176:201" placeholder="Select * fro..sub_capitol..." />
+            <marker date="1436526665677" expanded="true" signature="321:357" placeholder="Select * fro..sub_capitol..." />
           </folding>
         </state>
       </provider>
