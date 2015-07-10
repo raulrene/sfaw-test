@@ -1,5 +1,5 @@
 <?php
-include ('../database/database.php');
+include ('database/database.php');
 
 $host = "localhost";
 $user = "root";

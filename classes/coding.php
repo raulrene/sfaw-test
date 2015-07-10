@@ -5,9 +5,21 @@ class coding {
     private $id;
     private $coding;
 
-    /**
-     * @return mixed
-     */
+    public function getCoding(){
+        global $db;
+
+        $data = $db->fetch_all('Select * from codingl');
+
+        return $data;
+    }
+
+    public function getCodings($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from coding where id =' . $id);
+
+        return $data;
+    }
     public function getId()
     {
         return $this->id;
@@ -24,7 +36,7 @@ class coding {
     /**
      * @return mixed
      */
-    public function getCoding()
+    public function getCoding1()
     {
         return $this->coding;
     }
