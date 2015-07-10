@@ -8,7 +8,7 @@ class comentarii {
     public function getComentariu(){
         global $db;
 
-        $data = $db->fetch_all('Select * from capitol');
+        $data = $db->fetch_all('Select * from comentarii');
 
         return $data;
     }
@@ -16,7 +16,7 @@ class comentarii {
     public function getComentarii($id){
         global $db;
 
-        $data = $db->fetch_all('Select * from capitol where id =' . $id);
+        $data = $db->fetch_all('Select * from comentarii where id =' . $id);
 
         return $data;
     }

@@ -8,7 +8,7 @@ class content {
     public function getContent(){
     global $db;
 
-    $data = $db->fetch_all('Select * from capitol');
+    $data = $db->fetch_all('Select * from content');
 
     return $data;
 }
@@ -16,7 +16,7 @@ class content {
     public function getContents($id){
         global $db;
 
-        $data = $db->fetch_all('Select * from capitol where id =' . $id);
+        $data = $db->fetch_all('Select * from content where id =' . $id);
 
         return $data;
     }
