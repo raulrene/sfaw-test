@@ -5,9 +5,21 @@ class configurare {
     private $logo;
     private $background;
 
-    /**
-     * @return mixed
-     */
+    public function getConfigurare(){
+        global $db;
+
+        $data = $db->fetch_all('Select * from capitol');
+
+        return $data;
+    }
+
+    public function getConfigurari($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from capitol where id =' . $id);
+
+        return $data;
+    }
     public function getId()
     {
         return $this->id;
