@@ -6,9 +6,21 @@ class sub_sub_capitol {
     private $sub_sub_capitol;
     private $order;
 
-    /**
-     * @return mixed
-     */
+    public function getSubSubCapitol(){
+        global $db;
+
+        $data = $db->fetch_all('Select * from sub_sub_capitol');
+
+        return $data;
+    }
+
+    public function getSubSubCapitole($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from sub_sub_capitol where id =' . $id);
+
+        return $data;
+    }
     public function getId()
     {
         return $this->id;
@@ -25,7 +37,7 @@ class sub_sub_capitol {
     /**
      * @return mixed
      */
-    public function getSubSubCapitol()
+    public function getSubSubCapitol1()
     {
         return $this->sub_sub_capitol;
     }

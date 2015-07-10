@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e535b670-16bf-4c4f-9c88-a7b6aabb0318" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/sub_capitol.php" afterPath="$PROJECT_DIR$/classes/sub_capitol.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/sub_sub_capitol.php" afterPath="$PROJECT_DIR$/classes/sub_sub_capitol.php" />
     </list>
     <ignored path="site-radu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,16 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="544">
-              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="courses.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,14 +61,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sub_capitol.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sub_capitol.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/sub_capitol.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9136808" vertical-offset="102" max-vertical-offset="1241">
+            <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="1241">
               <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <marker date="1436526665677" expanded="true" signature="176:201" placeholder="Select * fro..sub_capitol..." />
                 <marker date="1436526665677" expanded="true" signature="321:357" placeholder="Select * fro..sub_capitol..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sub_sub_capitol.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classes/sub_sub_capitol.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58143324" vertical-offset="102" max-vertical-offset="1258">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <marker date="1436526923595" expanded="true" signature="193:222" placeholder="Select * fro..sub_sub_capitol..." />
+                <marker date="1436526923595" expanded="true" signature="353:393" placeholder="Select * fro..sub_sub_capitol..." />
               </folding>
             </state>
           </provider>
@@ -171,6 +174,7 @@
         <option value="$PROJECT_DIR$/classes/configurare.php" />
         <option value="$PROJECT_DIR$/classes/content.php" />
         <option value="$PROJECT_DIR$/classes/sub_capitol.php" />
+        <option value="$PROJECT_DIR$/classes/sub_sub_capitol.php" />
       </list>
     </option>
   </component>
@@ -467,14 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/sub_sub_capitol.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38762215" vertical-offset="0" max-vertical-offset="1054">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/courses_content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="1309">
@@ -586,11 +582,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/sub_capitol.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9136808" vertical-offset="102" max-vertical-offset="1241">
+        <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="1241">
           <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding>
             <marker date="1436526665677" expanded="true" signature="176:201" placeholder="Select * fro..sub_capitol..." />
             <marker date="1436526665677" expanded="true" signature="321:357" placeholder="Select * fro..sub_capitol..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/sub_sub_capitol.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58143324" vertical-offset="102" max-vertical-offset="1258">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1436526923595" expanded="true" signature="193:222" placeholder="Select * fro..sub_sub_capitol..." />
+            <marker date="1436526923595" expanded="true" signature="353:393" placeholder="Select * fro..sub_sub_capitol..." />
           </folding>
         </state>
       </provider>
