@@ -38,7 +38,7 @@ class capitol {
     /**
      * @return mixed
      */
-    public function getCapitol()
+    public function getCapitol1()
     {
         return $this->capitol;
     }
