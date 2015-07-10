@@ -12,6 +12,21 @@ class SubSubCapitol {
     private $sub_capitol_id;
     private $order;
 
+    public function getSubSubCapitole(){
+        global $db;
+
+        $data = $db->fetch_all('Select * from sub_sub_capitol');
+
+        return $data;
+    }
+
+    public function getSubSubCapitol($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from sub_sub_capitol where id =' . $id);
+
+        return $data;
+    }
     /**
      * @param mixed $id
      */
