@@ -6,6 +6,7 @@
  * Time: 11:31 AM
  */
 
+include('config/config.php');
 class Capitol {
     private $id;
     private $numeCapitol;
@@ -13,8 +14,20 @@ class Capitol {
     private $order;
 
 
-    public function getChapter(){
+    public function getCapitole(){
+        global $db;
 
+        $data = $db->fetch_all('Select * from capitol');
+
+        return $data;
+    }
+
+    public function getCapitol($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from capitol where id =' . $id);
+
+        return $data;
     }
     /**
      * @param mixed $numeCapitol

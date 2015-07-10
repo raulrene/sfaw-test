@@ -1,7 +1,15 @@
-<!DOCTYPE html>
 <?php
 include('config/config.php');
+include('classes/Courses.php');
+
+$obj = new Course();
+$data = $obj->getAll();
+echo '<pre>';
+print_r($data);
+die;
+
 ?>
+<!DOCTYPE html>
 
 <html>
 <head>
