@@ -1,12 +1,8 @@
 <?php
     include_once('database/database1.php');
     include_once('classes/courses.php');
-    //instantiating new database class
-    $pdo = new Database1();
-    //creating connection object
-    $obj = $pdo->connect();
     //new instatiation of class
-    $course = new Course($obj);
+    $course = new Course($db);
     //retrieve database/table data
     $q = $course->viewAll();
 ?>

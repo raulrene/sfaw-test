@@ -4,6 +4,21 @@ class Chapter{
     private $chapter_name;
     private $url;
 
+    public function getChapters(){
+        global $db;
+        $q = 'SELECT * FROM Chapters';
+        $data = $db->fetch_all($q);
+        return $data;
+    }
+    public function getChapterById($id){
+        global $db;
+        $q = 'SELECT * FROM Chapters WHERE id =$id';
+        $data = $db->fetch_row($q);
+        return $data;
+    }
+
+
+
     /**
      * @param mixed $chapter_name
      */

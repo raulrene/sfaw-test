@@ -1,9 +1,6 @@
 <?php
 class Config{
     private $host,$user,$pass;
-    $host = 'localhost';
-	$user = 'root';
-	$pass = '6636';
 
 
     /**
