@@ -1,5 +1,14 @@
-<!DOCTYPE html>
+<?php
+include('classes/courses.php');
+include('config/config.php');
+$obj = new Course();
+$data = $obj->getCourses();
+echo '<pre>';
+var_dump($data);
+die();
+?>
 
+<!DOCTYPE html>
 <html>
 <head>
     <?php include('includes/head.php'); ?>

@@ -13,9 +13,6 @@ $dbase   = 'site';
 
 include('../database/database1');
 
-//instantiating new database class
-$pdo = new Database1($host,$user,$pass,$dbase);
-//creating connection object
-$db = $pdo->connect();
-global $db;
+$db = new Database($host, $user, $pass,$dbase);
+
 ?>

@@ -12,10 +12,10 @@ class Database {
     private $debug, $stmt, $result, $filters = array();
 
   // Sets up database connection
-    public function __construct($name, $server, $username, $password, $charset = "utf8", $debug = true, $errormsg = "Database connection failed.") {
+    public function __construct($host, $user, $pass, $dbname, $charset = "utf8", $debug = true, $errormsg = "Database connection failed.") {
         if ($this->debug) { mysqli_report(MYSQLI_REPORT_ERROR); }
         else { mysqli_report(MYSQLI_REPORT_OFF); }
-        $this->connection = @new mysqli($server, $username, $password, $name);
+        $this->connection = @new mysqli($host, $user, $pass,$dbname);
         $this->connection_error = $this->connection->connect_error;
         $this->connection_error_code = $this->connection->connect_errno;
         $this->debug = $debug;
@@ -26,7 +26,7 @@ class Database {
             $this->client_info = $this->connection->client_info;
             $this->host_info = $this->connection->host_info;
         }
-        else if ($this->connection_error_code && $errormesg !== false) {
+        else if ($this->connection_error_code && $errormsg !== false) {
             error_log("MySQL database error:  ".$this->connection_error." for error code ".$this->connection_error_code);
             if ($this->debug) { die("Database Connection Error ".$this->connection_error_code.": ".$this->connection_error); } else { die($errormsg); }
         }
@@ -61,7 +61,7 @@ class Database {
           if (count($params)) {
               foreach ($params as $key => $param) {
                   if (is_int($param) || is_bool($param)) {
-                      $markers .= "i";
+                      $markers = "i";
                       $param_trueval = intval($param);
                       $params_bindable[] = $param_trueval;
                   } else if (is_double($param)) {

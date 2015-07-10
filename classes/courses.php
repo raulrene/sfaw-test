@@ -2,18 +2,18 @@
     class Course{
         private $id, $course_name,$course_price, $course_img, $course_author, $course_user, $course_stars, $img_alt;
         private $table = 'courses';
-        private $conn;
 
-
-        public function __construct($obj){
-            $this->conn = $obj;
+        public function getCourses(){
+            global $db;
+            $q = 'SELECT * FROM courses';
+            $data = $db->fetch_all($q);
+            return $data;
         }
-        //retrieve table object using prepared statements
-        public function viewAll(){
-            $sql = "SELECT * FROM $this->table";
-            $stmt = $this->conn->prepare($sql);
-            $stmt->execute();
-            return $stmt;
+        public function getCourseById($id){
+            global $db;
+            $q = 'SELECT * FROM courses WHERE id =$id';
+            $data = $db->fetch_row($q);
+            return $data;
         }
 
         /**
