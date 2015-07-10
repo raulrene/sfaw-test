@@ -5,9 +5,21 @@ class content {
     private $id;
     private $content;
 
-    /**
-     * @return mixed
-     */
+    public function getContent(){
+    global $db;
+
+    $data = $db->fetch_all('Select * from capitol');
+
+    return $data;
+}
+
+    public function getContents($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from capitol where id =' . $id);
+
+        return $data;
+    }
     public function getId()
     {
         return $this->id;
@@ -24,7 +36,7 @@ class content {
     /**
      * @return mixed
      */
-    public function getContent()
+    public function getContent1()
     {
         return $this->content;
     }
