@@ -2,7 +2,9 @@
 include('config/config.php');
 ?>
 
-<h1>Popular courses</h1>
+<div class="row">
+    <h1>Courses</h1>
+</div>
 
 <div class="course-list">
     <?php

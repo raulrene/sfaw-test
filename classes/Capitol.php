@@ -12,6 +12,10 @@ class Capitol {
     private $url;
     private $order;
 
+
+    public function getChapter(){
+
+    }
     /**
      * @param mixed $numeCapitol
      */
