@@ -12,6 +12,21 @@ class Content {
     private $sub_sub_capitol_id;
     private $contentText;
 
+    public function getContents(){
+        global $db;
+
+        $data = $db->fetch_all('Select * from content');
+
+        return $data;
+    }
+
+    public function getContent($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from content where id =' . $id);
+
+        return $data;
+    }
     /**
      * @param mixed $contentText
      */

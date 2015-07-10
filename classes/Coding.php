@@ -11,6 +11,21 @@ class Coding {
     private $sub_sub_capitol_id;
     private $codingText;
 
+    public function getCodings(){
+        global $db;
+
+        $data = $db->fetch_all('Select * from coding');
+
+        return $data;
+    }
+
+    public function getCoding($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from coding where id =' . $id);
+
+        return $data;
+    }
     /**
      * @param mixed $sub_sub_capitol_id
      */

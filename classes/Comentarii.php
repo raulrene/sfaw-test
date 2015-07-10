@@ -13,6 +13,23 @@ class Comentarii {
     private $dateAdded;
     private $tag;
 
+
+    public function getComentarii(){
+        global $db;
+
+        $data = $db->fetch_all('Select * from comentarii');
+
+        return $data;
+    }
+
+    public function getComentariu($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from comentarii where id =' . $id);
+
+        return $data;
+    }
+
     /**
      * @param mixed $dateAdded
      */
