@@ -5,9 +5,21 @@ class comentarii {
     private $id;
     private $comentarii;
 
-    /**
-     * @return mixed
-     */
+    public function getComentariu(){
+        global $db;
+
+        $data = $db->fetch_all('Select * from capitol');
+
+        return $data;
+    }
+
+    public function getComentarii($id){
+        global $db;
+
+        $data = $db->fetch_all('Select * from capitol where id =' . $id);
+
+        return $data;
+    }
     public function getId()
     {
         return $this->id;
@@ -24,7 +36,7 @@ class comentarii {
     /**
      * @return mixed
      */
-    public function getComentarii()
+    public function getComentarii1()
     {
         return $this->comentarii;
     }
