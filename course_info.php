@@ -28,10 +28,10 @@
     <div class="row">
         <div class="tabs">
             <ul>
-                <li><a href="">Online Learning</a></li>
-                <li><a href="">WooCommerce</a></li>
-                <li><a href="">User Profiles</a></li>
-                <li><a href=""> Media Player</a></li>
+                <li class="current" id="online">Online Learning</li>
+                <li id="woo">WooCommerce</li>
+                <li id="profiles">User Profiles</li>
+                <li id="media"> Media Player</li>
             </ul>
         </div>
         <div class="tabs_content">
@@ -48,9 +48,7 @@
 </div>
 <script type="text/javascript">
     $(function(){
-        $('.tabs ul li').on('click',function(){
-            $this.css('border-left','1px solid #e5e5e5');
-        });
+        alert('acaca');
     });
 </script>
 </body>

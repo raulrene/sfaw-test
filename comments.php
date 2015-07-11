@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,11 +7,11 @@
 <?php include('includes/header.php'); ?>
 <div class="site-wrap">
     <div class="main-content">
-        <div class="row">
-            <?php include('includes/course_loop1.php'); ?>
-        </div>
+        <?php
+        include('includes/comm_page.php');
+        ?>
     </div>
-    <?php require('includes/footer.php'); ?>
+    <?php include('includes/footer.php'); ?>
 </div>
 </body>
 </html>

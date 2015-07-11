@@ -12,10 +12,10 @@ class Database {
     private $debug, $stmt, $result, $filters = array();
 
   // Sets up database connection
-    public function __construct($host, $user, $pass, $dbname, $charset = "utf8", $debug = true, $errormsg = "Database connection failed.") {
+    public function __construct($db, $host, $user, $pass, $charset = "utf8", $debug = true, $errormsg = "Database connection failed.") {
         if ($this->debug) { mysqli_report(MYSQLI_REPORT_ERROR); }
         else { mysqli_report(MYSQLI_REPORT_OFF); }
-        $this->connection = @new mysqli($host, $user, $pass,$dbname);
+        $this->connection = @new mysqli($host, $user, $pass,$db);
         $this->connection_error = $this->connection->connect_error;
         $this->connection_error_code = $this->connection->connect_errno;
         $this->debug = $debug;
@@ -82,9 +82,9 @@ class Database {
             call_user_func_array(array($this->stmt, "bind_param"), $params_bindable_withref);
         }
       $execute = $this->stmt->execute();
-  
+
       // An extra check to see if the query executed without errors (first check is when we first prepare the query)
-      if (!$execute) {  
+      if (!$execute) {
 	        $debug_backtrace = debug_backtrace();
 	        error_log("MySQL database error:  ".$this->stmt->error." for query ".$query." in ".$debug_backtrace[1]["file"]." on line ".$debug_backtrace[1]["line"]);
           if ($this->debug) {

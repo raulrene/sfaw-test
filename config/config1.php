@@ -9,10 +9,9 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '6636';
-$dbase   = 'site';
+$db   = 'site';
 
-include('../database/database1');
+include_once('../database/database');
 
-$db = new Database($host, $user, $pass,$dbase);
+$dbb = new Database($host, $user, $pass,$db);
 
-?>
