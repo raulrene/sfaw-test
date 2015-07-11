@@ -60,3 +60,7 @@ CHANGE COLUMN `comments_content` `author_img` VARCHAR(255) NOT NULL ,
 CHANGE COLUMN `date` `date_posted` DATETIME NOT NULL ,
 CHANGE COLUMN `tag` `comm_text` VARCHAR(1500) NOT NULL ,
 ADD COLUMN `author_link` VARCHAR(255) NOT NULL AFTER `comm_text`;
+
+INSERT INTO `site`.`comments` (`author`, `author_img`, `date_posted`, `comm_text`, `author_link`) VALUES ('Stevie', 'assets/img/stevie.jpg', 'February 24,2013', 'Phasellus id velit ante, quis elementum elit. Donec bibendum consequat massa, sit amet rhoncus sapien elementum vel. Suspendisse potenti. Donec semper dapibus nisl et pellentesque. Cras vel tempus.', '#');
+INSERT INTO `site`.`comments` (`author`, `author_img`, `date_posted`, `comm_text`) VALUES ('Zenith', 'assets/img/zenith.jpg', 'February 23,2013', 'Phasellus id velit ante, quis elementum elit. Donec bibendum consequat massa, sit amet rhoncus sapien elementum vel. Suspendisse potenti. Donec semper dapibus nisl et pellentesque. Cras vel tempus.');
+INSERT INTO `site`.`comments` (`author`, `author_img`, `date_posted`, `comm_text`) VALUES ('Mitch', 'asstes/img/mitch.jpg', 'February 23,2013', 'Phasellus id velit ante, quis elementum elit. Donec bibendum consequat massa, sit amet rhoncus sapien elementum vel. Suspendisse potenti. Donec semper dapibus nisl et pellentesque. Cras vel tempus.');

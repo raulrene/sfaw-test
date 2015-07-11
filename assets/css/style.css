@@ -273,6 +273,55 @@ body{
     padding:0px;
 }
 .comments ul li{
+    border-top: 1px dotted #d7d7d7;
     margin: 0px 0px 6px 0px;
     padding:0px;
+}
+.bordered-image{
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    margin:0px;
+    padding:3px;
+}
+.comment-text{
+    margin: 0px;
+    padding:0px;
+}
+.comment-text header{
+    margin:0px 0px 5px 0px;
+    padding:0px;
+}
+.comment-text header h5{
+    font-size: 15px;
+    margin:0px 10px 0px 0px;
+    padding: 0px;
+}
+.comment-text header time{
+    color:#777;
+    margin:0px 10px 0px 0px;
+    padding: 0px;
+}
+.comment-text header a{
+    color:#777;
+    text-decoration: none;
+}
+.comment-text header a:hover{
+    color:#5ea5d7;
+}
+.comment-text p{
+    color:#555;
+    margin: 0px;
+    padding: 0px;
+}
+/* replies*/
+.replies{
+    list-style-type: none;
+    margin: 0px 0px 0px 96px;
+    padding: 0px;
+}
+.replies li{
+    border-top: 1px dotted #d7d7d7;
+    margin: 19px 0px 6px 0px;
+    padding: 19px 0px 0px 0px;
 }
