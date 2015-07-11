@@ -54,3 +54,9 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2015-07-09 13:21:46
+ALTER TABLE `site`.`comments`
+CHANGE COLUMN `content_id` `author` VARCHAR(255) NOT NULL ,
+CHANGE COLUMN `comments_content` `author_img` VARCHAR(255) NOT NULL ,
+CHANGE COLUMN `date` `date_posted` DATETIME NOT NULL ,
+CHANGE COLUMN `tag` `comm_text` VARCHAR(1500) NOT NULL ,
+ADD COLUMN `author_link` VARCHAR(255) NOT NULL AFTER `comm_text`;

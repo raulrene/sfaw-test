@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f251bc04-0e67-416a-b078-244a1a72df0a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/comm_page.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config1.php" afterPath="$PROJECT_DIR$/config/config1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course.php" afterPath="$PROJECT_DIR$/course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course_info.php" afterPath="$PROJECT_DIR$/course_info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/courses.php" afterPath="$PROJECT_DIR$/classes/courses.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/database.php" afterPath="$PROJECT_DIR$/database/database.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/migrations/replies-11-06-2015.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/comm_page.php" afterPath="$PROJECT_DIR$/includes/comm_page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/site_comments.sql" afterPath="$PROJECT_DIR$/migrations/site_comments.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="235" column="19" selection-start="4899" selection-end="4899" vertical-scroll-proportion="0.0" vertical-offset="3866" max-vertical-offset="4590">
+            <state line="275" column="27" selection-start="5515" selection-end="5515" vertical-scroll-proportion="0.91818184" vertical-offset="4344" max-vertical-offset="5094">
               <folding />
             </state>
           </provider>
@@ -51,11 +47,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comm_page.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="comm_page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/comm_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <folding />
+            <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="180">
+              <folding>
+                <element signature="tag#div#0;tag#div#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,9 +106,12 @@
         <option value="$PROJECT_DIR$/database/database.php" />
         <option value="$PROJECT_DIR$/database/database1.php" />
         <option value="$PROJECT_DIR$/course.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/course_info.php" />
         <option value="$PROJECT_DIR$/comments.php" />
+        <option value="$PROJECT_DIR$/includes/comm_page.php" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/migrations/replies-11-06-2015.sql" />
+        <option value="$PROJECT_DIR$/migrations/site_comments.sql" />
       </list>
     </option>
   </component>
@@ -162,6 +163,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="19" selection-start="4899" selection-end="4899" vertical-scroll-proportion="0.0" vertical-offset="3866" max-vertical-offset="4590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="455" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="468">
@@ -507,7 +515,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/comm_page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+        <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="180">
+          <folding>
+            <element signature="tag#div#0;tag#div#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/site_Chapters.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/replies-11-06-2015.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="303" selection-end="303" vertical-scroll-proportion="0.21396731" vertical-offset="0" max-vertical-offset="673">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/site_comments.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.9830247" vertical-offset="479" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="275" column="27" selection-start="5515" selection-end="5515" vertical-scroll-proportion="0.91818184" vertical-offset="4344" max-vertical-offset="5094">
           <folding />
         </state>
       </provider>

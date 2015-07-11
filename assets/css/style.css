@@ -248,3 +248,31 @@ body{
     margin-top: 30px;
     width: 50%;
 }
+
+/**  comments   **/
+
+#comments{
+    color:#444;
+    font-size: 13px;
+    margin:39px;
+    width:70%;
+}
+#comments h1{
+    font-size: 19px;
+    padding:0px;
+    margin:0px 0px 19px 0px;
+}
+/* comment div */
+.comment{
+    margin:0px 0px 26px 0px;
+    padding:0px;
+}
+.comment ul{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+.comments ul li{
+    margin: 0px 0px 6px 0px;
+    padding:0px;
+}
