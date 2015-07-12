@@ -1,4 +1,5 @@
 <?php
+
 /**
  * MySQL Database Framework for MySQLi
  *
@@ -12,10 +13,10 @@ class Database {
     private $debug, $stmt, $result, $filters = array();
 
     // Sets up database connection
-    public function __construct($servername,$username,$password,$dbName, $charset = "utf8", $debug = true, $errormsg = "Database connection failed.") {
+    public function __construct($serverName,$username,$password,$dbName, $charset, $debug, $errormsg) {
         if ($this->debug) { mysqli_report(MYSQLI_REPORT_ERROR); }
         else { mysqli_report(MYSQLI_REPORT_OFF); }
-        $this->connection = @new mysqli($servername, $username, $password, $dbName);
+        $this->connection = @new mysqli($serverName, $username, $password, $dbName);
         $this->connection_error = $this->connection->connect_error;
         $this->connection_error_code = $this->connection->connect_errno;
         $this->debug = $debug;
@@ -60,6 +61,7 @@ class Database {
             $this->query_count_success++;
             if (count($params)) {
                 foreach ($params as $key => $param) {
+                    $markers="";
                     if (is_int($param) || is_bool($param)) {
                         $markers .= "i";
                         $param_trueval = intval($param);

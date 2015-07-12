@@ -1,13 +1,14 @@
 <?php
 
 include('../database/database.php');
-$servername = "localhost";
+$serverName = "localhost";
 $username = "root";
 $password = "root";
 $dbName = 'newSite';
-
+$charset = "utf8"; $debug = true;$errormsg = "Database connection failed";
 
 // Create connection
-//$conn = mysqli_connect($servername, $username, $password,$db);
+//$conn = mysqli_connect($serverName, $username, $password,$dbName);
 
-$db = new Database($servername,$username,$password,$dbName);
+$db = new Database($serverName,$username,$password,$dbName,$charset,$debug,$errormsg);
+

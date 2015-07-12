@@ -192,3 +192,115 @@ body{
 .corner_red .corner{
     border-color: #f3715d #f3715d #fff #fff !important;
 }
+
+
+/*Course-info*/
+.nomargin {
+    margin: 0!important;
+}
+
+.course-description{
+    border-radius: 3px;
+
+}
+.course-description h4{
+    margin-bottom: 0.4em;
+    font-weight: bold;
+}
+.single-course .featured-content {
+    padding: 3em 0;
+    height: auto !important;
+}
+.single-course .col-img{
+    padding-top: 0px !important;
+    border: 5px solid #fff;
+
+}
+.widget .course-description{
+    border-radius: 3px;
+}
+.widget {
+    position: relative;
+    z-index: 1;
+    padding: 13px 15px;
+    border: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    background: #fff;
+    color: #555;
+    border-radius: 3px;
+}
+.widget-title {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0)));
+    position: relative;
+    overflow: hidden;
+    margin: -14px -16px 13px -16px;
+    padding: 0.7em 15px;
+    border: 1px solid rgba(0,0,0,0.01);
+    border-bottom-color: #3d4e5b;
+    background-color: #3d4e5b;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.widget-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button.medium {
+    padding: 0 12px;
+    font-size: 1.2em;
+    line-height: 2.4em;
+}
+
+.course-preview {
+    border: 1px solid #e1e1e1;
+    background: #fff;
+}
+
+/*About part of the info*/
+.row .threecol {
+    width: 22.05%;
+}
+
+.vertical-tabs .tabs {
+    margin-right: -1px!important;
+    padding: 1em 0;
+    border-right: 1px solid #E5E5E5;
+}
+
+.tabs-container .tabs {
+    position: relative;
+    z-index: 9;
+    margin: 0;
+    list-style: none;
+}
+
+.vertical-tabs .tabs li {
+    display: block;
+    margin: 0 0 -1px 0;
+    padding: 1em 15px;
+    border: 1px solid transparent;
+    border-bottom-style: dotted;
+    border-bottom-color: #dcdcdc;
+    background: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.vertical-tabs .tabs li.current {
+    margin-right: -1px;
+    border-style: solid;
+    border-color: #E5E5E5;
+    border-right-color: #fff;
+    color: #444;
+}
+
+.tabs-content{
+    padding: 1em 0 1em 3.7%;
+    border-left: 1px solid #E5E5E5;
+    float: left;
+    width: 74.05%;
+}

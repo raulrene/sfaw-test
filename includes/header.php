@@ -17,8 +17,8 @@
 			</div>	
 			<div class="nav">
 				<ul>
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Courses</a></li>
+					<li class="active"><a href="index.php">Home</a></li>
+					<li><a href="course.php">Courses</a></li>
 					<li><a href="#">Plans</a></li>
 				</ul>
 			</div>

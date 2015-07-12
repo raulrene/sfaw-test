@@ -1,5 +1,5 @@
 <?php
-include('config/config.php');
+include('../config/config-old.php');
 ?>
 
 <div class="row">
@@ -21,7 +21,7 @@ include('config/config.php');
         <div class="column-content">
             <!-- course first section img -->
             <div class="col-img">
-                <a href="#">
+                <a href="course-info.php/<?php echo $row['id']; ?>">
                     <img alt="cook" src="<?php echo $row['picture'];?>">
                 </a>
             </div>
