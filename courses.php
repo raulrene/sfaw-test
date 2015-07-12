@@ -1,11 +1,7 @@
 <?php
 include('config/config.php');
-include('classes/courses_class.php');
-$obj = new Courses();
-$data = $obj->getCourses();
-echo '<pre>';
-print_r($data);
-die;
+
+
 ?>
 
 <!DOCTYPE html>

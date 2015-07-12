@@ -18,7 +18,7 @@
 			<div class="nav">
 				<ul>
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Courses</a></li>
+					<li><a href="courses.php">Courses</a></li>
 					<li><a href="#">Plans</a></li>
 				</ul>
 			</div>
