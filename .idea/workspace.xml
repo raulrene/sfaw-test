@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c782e35-77d9-4673-9e17-a1bcd75ddadf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classes/Comentarii.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course-info.php" afterPath="$PROJECT_DIR$/course-info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/courses-loop1.php" afterPath="$PROJECT_DIR$/includes/courses-loop1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/head.php" afterPath="$PROJECT_DIR$/includes/head.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/comments.php" afterPath="$PROJECT_DIR$/includes/comments.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,28 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="course-info.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/course-info.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="153" selection-end="153" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="1638">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="49" selection-start="296" selection-end="296" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="594">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="comments.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="10" selection-start="2349" selection-end="2349" vertical-scroll-proportion="-34.0" vertical-offset="0" max-vertical-offset="1350">
+            <state line="61" column="85" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.57491857" vertical-offset="745" max-vertical-offset="1728">
               <folding>
                 <element signature="e#6#85#0" expanded="true" />
               </folding>
@@ -62,7 +40,7 @@
       <file leaf-file-name="courses-loop1.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/courses-loop1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="166" selection-end="166" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1440">
+            <state line="31" column="62" selection-start="679" selection-end="679" vertical-scroll-proportion="-15.592592" vertical-offset="137" max-vertical-offset="1440">
               <folding />
             </state>
           </provider>
@@ -71,7 +49,7 @@
       <file leaf-file-name="Comments.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="30" selection-start="490" selection-end="490" vertical-scroll-proportion="-10.518518" vertical-offset="184" max-vertical-offset="2466">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2466">
               <folding>
                 <element signature="e#6#84#0" expanded="true" />
                 <marker date="1436785141307" expanded="true" signature="400:426" placeholder="Select * fro..." />
@@ -80,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Replies.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Replies.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Replies.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="508" selection-end="508" vertical-scroll-proportion="0.76221496" vertical-offset="0" max-vertical-offset="2736">
+            <state line="12" column="20" selection-start="181" selection-end="181" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="2736">
               <folding>
                 <element signature="e#6#84#0" expanded="true" />
                 <marker date="1436785161911" expanded="true" signature="420:446" placeholder="Select * fro..." />
@@ -128,13 +106,13 @@
         <option value="$PROJECT_DIR$/comments.php" />
         <option value="$PROJECT_DIR$/comment.php" />
         <option value="$PROJECT_DIR$/includes/courses-loop1.php" />
-        <option value="$PROJECT_DIR$/includes/comments.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/course-info.php" />
         <option value="$PROJECT_DIR$/includes/head.php" />
         <option value="$PROJECT_DIR$/classes/Comentarii.php" />
         <option value="$PROJECT_DIR$/classes/Comments.php" />
         <option value="$PROJECT_DIR$/classes/Replies.php" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/includes/comments.php" />
       </list>
     </option>
   </component>
@@ -344,7 +322,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18831667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18985395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -376,15 +354,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/single-course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="57" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1080">
-          <folding>
-            <marker date="1436773627235" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..courses..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/course.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="5" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="810">
@@ -696,36 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="304" column="1" selection-start="6304" selection-end="6304" vertical-scroll-proportion="0.0" vertical-offset="4880" max-vertical-offset="7182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="49" selection-start="296" selection-end="296" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="10" selection-start="2349" selection-end="2349" vertical-scroll-proportion="-34.0" vertical-offset="0" max-vertical-offset="1350">
-          <folding>
-            <element signature="e#6#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/courses-loop1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="166" selection-end="166" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Courses.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="5" selection-start="131" selection-end="490" vertical-scroll-proportion="0.61120546" vertical-offset="0" max-vertical-offset="2844">
@@ -735,9 +674,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="49" selection-start="296" selection-end="296" vertical-scroll-proportion="0.55700326" vertical-offset="0" max-vertical-offset="614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/herry.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="393" column="21" selection-start="7825" selection-end="7825" vertical-scroll-proportion="0.819398" vertical-offset="6584" max-vertical-offset="7200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/courses-loop1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="62" selection-start="679" selection-end="679" vertical-scroll-proportion="-15.592592" vertical-offset="137" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="490" selection-end="490" vertical-scroll-proportion="-10.518518" vertical-offset="184" max-vertical-offset="2466">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2466">
           <folding>
             <element signature="e#6#84#0" expanded="true" />
             <marker date="1436785141307" expanded="true" signature="400:426" placeholder="Select * fro..." />
@@ -747,10 +712,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Replies.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="508" selection-end="508" vertical-scroll-proportion="0.76221496" vertical-offset="0" max-vertical-offset="2736">
+        <state line="12" column="20" selection-start="181" selection-end="181" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="2736">
           <folding>
             <element signature="e#6#84#0" expanded="true" />
             <marker date="1436785161911" expanded="true" signature="420:446" placeholder="Select * fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="85" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.57491857" vertical-offset="745" max-vertical-offset="1728">
+          <folding>
+            <element signature="e#6#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
