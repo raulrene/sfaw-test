@@ -1,43 +1,34 @@
 <?php
-include ('config/config.php');
+$obj = new Courses();
+$row = $obj->getCourse($_GET['id']);
 ?>
     <div class="featured-content_info">
-       <?php
-        $query  = "SELECT * FROM `courses` ";
-        $result = mysqli_query($conn, $query);
-        if (isset($result) && !empty($result)) {
-        $i=0;
-
-        foreach ($result as $row){
-        $i++;
-		if($i == 2) {break;}
-        ?>
 		<div class = "column_info">
 			<div class="column-content">
 				<!-- course first section img -->
 				<div class="col-img">
 					<a href="#">
-						<img alt="cook" src="assets/img/<?php echo $row ['img'];?>">
+						<img alt="cook" src="assets/img/<?php echo $row->img;?>">
 					</a>
 				</div>
 				<!-- course first section  links-->			
 				<div class="col-txt">
 					<header class="crs-header">
-						<h5><a href="#"><?php echo $row ['name'];?></a></h5>
-						<a class="author" href="#"><?php echo $row ['author'];?></a>
+						<h5><a href="#"><?php echo $row->name;?></a></h5>
+						<a class="author" href="#"><?php echo $row->author;?></a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user"/><?php echo $row['users'];?></div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user"/><?php echo $row->users;?></div>
 						<div class="crs-star">
                     <?php
                         for ($j=0; $j<5; $j++ ) {
-                            if ($j < $row ['stars']) {
+                            if ($j < $row->stars) {
                                 echo '<img src="assets/img/star-on.png" alt="star"/>';
                             }
                             else {
                                 echo '<img src="assets/img/star-off.png" alt="star"/>';
                             }
-		}
+						}
 						
 					?>
 							
@@ -47,7 +38,6 @@ include ('config/config.php');
 				</div>
 			</div>
 		</div>
-        <?php } }?>
 		<div class="description">
 			<div class="description_title">
 			<h1>Description</h1>
@@ -61,7 +51,7 @@ include ('config/config.php');
 			<div >
 				<a href="#"><div class="link_info">
 					<div class="link_take">Take this course</div>
-					<div class="link_price">$128</div>
+					<div class="link_price"><?php echo $row->price;?></div>
 				</div></a>
 			</div>
 			</div>
