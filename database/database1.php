@@ -1,17 +1,17 @@
 <?php
     class Database1{
 
-    private $host;
-    private $user;
-    private $pass;
-    private $dbase;
+    private $host = 'localhost';
+    private $user = 'root';
+    private $pass = '6636';
+    private $db   = 'site';
     private $conn;
 
-    public function __construct($host,$user,$pass,$dbase){
-        $this->host = $host;
-        $this->user = $user;
-        $this->pass = $pass;
-        $this->dbase = $dbase;
+    public function __construct($host,$user,$pass,$db){
+        $this->host   = $host;
+        $this->user   = $user;
+        $this->pass   = $pass;
+        $this->db     = $db;
     }
 
     public function connect(){
@@ -19,7 +19,7 @@
         try{
             $this->conn = new PDO(
                                     "mysql:host=". $this->host .
-                                    ";dbname=".$this->dbase,
+                                    ";dbname=".$this->db,
                                     $this->user,
                                     $this->pass
                                 );

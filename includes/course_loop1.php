@@ -1,21 +1,12 @@
-<?php
-    include_once('database/database1.php');
-    include_once('classes/courses.php');
-    //new instatiation of class
-    $course = new Course($db);
-    //retrieve database/table data
-    $q = $course->viewAll();
-?>
 <!-- courses section header  -->
 <h1>Popular courses</h1>
 <!-- courses section  -->
 <div class="course-list">
     <!-- course first section  -->
     <?php
-
     if(isset($q) && !empty($q)){
         $i = 0;
-        while($row = $q->fetchObject()){
+        foreach($q as $row){
             $i++;
             ?>
             <div class = "column <?php if($i % 4 == 0){echo "last";} ?>">

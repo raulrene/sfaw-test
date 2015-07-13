@@ -1,4 +1,10 @@
+<?php
+include_once('config/config.php');
+include_once('classes/courses.php');
 
+$course = new Course();
+$q = $course->getCourses();
+?>
 
 <!DOCTYPE html>
 <html>

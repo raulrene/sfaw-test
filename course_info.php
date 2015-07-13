@@ -1,3 +1,10 @@
+<?php
+include_once('config/config.php');
+include_once('classes/about.php');
+
+$ab = new About();
+$q = $ab->getInfo();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +17,7 @@
         <div class="ech_col">
             <?php include('includes/each_course.php'); ?>
         </div>
+
         <div class="course_decription">
             <div class="description_title">
                 <h4>Course Description</h4>
@@ -24,33 +32,33 @@
                 </a>
             </div>
         </div>
+
     </div>
     <div class="row">
         <div class="tabs">
             <ul>
-                <li class="current" id="online">Online Learning</li>
-                <li id="woo">WooCommerce</li>
-                <li id="profiles">User Profiles</li>
-                <li id="media"> Media Player</li>
+                <?php if(isset($q) && !empty($q)){
+                    foreach($q as $row){ ?>
+                    <li class="<?php echo $row->class; ?>" id="<?php echo $row->idname; ?>"><?php echo $row->link; ?></li>
+                <?php } } ?>
             </ul>
         </div>
         <div class="tabs_content">
-            <h1>Learning Management</h1>
-            <p>Quisque id augue erat, suscipit ultricies est. Maecenas feugiat justo ac massa porttitor mollis auctor nulla ullamcorper. sed blandit interdum.</p>
-            <p>Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer fringilla magna ut risus sagittis ultrices. Nam eget varius sem. Nam mattis consectetur suscipit. Vivamus quis ante enim. Cras id sodales metus.</p>
-            <p>Suspendisse luctus, felis at fringilla dictum, erat massa vehicula velit, id venenatis eros libero et lectus. Proin ullamcorper molestie lectus, sit amet condimentum dui tincidunt ut. In tempor faucibus eros, sed auctor orci ultricies non suspen.</p>
+
+            <h1><?php echo $row->h1; ?></h1>
+            <p><b><?php echo $row->p1; ?></b></p>
+            <p><?php echo $row->p2; ?></p>
+            <p><?php echo $row->p3; ?> </p>
             <a class="button large primary" target="_self" href=" ">
                 <img src="assets/img/image_66.png" alt="" />
                 Purchase now
             </a>
+
         </div>
         <div class="clear"></div>
     </div>
 </div>
-<script type="text/javascript">
-    $(function(){
-        alert('acaca');
-    });
+<script type="text/javascript" src="assets/js/links.js" language="JavaScript">
 </script>
 </body>
 </html>

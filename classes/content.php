@@ -7,13 +7,13 @@ class Content{
 
     public function getContent(){
         global $db;
-        $q = 'SELECT * FROM $this->table';
-        $data = $db->fetch_all($q);
+        $q = "SELECT * FROM $this->table";
+        $data = $db->fetch_rows($q);
         return $data;
     }
     public function getContentById($id){
         global $db;
-        $q = 'SELECT * FROM $this->table WHERE id =$id';
+        $q = "SELECT * FROM $this->table WHERE id =$id";
         $data = $db->fetch_row($q);
         return $data;
     }

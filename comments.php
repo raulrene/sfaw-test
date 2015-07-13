@@ -1,3 +1,13 @@
+<?php
+include_once('config/config.php');
+include_once('classes/comments.php');
+include_once('classes/replies.php');
+
+$comm = new Comments();
+$q = $comm->getComments();
+$reply = new Replies();
+$s = $reply->getReplies();
+?>
 <!DOCTYPE html>
 <html>
 <head>

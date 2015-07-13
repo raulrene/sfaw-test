@@ -7,16 +7,25 @@
  * Project Page: http://github.com/sunnysingh/database
  */
 class Database {
+    //define class properties
+    //define as public the connection ,conn errors,conn errors code,server host....info
     public $connection, $connection_error, $connection_error_code, $server_info, $client_info, $host_info, $insert_id, $affected_rows;
+    //define as public query results and error
     public $query_count_all = 0, $query_count_success = 0, $query_count_error = 0;
-    private $debug, $stmt, $result, $filters = array();
+    //define as private properties debugging.....
+    public $debug, $stmt, $result, $filters = array();
 
   // Sets up database connection
-    public function __construct($db, $host, $user, $pass, $charset = "utf8", $debug = true, $errormsg = "Database connection failed.") {
+    //receive through the constructor the variables needed to connect
+    public function __construct($host, $user, $pass, $dbname, $charset = "utf8", $debug = true, $errormsg = "Database connection failed.") {
+        //if debugging errors show error report
         if ($this->debug) { mysqli_report(MYSQLI_REPORT_ERROR); }
         else { mysqli_report(MYSQLI_REPORT_OFF); }
-        $this->connection = @new mysqli($host, $user, $pass,$db);
+        //making connection
+        $this->connection = @new mysqli($host, $user, $pass,$dbname);
+        //if conn error populating property conn_error with the results of connect_error function
         $this->connection_error = $this->connection->connect_error;
+
         $this->connection_error_code = $this->connection->connect_errno;
         $this->debug = $debug;
         if (!$this->connection_error_code) {
@@ -32,10 +41,7 @@ class Database {
         }
    }
 
-  // Automatically close database connection
-    public function __destruct() {
-        if (!$this->connection_error_code) { $this->connection->close(); }
-    }
+
 
   // Filters
     public function add_filter($type, $filter) {

@@ -2,11 +2,11 @@
     <h1>Comments</h1>
     <div class="comment">
         <ul>
-            <?php foreach ($comments as $comment){ ?>
+            <?php foreach ($q as $comment){ ?>
             <li id="comm<?php echo $comment->id; ?>">
-                <div class="comment hidden-wrap">
+                <div class="comment">
                     <div class="avatar-container">
-                        <div class="bordered-image">
+                        <div class="bordered-img">
                             <a href="<?php echo $comment->author_link; ?>">
                                 <img src="<?php echo $comment->author_img; ?>" alt="" />
                             </a>
@@ -19,16 +19,18 @@
                             </h5>
                             <time><?php echo $comment->date_posted; ?></time>
                             <a><img src="assets/img/reply_icon.png" alt="reply" />Reply</a>
+                            <div class="clear"></div>
                         </header>
                         <p><?php echo $comment->comm_text; ?></p>
                     </div>
                 </div>
-                <ul class="replies">
-                    <?php foreach($replies as $reply){ ?>
+                <ol class="replies">
+                    <?php foreach($s as $reply){
+                        if($reply->comment_id == $comment->id){?>
                     <li id="reply<?php echo $reply->id; ?>">
-                        <div class="comment hidden-wrap">
+                        <div class="comment">
                             <div class="avatar-container">
-                                <div class="bordered-image">
+                                <div class="bordered-img">
                                     <a href="<?php echo $reply->author_link; ?>">
                                         <img src="<?php echo $reply->author_img; ?>" alt="" />
                                     </a>
@@ -40,13 +42,14 @@
                                         <a href="<?php echo $reply->author_link; ?>"><?php echo $reply->author; ?></a>
                                     </h5>
                                     <time><?php echo $reply->date_posted; ?></time>
+                                    <div class="clear"></div>
                                 </header>
                                 <p><?php echo $reply->comm_text; ?></p>
                             </div>
                         </div>
                     </li>
-                    <?php } ?>
-                </ul>
+                    <?php } } ?>
+                </ol>
             </li>
             <?php } ?>
         </ul>

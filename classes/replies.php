@@ -6,19 +6,19 @@
  * Time: 2:22 PM
  */
 
-class Repliess{
+class Replies{
     private $id, $comments_id, $author, $author_img, $author_link, $date_posted, $comm_text;
     private $table = 'replies';
 
     public function getReplies(){
         global $db;
-        $q = 'SELECT * FROM $this->table';
-        $data = $db->fetch_all($q);
+        $q = "SELECT * FROM $this->table";
+        $data = $db->fetch_rows($q);
         return $data;
     }
     public function getReplyById($id){
         global $db;
-        $q = 'SELECT * FROM $this->table WHERE id = $id';
+        $q = "SELECT * FROM $this->table WHERE id = $id";
         $data = $db->fetch_row($q);
         return $data;
     }
