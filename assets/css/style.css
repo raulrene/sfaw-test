@@ -393,3 +393,11 @@ form .form-field {
     border-top: 1px dotted #d7d7d7;
     list-style: none;
 }
+
+.comment-reply-link {
+    float: left;
+    padding-left: 20px;
+    background: url("../img/reply_icon.png") 0 0.35em no-repeat;
+    color: #777;
+    margin-left: 10px;
+}
