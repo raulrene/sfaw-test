@@ -37,11 +37,11 @@ $data2 = $obj2->getReplies();
                     <div class="comment-text">
                         <div class="comment-header hidden-wrap">
                             <h3><?php echo $comm->author ." ". $comm->date;?></h3>
-                            <h3>
+                            <h4>
                                <a class="comment-reply-link">
                                    Reply
                                </a>
-                            </h3>
+                            </h4>
 
                         </div>
                         <p><?php echo $comm->text;?></p>
