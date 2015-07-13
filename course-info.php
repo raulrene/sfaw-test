@@ -10,7 +10,6 @@ include('classes/Courses.php');
     <?php
     include('includes/head.php');
     ?>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script language="javascript" src="assets/js/course-info.js"></script>
     <script>
 

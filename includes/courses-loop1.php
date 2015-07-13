@@ -28,7 +28,7 @@ $data = $obj->getAll();
                 <div class="column-content">
                     <!-- course first section img -->
                     <div class="col-img">
-                        <a href="courses-info/<?php echo $row->id; ?>">
+                        <a href="course-info.php/<?php echo $row->id; ?>">
                             <img alt="cook" src="<?php echo $row->picture;?>">
                         </a>
                     </div>
