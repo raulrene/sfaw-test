@@ -4,15 +4,15 @@
         private $table = 'courses';
 
         public function getCourses(){
-            global $dbb;
+            global $db;
             $q = 'SELECT * FROM $this->table';
-            $data = $dbb->fetch_all($q);
+            $data = $db->fetch_all($q);
             return $data;
         }
         public function getCourseById($id){
-            global $dbb;
+            global $db;
             $q = 'SELECT * FROM $this->table WHERE id =$id';
-            $data = $dbb->fetch_row($q);
+            $data = $db->fetch_row($q);
             return $data;
         }
 
