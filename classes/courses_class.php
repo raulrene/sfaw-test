@@ -1,15 +1,19 @@
 <?php
 
-class courses {
+class Courses {
     private $id;
     private $name;
     private $price;
     private $img;
+    private $author;
+    private $users;
+    private $stars;
+    private $table = 'courses';
 
-    public function getCourses(){
+    public function getAll(){
         global $db;
 
-        $data = $db->fetch_all('Select * from courses');
+        $data = $db->fetch_rows("Select * from $this->table");
 
         return $data;
     }
@@ -17,7 +21,7 @@ class courses {
     public function getCourse($id){
         global $db;
 
-        $data = $db->fetch_all('Select * from courses where id =' . $id);
+        $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
 
         return $data;
     }
@@ -131,7 +135,5 @@ class courses {
     {
         $this->stars = $stars;
     }
-    private $author;
-    private $users;
-    private $stars;
+
 }

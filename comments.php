@@ -1,3 +1,10 @@
+<?php
+include('config/config.php');
+include('classes/comments_class.php');
+include('classes/replies_class.php');
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,7 +19,7 @@
 		?>
 		<div class="site-wrap">
 			<?php
-			include('includes/feature-content_info.php');
+            include('includes/comments_content.php');
 			?>
 		   <div class="main-content">
 			<?php

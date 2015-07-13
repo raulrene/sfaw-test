@@ -1,10 +1,14 @@
 <?php
 
-$host = "localhost";
+$host = "127.0.0.1";
 $user = "root";
 $password = "";
-$database="primarydb";
+$database = 'primarydb';
+$charset = "utf8";
+$debug = false;
+$errormsg = "Database connection failed.";
+include('database/database.php');
+$db = new Database($database, $host,$user,$password);
 
-$conn = mysqli_connect($host, $user, $password, $database);
 
 ?>

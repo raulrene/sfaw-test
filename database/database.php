@@ -50,7 +50,7 @@ class Database {
     // Queries
     // Used internally for all queries and externally for INSERT, UPDATE, DELETE, etc.
     public function query($query, $params = array()) {
-        if ($this->filter_exists("query")) { $query = $this->apply_filter("query", array($query)); }
+        //if ($this->filter_exists("query")) { $query = $this->apply_filter("query", array($query)); }
         $this->stmt = $this->connection->prepare($query);
         $this->query_count_all++;
         if ($this->stmt) {
