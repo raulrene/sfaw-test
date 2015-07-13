@@ -1,5 +1,4 @@
 <?php
-include('../config/config.php');
 
 class Course{
     private $id, $courseName,$coursePrice, $img, $author, $user, $stars;
@@ -8,7 +7,7 @@ class Course{
     //retrieve table object using prepared statements
     public function getAll(){
         global $db;
-        $data = $db->fetch_all("Select * from $this->table");
+        $data = $db->fetch_rows("Select * from $this->table");
 
         return $data;
     }
@@ -16,7 +15,7 @@ class Course{
     public function getCapitol($id){
         global $db;
 
-        $data = $db->fetch_all("Select * from $this->table where id =" . $id);
+        $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
 
         return $data;
     }

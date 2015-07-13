@@ -1,17 +1,16 @@
 <?php
-include('config/config-old.php');
+
+include('config/config.php');
 include('classes/Courses.php');
 
-/*
+
 $obj = new Course();
-echo '<pre>';
-print_r($obj);
 $data = $obj->getAll();
 
 echo '<pre>';
 print_r($data);
 die;
-*/
+
 ?>
 <!DOCTYPE html>
 

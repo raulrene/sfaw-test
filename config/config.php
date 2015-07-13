@@ -1,6 +1,6 @@
 <?php
 
-include('../database/database.php');
+include('database/database.php');
 $serverName = "localhost";
 $username = "root";
 $password = "root";
