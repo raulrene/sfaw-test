@@ -13,7 +13,7 @@ class Testimonials {
     public function getByTag($tag){
         global $db;
 
-        $data = $db->fetch_rows("Select * from $this->table where tag = $tag");
+        $data = $db->fetch_rows("Select * from $this->table where tag = '$tag'");
 
         return $data;
     }

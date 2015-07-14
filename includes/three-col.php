@@ -1,29 +1,22 @@
+<?php
+$tag = 'three-col';
+$obj = new Testimonials();
+$data = $obj->getByTag($tag);
+?>
 
-        <div class="row">
-            <div class="fourcol column">
+<?php
+    $no = 0;
+    foreach($data as $row){
+        $no++;
+?>
+
+            <div class="fourcol column <?php if($no % 3 == 0)echo "last"?>"">
                 <div class="three-col">
-                    <img class="alignnone float-left" alt="" src="assets/img/book.jpg">
-                    <h3>Learn anything online</h3>
+                    <img class="alignnone float-left" alt="" src="<?php echo $row->img;?>">
+                    <h3><?php echo $row->title;?></h3>
                 </div>
                 <div class="clear"></div>
-                <p>Suspendisse ante mi, iaculis ac eleifend id, venenatis non eros. Sed rhoncus gravida elit, eu sollicitudin sem iaculis. Proin scelerisque, ipsum mollis posuere metus.</p>
+                <p><?php echo $row->text;?></p>
             </div>
-            <div class="fourcol column">
-                <div class="three-col">
-                    <img class="alignnone float-left" alt="" src="assets/img/book.jpg">
-                    <h3>Talk to Our Experts</h3>
-                </div>
-                <div class="clear"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna mauris, sagittis tempus varius vel, eleifend ut metus. Pellentesque sapien tellus, accumsan.</p>
-
-            </div>
-
-            <div class="fourcol column last">
-                <div class="three-col">
-                    <img class="alignnone float-left" alt="" src="assets/img/book.jpg">
-                    <h3>Communicate with People</h3>
-                </div>
-                <div class="clear"></div>
-                <p>Nullam viverra, magna vitae mollis venenatis, leo mi dignissim quam, et lacinia purus diam nec sapien. Cras aliquet, purus non rhoncus aliquet, dapibus.</p>
-            </div>
+    <?php }?>
             <div class="clear"></div>

@@ -1,10 +1,17 @@
 <?php
 
 class Course{
-    private $id, $courseName,$coursePrice, $img, $author, $user, $stars;
+    private $id, $name,$price, $picture, $author, $user, $stars;
     private $table = 'courses';
 
     //retrieve table object using prepared statements
+    public function getAllRange($first,$last){
+        global $db;
+        $data = $db->fetch_rows("Select * from $this->table where id > '$first' AND id < '$last'");
+
+        return $data;
+    }
+
     public function getAll(){
         global $db;
         $data = $db->fetch_rows("Select * from $this->table");
@@ -23,17 +30,17 @@ class Course{
     /**
      * @param mixed $courseName
      */
-    public function setCourseName($courseName)
+    public function setName($courseName)
     {
-        $this->courseName = $courseName;
+        $this->name = $courseName;
     }
 
     /**
      * @return mixed
      */
-    public function getCourseName()
+    public function getName()
     {
-        return $this->courseName;
+        return $this->name;
     }
 
     /**
@@ -55,17 +62,17 @@ class Course{
     /**
      * @param mixed $coursePrice
      */
-    public function setCoursePrice($coursePrice)
+    public function setPrice($coursePrice)
     {
-        $this->coursePrice = $coursePrice;
+        $this->price = $coursePrice;
     }
 
     /**
      * @return mixed
      */
-    public function getCoursePrice()
+    public function getPrice()
     {
-        return $this->coursePrice;
+        return $this->price;
     }
 
     /**
@@ -87,17 +94,17 @@ class Course{
     /**
      * @param mixed $img
      */
-    public function setImg($img)
+    public function setPicture($img)
     {
-        $this->img = $img;
+        $this->picture = $img;
     }
 
     /**
      * @return mixed
      */
-    public function getImg()
+    public function getPicture()
     {
-        return $this->img;
+        return $this->picture;
     }
 
     /**

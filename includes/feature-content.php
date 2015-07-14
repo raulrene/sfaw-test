@@ -1,10 +1,14 @@
-
+<?php
+$tag = 'slider';
+$obj = new Testimonials();
+$data = $obj->getByTag($tag);
+?>
     <div class="featured-content">
         <div class="row">
             <div class="fivecol column" style="top: 150.5px;">
-                <h1>Learning Online Becomes Easier</h1>
+                <h1><?php echo $data[0]->title?></h1>
                 <p>
-                    Academy is a perfect theme for sharing and selling your knowledge online. It’s not just a theme, but learning management system that provides great features to make learning and teaching online easier for everyone.
+                    <?php echo $data[0]->text; ?>
                 </p>
                 <a href=" " target="_self" class="button large primary">
                     <img class="alignnone" alt="" src="assets/img/bookImg.png">
@@ -12,7 +16,7 @@
                 </a>
             </div>
             <div class="sevencol column last">
-                <img class="alignnone" alt="" src="assets/img/slide_1.png">
+                <img class="alignnone" alt="" src="<?php echo $data[0]->img?>">
             </div>
         </div>
         <div class="arrow arrow-left"></div>

@@ -1,6 +1,5 @@
 <?php
-include('config/config.php');
-include('classes/Courses.php');
+
 
 ?>
 <!DOCTYPE html>
