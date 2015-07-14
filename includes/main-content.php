@@ -48,53 +48,33 @@
 </div>
 
 <div class="sixcol column last">
-    <h1>Testimonials</h1>
+    <?php
+        $tag = 'testimonials';
+        $t = $hm->getInfoByTag($tag);
+    ?>
+    <h1><?php echo $t[0]->title; ?></h1>
     <div class="testimonials">
-        <article class="testimonial">
-            <div class="testimonial-image">
-                <div class="bubble-image">
-                    <img width="264" height="264" src="assets/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
-                    <div class="substrate">
-                        <img src="http://themextemplates.com/demo/academy/wp-content/themes/academy/images/bgs/testimonial_bg.png" alt="">
+        <?php
+        if(isset($t) && !empty($t)){
+            foreach($t as $row){ ?>
+                <article class="testimonial">
+                    <div class="testimonial-image">
+                        <div class="bubble-image">
+                            <img width="264" height="264" src="<?php echo $row->img;  ?>" class="attachment-small wp-post-image" alt="avatar">
+                            <div class="substrate">
+                                <img src="http://themextemplates.com/demo/academy/wp-content/themes/academy/images/bgs/testimonial_bg.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="testimonial-text">
-                <p>Pellentesque pulvinar sodales quam a placerat. Vivamus quis vitae consectetur ligula. Ut bibendum eleifend quam eget fermentum. Nulla facilisi. Augue aliquam augue vel odio faucibus luctus!</p>
-                <h5>Jessica White</h5>
-            </div>
-        </article>
+                    <div class="testimonial-text">
+                        <p><?php echo $row->text; ?></p>
+                        <h5><?php echo $row->name; ?></h5>
+                    </div>
+                </article>
+        <?php } } ?>
 
-        <article class="testimonial">
-            <div class="testimonial-image">
-                <div class="bubble-image">
-                    <img width="264" height="264" src="assets/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
-                    <div class="substrate">
-                        <img src="http://themextemplates.com/demo/academy/wp-content/themes/academy/images/bgs/testimonial_bg.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-text">
-                <p>Maecenas sed metus sem, ac varius ante. Nullam non mi tempor nisl varius consectetur vel in ipsum. Vestibulum sem diam, vehicula sit amet luctus adipiscing, viverra in sem. Proin molestie.</p>
-                <h5>John Dawson</h5>
-            </div>
-        </article>
-
-        <article class="testimonial">
-            <div class="testimonial-image">
-                <div class="bubble-image">
-                    <img width="264" height="264" src="assets/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
-                    <div class="substrate">
-                        <img src="http://themextemplates.com/demo/academy/wp-content/themes/academy/images/bgs/testimonial_bg.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-text">
-                <p>Donec convallis, mauris quis tempor pulvinar, lorem neque rhoncus nisl, at hendrerit quam leo volutpat est. Quisque fringilla, nulla vitae vehicula fermentum, nibh dolor tristique, scelerisque.</p>
-                <h5>Mary Springs</h5>
-            </div>
-        </article>
+         <div class="clear"></div>
     </div>
-</div>
 
 </div>
+<div class="clear"></div>

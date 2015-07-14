@@ -1,3 +1,12 @@
+<?php
+include_once('config/config.php');
+include_once('classes/home.php');
+include_once('classes/courses.php');
+
+$hm = new Home();
+$course = new Course();
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,11 +17,13 @@
 		<div class="site-wrap">
 			<?php include('includes/feature-content.php'); ?>
 		   <div class="main-content">
-			<?php
-				include('includes/three-col.php');
-				include('includes/courses.php');
-				include('includes/main-content.php');
-			?>
+               <div class="row">
+                <?php
+                    include('includes/three-col.php');
+                    include('includes/courses.php');
+                    include('includes/main-content.php');
+                ?>
+                </div>
 			</div>
 			<?php include('includes/footer.php'); ?>
 		</div>

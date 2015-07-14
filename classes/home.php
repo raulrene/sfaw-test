@@ -4,7 +4,21 @@ class Home{
     private $id, $title, $img, $text, $tag, $name;
     private $table = 'home';
 
-    /**
+    public function getHomeInfo(){
+        global $db;
+        $q = "SELECT * FROM $this->table";
+        $data = $db->fetch_rows($q);
+        return $data;
+    }
+
+    public function getInfoByTag($tag){
+        global $db;
+        $q = "SELECT * FROM $this->table WHERE tag = '$tag'";
+        $data = $db->fetch_rows($q);
+        return $data;
+    }
+
+        /**
      * @param mixed $title
      */
     public function setTitle($title)

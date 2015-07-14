@@ -161,7 +161,9 @@ body{
 .crs-star{
 	float:right;
 }
-
+.crs-star img{
+    margin-right: 3px;
+}
 /**   price div    **/
 .crs-price{
     background-color: #5ea5d7;

@@ -1,10 +1,13 @@
-
+<?php
+$tag = 'slider';
+$s = $hm->getInfoByTag($tag);
+?>
     <div class="featured-content">
         <div class="row">
-            <div class="fivecol column" style="top: 150.5px;">
-                <h1>Learning Online Becomes Easier</h1>
+            <div class="fivecol column" style="top: 150px;">
+                <h1><?php echo $s[2]->title; ?></h1>
                 <p>
-                    Academy is a perfect theme for sharing and selling your knowledge online. It’s not just a theme, but learning management system that provides great features to make learning and teaching online easier for everyone.
+                    <?php echo $s[2]->text; ?>
                 </p>
                 <a href=" " target="_self" class="button large primary">
                     <img class="alignnone" alt="" src="assets/img/bookImg.png">
@@ -12,7 +15,7 @@
                 </a>
             </div>
             <div class="sevencol column last">
-                <img class="alignnone" alt="" src="assets/img/slide_1.png">
+                <img class="alignnone" alt="" src="<?php echo $s[2]->img; ?>">
             </div>
         </div>
         <div class="arrow arrow-left"></div>

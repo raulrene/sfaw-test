@@ -16,6 +16,13 @@
             return $data;
         }
 
+        public function getCoursesHome(){
+            global $db;
+            $q = "SELECT * FROM $this->table LIMIT 4";
+            $data = $db->fetch_rows($q);
+            return $data;
+        }
+
         /**
          * @param mixed $course_author
          */
