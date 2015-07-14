@@ -4,6 +4,9 @@
 <div class="course-list">
     <!-- course first section  -->
     <?php
+    $obj= new Pagination();
+    $q = $obj->pagination();
+
     if(isset($q) && !empty($q)){
         $i = 0;
         foreach($q as $row){
@@ -13,7 +16,7 @@
                 <div class="column-content">
                     <!-- course first section img -->
                     <div class="col-img">
-                        <a href="course_info.php/<?php echo $row->id; ?>">
+                        <a href="course_info.php?id=<?php echo $row->id; ?>">
                             <img src="<?php echo $row->course_img; ?>" alt="<?php echo $row->img_alt; ?>" />
                         </a>
                     </div>
@@ -53,4 +56,16 @@
             </div>
         <?php  } } ?>
 </div>
+<?php
+
+echo "<center ><a href='?page=1' style='color:#ccc;'>".'First<< '."</a> ";
+
+for ($p=1; $p<=3; $p++) {
+
+    echo "<a style='color:#00000f;' href='?page=".$p."'>".$p."</a> ";
+};
+
+echo "<a href='?page=3' style='color:#ccc;'>".'>>Last '."</a></center> ";
+?>
+
 <!-- courses section end -->

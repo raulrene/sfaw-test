@@ -3,8 +3,9 @@ include_once('config/config.php');
 include_once('classes/sub_chapter.php');
 include_once('classes/sub_sub_chapter.php');
 include_once('classes/content.php');
+include_once('classes/courses.php');
 
-
+$obj= new SubChapter();
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +30,7 @@ include_once('classes/content.php');
                 <h4>About the Author</h4>
                 <p>Nam sem nulla, mollis ac ullamcorper in, placerat eget lectus. Suspendisse in dui eu neque suscipit imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam lobortis.</p>
                 <a class="button large primary" target="_self" href=" ">
-                    Take This Course | $128
+                    Take This Course | <?php echo $c->course_price; ?>
                 </a>
             </div>
         </div>
@@ -38,10 +39,18 @@ include_once('classes/content.php');
     <div class="row">
         <div class="tabs">
             <ul>
-                <?php if(isset($q) && !empty($q)){
-                    foreach($q as $row){ ?>
-                    <a href="/course_info?url=<?php echo $row->friendly_link; ?>"><li class="<?php echo $row->class; ?>" id="<?php echo $row->idname; ?>"><?php echo $row->link; ?></li></a>
-                <?php } } ?>
+                <?php
+                if(isset($_GET['url']) && !empty($_GET['url'])){
+                    $url = $_GET['url'];
+                }else{
+                    $url = '#online-learning';
+                }
+                $ll = $obj->getCombined($url);
+                if(isset($ll) && !empty($ll)){
+                    echo '<pre>';
+                    var_dump($ll);
+                } ?>
+
             </ul>
         </div>
         <div class="tabs_content">

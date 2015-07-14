@@ -26,7 +26,7 @@
         <div class="expert-preview">
             <div class="expert-meta">
                 <div class="expert-image bordered-image">
-                    <img src="assets/img/expAvatar.jpg" class="avatar" width="96" alt="">
+                    <img src="assets/img/mb.jpg" class="avatar" width="96" alt="">
                 </div>
 
                 <div class="user-links">

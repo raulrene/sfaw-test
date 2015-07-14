@@ -1,9 +1,8 @@
 <?php
 include_once('config/config.php');
 include_once('classes/courses.php');
+include_once('classes/pagination.php');
 
-$course = new Course();
-$q = $course->getCourses();
 ?>
 
 <!DOCTYPE html>
