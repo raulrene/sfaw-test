@@ -23,7 +23,7 @@ $data2 = $obj2->getReplies();
         <ul>
             <?php
             if(isset($data1) && !empty($data1)){
-            foreach($data1 as $comm){
+                foreach($data1 as $comm){
             ?>
             <li id="">
                 <div class="comment hidden-wrap">

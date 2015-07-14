@@ -11,11 +11,12 @@ class Content {
     private $id;
     private $sub_sub_capitol_id;
     private $contentText;
+    private $table = 'content';
 
     public function getContents(){
         global $db;
 
-        $data = $db->fetch_all('Select * from content');
+        $data = $db->fetch_rows("Select * from $this->table");
 
         return $data;
     }
@@ -23,7 +24,7 @@ class Content {
     public function getContent($id){
         global $db;
 
-        $data = $db->fetch_all('Select * from content where id =' . $id);
+        $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
 
         return $data;
     }

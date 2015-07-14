@@ -11,11 +11,11 @@ class SubSubCapitol {
     private $nume;
     private $sub_capitol_id;
     private $order;
-
+    private $table = 'sub_sub_capitol';
     public function getSubSubCapitole(){
         global $db;
 
-        $data = $db->fetch_all('Select * from sub_sub_capitol');
+        $data = $db->fetch_rows("Select * from $this->table");
 
         return $data;
     }
@@ -23,7 +23,7 @@ class SubSubCapitol {
     public function getSubSubCapitol($id){
         global $db;
 
-        $data = $db->fetch_all('Select * from sub_sub_capitol where id =' . $id);
+        $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
 
         return $data;
     }
