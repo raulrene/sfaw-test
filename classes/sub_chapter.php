@@ -7,15 +7,20 @@ class SubChapter{
 
     public function getsubChapter(){
         global $db;
-        $q = 'SELECT * FROM $this->table';
+        $q = "SELECT * FROM $this->table";
         $data = $db->fetch_all($q);
         return $data;
     }
     public function getSubCHById($id){
         global $db;
-        $q = 'SELECT * FROM $this->table WHERE id =$id';
+        $q = "SELECT * FROM $this->table WHERE id = $id";
         $data = $db->fetch_row($q);
         return $data;
+    }
+
+    public function getCombined(){
+        global $db;
+        $q = "SELECT "
     }
 
     /**
@@ -114,7 +119,7 @@ class SubChapter{
         return $this->links;
     }
 
-    
+
 
 }
 ?>

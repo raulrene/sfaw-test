@@ -1,9 +1,10 @@
 <?php
 include_once('config/config.php');
-include_once('classes/about.php');
+include_once('classes/sub_chapter.php');
+include_once('classes/sub_sub_chapter.php');
+include_once('classes/content.php');
 
-$ab = new About();
-$q = $ab->getInfo();
+
 ?>
 <!DOCTYPE html>
 <html>
