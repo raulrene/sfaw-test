@@ -15,7 +15,7 @@ class Course{
     public function getCapitol($id){
         global $db;
 
-        $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
+        $data = $db->fetch_row("Select * from $this->table where id =" . $id);
 
         return $data;
     }

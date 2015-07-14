@@ -28,6 +28,7 @@ class Content {
 
         return $data;
     }
+
     /**
      * @param mixed $contentText
      */
@@ -75,6 +76,7 @@ class Content {
     {
         return $this->sub_sub_capitol_id;
     }
+
 
 
 } 

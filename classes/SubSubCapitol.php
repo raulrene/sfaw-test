@@ -10,7 +10,6 @@ class SubSubCapitol {
     private $id;
     private $nume;
     private $sub_capitol_id;
-    private $order;
     private $table = 'sub_sub_capitol';
     public function getSubSubCapitole(){
         global $db;
@@ -27,6 +26,7 @@ class SubSubCapitol {
 
         return $data;
     }
+
     /**
      * @param mixed $id
      */
@@ -74,22 +74,5 @@ class SubSubCapitol {
     {
         return $this->sub_capitol_id;
     }
-
-    /**
-     * @param mixed $order
-     */
-    public function setOrder($order)
-    {
-        $this->order = $order;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getOrder()
-    {
-        return $this->order;
-    }
-
 
 } 

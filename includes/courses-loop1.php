@@ -1,6 +1,4 @@
 <?php
-include('config/config.php');
-include('classes/Courses.php');
 
 
 $obj = new Course();
@@ -28,7 +26,7 @@ $data = $obj->getAll();
                 <div class="column-content">
                     <!-- course first section img -->
                     <div class="col-img">
-                        <a href="course-info.php/<?php echo $row->id; ?>">
+                        <a href="course-info.php?id=<?php echo $row->id; ?>">
                             <img alt="cook" src="<?php echo $row->picture;?>">
                         </a>
                     </div>

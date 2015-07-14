@@ -1,9 +1,9 @@
 <?php
-/*
+
 include('config/config.php');
 include('classes/Courses.php');
 
-
+/*
 $obj = new Course();
 $data = $obj->getAll();
 

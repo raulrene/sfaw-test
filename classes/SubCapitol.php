@@ -8,9 +8,9 @@
 
 class SubCapitol {
     private $id;
-    private $nume;
     private $capitol_id;
-    private $order;
+    private $nume;
+    private $html_id,$class,$friendly_url;
     private $table = 'sub_capitol';
 
     public function getSubCapitole(){
@@ -27,21 +27,6 @@ class SubCapitol {
         $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
 
         return $data;
-    }
-    /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
     }
 
     /**
@@ -61,19 +46,67 @@ class SubCapitol {
     }
 
     /**
-     * @param mixed $order
+     * @param mixed $class
      */
-    public function setOrder($order)
+    public function setClass($class)
     {
-        $this->order = $order;
+        $this->class = $class;
     }
 
     /**
      * @return mixed
      */
-    public function getOrder()
+    public function getClass()
     {
-        return $this->order;
+        return $this->class;
+    }
+
+    /**
+     * @param mixed $friendly_url
+     */
+    public function setFriendlyUrl($friendly_url)
+    {
+        $this->friendly_url = $friendly_url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFriendlyUrl()
+    {
+        return $this->friendly_url;
+    }
+
+    /**
+     * @param mixed $html_id
+     */
+    public function setHtmlId($html_id)
+    {
+        $this->html_id = $html_id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHtmlId()
+    {
+        return $this->html_id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
     /**
@@ -91,7 +124,6 @@ class SubCapitol {
     {
         return $this->nume;
     }
-
 
 
 } 
