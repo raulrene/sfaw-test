@@ -7,6 +7,8 @@
 <html>
 <head>
     <?php
+    include('classes/Courses.php');
+    include('config/config.php');
     include('includes/head.php');
     ?>
     <script language="javascript" src="assets/js/course-info.js"></script>
