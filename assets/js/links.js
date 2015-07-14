@@ -2,8 +2,8 @@ $(function(){
     $('.tabs ul li').on('click',function(){
         $('.tabs ul li').removeClass('current');
         $(this).addClass('current');
-        var id = $(this).attr('id');
-        console.log(id);
+
+
 
         $.ajax({
             type      : 'GET',

@@ -39,7 +39,7 @@ $q = $ab->getInfo();
             <ul>
                 <?php if(isset($q) && !empty($q)){
                     foreach($q as $row){ ?>
-                    <li class="<?php echo $row->class; ?>" id="<?php echo $row->idname; ?>"><?php echo $row->link; ?></li>
+                    <a href="/course_info?url=<?php echo $row->friendly_link; ?>"><li class="<?php echo $row->class; ?>" id="<?php echo $row->idname; ?>"><?php echo $row->link; ?></li></a>
                 <?php } } ?>
             </ul>
         </div>

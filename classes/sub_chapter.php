@@ -1,7 +1,7 @@
 <?php
 class SubChapter{
 
-    private $id, $chapter_id, $sub_ch_name,$order;
+    private $id, $chapter_id, $links, $id_html, $class, $friendly_url;
     private $table = 'sub_chapters';
 
 
@@ -35,6 +35,38 @@ class SubChapter{
     }
 
     /**
+     * @param mixed $class
+     */
+    public function setClass($class)
+    {
+        $this->class = $class;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClass()
+    {
+        return $this->class;
+    }
+
+    /**
+     * @param mixed $friendly_url
+     */
+    public function setFriendlyUrl($friendly_url)
+    {
+        $this->friendly_url = $friendly_url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFriendlyUrl()
+    {
+        return $this->friendly_url;
+    }
+
+    /**
      * @param mixed $id
      */
     public function setId($id)
@@ -51,38 +83,38 @@ class SubChapter{
     }
 
     /**
-     * @param mixed $order
+     * @param mixed $id_html
      */
-    public function setOrder($order)
+    public function setIdHtml($id_html)
     {
-        $this->order = $order;
+        $this->id_html = $id_html;
     }
 
     /**
      * @return mixed
      */
-    public function getOrder()
+    public function getIdHtml()
     {
-        return $this->order;
+        return $this->id_html;
     }
 
     /**
-     * @param mixed $sub_ch_name
+     * @param mixed $links
      */
-    public function setSubChName($sub_ch_name)
+    public function setLinks($links)
     {
-        $this->sub_ch_name = $sub_ch_name;
+        $this->links = $links;
     }
 
     /**
      * @return mixed
      */
-    public function getSubChName()
+    public function getLinks()
     {
-        return $this->sub_ch_name;
+        return $this->links;
     }
 
-
+    
 
 }
 ?>
