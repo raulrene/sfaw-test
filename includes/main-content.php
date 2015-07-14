@@ -76,7 +76,10 @@ $data = $obj->getByTag($tag);
             </div>
         </article>
         <?php } ?>
+        <div class="clear"></div>
     </div>
+
 </div>
 
 </div>
+<div class="clear"></div>

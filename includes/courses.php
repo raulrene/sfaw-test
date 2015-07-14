@@ -3,8 +3,8 @@
 $obj = new Course();
 $first = 0;
 $last = 5;
-$data = $obj->getAllRange($first,$last);
-//$data = $obj->getAll();
+//$data = $obj->getAllRange($first,$last);
+$data = $obj->getAllLimit();
 //echo '<pre>'; print_r($data);
 ?>
 	<!-- courses section header  -->
@@ -22,7 +22,7 @@ $data = $obj->getAllRange($first,$last);
 			<div class="column-content">
 
 				<div class="col-img">
-					<a href="#">
+					<a href="course-info.php?id=<?php echo $row->id; ?>">
 						<img alt="" src="<?php echo $row->picture;?>">
 					</a>
 				</div>

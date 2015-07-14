@@ -5,6 +5,13 @@ class Course{
     private $table = 'courses';
 
     //retrieve table object using prepared statements
+    public function getAllLimit(){
+        global $db;
+        $data = $db->fetch_rows("Select * from $this->table LIMIT 4");
+
+        return $data;
+    }
+
     public function getAllRange($first,$last){
         global $db;
         $data = $db->fetch_rows("Select * from $this->table where id > '$first' AND id < '$last'");

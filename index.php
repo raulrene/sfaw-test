@@ -26,10 +26,12 @@ include('classes/Testimonials.php');
                         include('includes/main-content.php');
                     ?>
                    </div>
+               <?php include('includes/footer.php'); ?>
 			</div>
-            <div class="footer-wrap"?
-			<?php include('includes/footer.php'); ?>
-		    </div>
+
+
+
         </div>
+
 	</body>
 </html>
