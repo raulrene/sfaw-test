@@ -21,7 +21,7 @@ class Courses {
     public function getCourse($id){
         global $db;
 
-        $data = $db->fetch_row("Select * from $this->table where id =" . $id);
+        $data = $db->fetch_row("Select * from $this->table where id = '$id'");
 
         return $data;
     }

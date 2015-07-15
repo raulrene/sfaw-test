@@ -1,23 +1,23 @@
 <?php
 
 
-class capitol {
+class Capitol {
     private $id;
     private $capitol;
     private $order;
 
-    public function getCapitol(){
+    public function getCapitole(){
         global $db;
 
-        $data = $db->fetch_all('Select * from capitol');
+        $data = $db->fetch_rows('Select * from capitol');
 
         return $data;
     }
 
-    public function getCapitole($id){
+    public function getCapitol($id){
         global $db;
 
-        $data = $db->fetch_all('Select * from capitol where id =' . $id);
+        $data = $db->fetch_row('Select * from capitol where id =' . $id);
 
         return $data;
     }

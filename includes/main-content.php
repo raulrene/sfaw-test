@@ -1,7 +1,7 @@
 
 <?php
 
-$tag = 'testimonial';
+$tag = 'testimonials';
 $obj = new Index();
 $data = $obj->getTag($tag);
 

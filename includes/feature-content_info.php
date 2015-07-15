@@ -1,6 +1,7 @@
 <?php
 $obj = new Courses();
 $row = $obj->getCourse($_GET['id']);
+
 ?>
     <div class="featured-content_info">
 		<div class = "column_info">
@@ -43,10 +44,10 @@ $row = $obj->getCourse($_GET['id']);
 			<h1>Description</h1>
 			</div>
 			<div class="description_text">
-			<h4>Course Overview</h4>
-			<p>Maecenas a leo nisi. Nam pharetra imperdiet diam, ut consequat felis egestas sagittis. Donec at nunc augue, cursus iaculis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim lobortis ligula, quis fringilla justo dictum phasellus adipiscing dictum!</p>
-			<h4>About the Author</h4>
-			<p>Nam sem nulla, mollis ac ullamcorper in, placerat eget lectus. Suspendisse in dui eu neque suscipit imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam lobortis.</p>
+			<h4><?php echo $row->title_1; ?></h4>
+			<p><?php echo $row->text_1; ?></p>
+			<h4><?php echo $row->title_2; ?></h4>
+			<p><?php echo $row->text_2; ?></p>
 			
 			<div >
 				<a href="#"><div class="link_info">
@@ -57,23 +58,50 @@ $row = $obj->getCourse($_GET['id']);
 			</div>
 		</div>
     </div>
+	<?php
+	if (isset($_GET['url']) && !empty($_GET['url'])){
+		$url = $_GET['url'];
+	}
+	else {
+		$url = "online-learning";
+		}
+	include('config/config_old.php');
+	$query = "
+	SELECT * FROM capitol X
+	LEFT JOIN sub_capitol Y ON X.id = Y.capitol_id
+	LEFT JOIN content C ON Y.id = C.sub_capitol_id
+	WHERE X.url =" ."'". $url ."'
+		";
+	$q = "SELECT * FROM capitol" ;
+	$a = mysqli_query($conn, $q);
+	$b = mysqli_query($conn, $query);
+	
+	//var_dump($b);
+	
+	?>
 	<div class="info_content">
         <div class="info_learning">
             <div class="meniu_lateral">
                 <div class="meniu_lateral_content">
                     <ul>
-                        <li class="active"><a href="#">Online Learning</a></li>
-                        <li class=""><a href="#"> WooCommerce</a></li>
-                        <li class=""><a href="#"> User Profiles</a></li>
-                        <li class=""><a href="#"> Media Player</a></li>
+						<?php 
+						while ($row = mysqli_fetch_assoc($a))
+						{?>
+                        <li class="active"><a href="course_info.php?id=<?php echo $_GET['id'] . '&url=' . $row['url'];?>"><?php echo $row['capitol'];?></a></li>
+                        
+						<?php }?>
                     </ul>
                 </div>
             </div>
             <div class="tabs-content">
-                <h1>Learning Management</h1>
-                <p>Quisque id augue erat, suscipit ultricies est. Maecenas feugiat justo ac massa porttitor mollis auctor nulla ullamcorper. sed blandit interdum.</p>
-                <p>Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer fringilla magna ut risus sagittis ultrices. Nam eget varius sem. Nam mattis consectetur suscipit. Vivamus quis ante enim. Cras id sodales metus.</p>
-                <p>Suspendisse luctus, felis at fringilla dictum, erat massa vehicula velit, id venenatis eros libero et lectus. Proin ullamcorper molestie lectus, sit amet condimentum dui tincidunt ut. In tempor faucibus eros, sed auctor orci ultricies non suspen.</p>
+				<?php 
+					foreach ($b as $row1)
+						{?>
+                <h1><?php echo $row1['sub_capitol'];?></h1>
+                <p><?php echo $row1['text_1'];?></p>
+                <p><?php echo $row1['text_2'];?></p>
+                <p><?php echo $row1['text_3'];?></p>
+					<?php }?>
                 <a class="button large primary" target="_self" href=" ">
                     Purchase now
                 </a>

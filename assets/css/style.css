@@ -413,5 +413,34 @@ body{
 	color:#444;
 	font-size:13px;
 	overflow:auto;
+}
+.form {
+	float:left;
+	margin-bottom:30px;
 	
+}
+.index_form {
+	float:left;
+	margin-right:100px;
+}
+
+.form_wrap {
+	margin:40px;
+}
+
+.input_form {
+	border-radius:5px;
+	margin:8px 0;
+	height:20px;
+}
+
+.submit {
+	background-color:#aa99cc;
+	display:block;
+	height:35px;
+	width:100px;
+	color:#fff;
+	font-size:20px;
+	border-radius:5px;
+	margin-top:15px;
 }
