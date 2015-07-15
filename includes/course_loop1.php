@@ -1,6 +1,3 @@
-<!-- courses section header  -->
-<h1>Popular courses</h1>
-<!-- courses section  -->
 <div class="course-list">
     <!-- course first section  -->
     <?php

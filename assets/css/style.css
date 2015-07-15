@@ -369,3 +369,21 @@ body{
     border: none;
     color:#fff;
 }
+
+.sub-header{
+    width:100%;
+    height:82px;
+    overflow: hidden;
+}
+.sub-header img{
+    width:100%;
+}
+.Sh_content{
+    color:#fff;
+    padding:20px 30px;
+    position: absolute;
+    top:100px;
+    z-index: 3;
+    width:100%;
+    height:40px;
+}

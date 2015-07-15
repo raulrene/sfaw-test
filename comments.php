@@ -2,7 +2,7 @@
 include_once('config/config.php');
 include_once('classes/comments.php');
 include_once('classes/replies.php');
-
+$title='Comments';
 $comm = new Comments();
 $q = $comm->getComments();
 $reply = new Replies();
@@ -15,6 +15,7 @@ $s = $reply->getReplies();
 </head>
 <body>
 <?php include('includes/header.php'); ?>
+<?php include('includes/sub_header.php'); ?>
 <div class="site-wrap">
     <div class="main-content">
         <?php

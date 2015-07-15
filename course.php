@@ -2,7 +2,7 @@
 include_once('config/config.php');
 include_once('classes/courses.php');
 include_once('classes/pagination.php');
-
+$title = 'Courses';
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +12,7 @@ include_once('classes/pagination.php');
 </head>
 <body>
 <?php include('includes/header.php'); ?>
+<?php include('includes/sub_header.php'); ?>
 <div class="site-wrap">
     <div class="main-content">
         <div class="row">

@@ -4,7 +4,7 @@ include_once('classes/sub_chapter.php');
 include_once('classes/sub_sub_chapter.php');
 include_once('classes/content.php');
 include_once('classes/courses.php');
-
+$title = 'Course-Info';
 $obj= new SubChapter();
 ?>
 <!DOCTYPE html>

@@ -2,7 +2,7 @@
 include_once('config/config.php');
 include_once('classes/home.php');
 include_once('classes/courses.php');
-
+$title='Academy-Learning';
 $hm = new Home();
 $course = new Course();
 

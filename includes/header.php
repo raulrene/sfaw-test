@@ -19,7 +19,7 @@
 				<ul>
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="course.php">Courses</a></li>
-					<li><a href="course_info.php">Plans</a></li>
+					<li><a href="comments.php">Comments</a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>	
