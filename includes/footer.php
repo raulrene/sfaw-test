@@ -6,11 +6,9 @@
             </div>
             <div class="footer-navigation right">
                 <ul id="footer-menu" class="menu">
-                    <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="#">Courses</a></li>
-                    <li class="footer-link"><a href="#">News</a></li>
-                    <li class="footer-link"><a href="#">About</a></li>
-                    <li class="footer-link"><a href="#">Suport</a></li>
+                    <li class="footer-link"><a href="index.php">Home</a></li>
+                    <li class="footer-link"><a href="course.php">Courses</a></li>
+                    <li class="footer-link"><a href="comments.php">Comments</a></li>
                 </ul>
             </div>
         </div>

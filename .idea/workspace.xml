@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f251bc04-0e67-416a-b078-244a1a72df0a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/sub_header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about-json.php" afterPath="$PROJECT_DIR$/about-json.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comments.php" afterPath="$PROJECT_DIR$/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course.php" afterPath="$PROJECT_DIR$/course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course_info.php" afterPath="$PROJECT_DIR$/course_info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/course_loop1.php" afterPath="$PROJECT_DIR$/includes/course_loop1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/head.php" afterPath="$PROJECT_DIR$/includes/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/header.php" afterPath="$PROJECT_DIR$/includes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/footer.php" afterPath="$PROJECT_DIR$/includes/footer.php" />
     </list>
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,91 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <file leaf-file-name="about-json.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/about-json.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="384" column="11" selection-start="7524" selection-end="7524" vertical-scroll-proportion="0.0" vertical-offset="6342" max-vertical-offset="7092">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course_loop1.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/course_loop1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1350">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="29" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="342">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="666">
-              <folding>
-                <marker date="1436973422717" expanded="true" signature="206:768" placeholder="..." />
-                <marker date="1436973422717" expanded="true" signature="214:263" placeholder="..." />
-                <marker date="1436973422717" expanded="true" signature="271:760" placeholder="..." />
-                <marker date="1436973422717" expanded="true" signature="340:751" placeholder="..." />
-                <marker date="1436973422717" expanded="true" signature="425:698" placeholder="..." />
-                <marker date="1436973422717" expanded="true" signature="458:688" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/course.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="271" selection-end="315" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/comments.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="16" selection-start="132" selection-end="132" vertical-scroll-proportion="0.11594203" vertical-offset="0" max-vertical-offset="621">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="55" selection-start="636" selection-end="636" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="594">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course_info.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/course_info.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="224" selection-end="224" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="1800">
-              <folding>
-                <marker date="1436973660881" expanded="true" signature="1532:1558" placeholder="SELECT * FRO..sub_chapters..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sub_header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/sub_header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="131" selection-end="131" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="198">
+            <state line="21" column="16" selection-start="599" selection-end="599" vertical-scroll-proportion="0.44582042" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -180,6 +89,7 @@
         <option value="$PROJECT_DIR$/course_info.php" />
         <option value="$PROJECT_DIR$/includes/sub_header.php" />
         <option value="$PROJECT_DIR$/comments.php" />
+        <option value="$PROJECT_DIR$/includes/footer.php" />
       </list>
     </option>
   </component>
@@ -232,20 +142,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,13 +303,6 @@
           <folding>
             <marker date="1436472825980" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..courses..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about-json.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="599" selection-end="599" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/site_bg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -658,12 +540,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="26" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="666">
           <folding>
-            <marker date="1436973422717" expanded="true" signature="206:768" placeholder="..." />
-            <marker date="1436973422717" expanded="true" signature="214:263" placeholder="..." />
-            <marker date="1436973422717" expanded="true" signature="271:760" placeholder="..." />
-            <marker date="1436973422717" expanded="true" signature="340:751" placeholder="..." />
-            <marker date="1436973422717" expanded="true" signature="425:698" placeholder="..." />
-            <marker date="1436973422717" expanded="true" signature="458:688" placeholder="..." />
+            <marker date="1436973422717" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436973422717" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436973422717" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436973422717" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436973422717" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436973422717" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -675,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/sub_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="131" selection-end="131" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="198">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/course.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="271" selection-end="315" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="540">
@@ -689,18 +564,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="132" selection-end="132" vertical-scroll-proportion="0.111455105" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/course_info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="224" selection-end="224" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="1800">
+        <state line="6" column="23" selection-start="224" selection-end="224" vertical-scroll-proportion="0.17061612" vertical-offset="0" max-vertical-offset="1800">
           <folding>
-            <marker date="1436973660881" expanded="true" signature="1532:1558" placeholder="SELECT * FRO..sub_chapters..." />
+            <marker date="1436973660881" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sub_chapters..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comments.php">
+    <entry file="file://$PROJECT_DIR$/includes/sub_header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="132" selection-end="132" vertical-scroll-proportion="0.11594203" vertical-offset="0" max-vertical-offset="621">
+        <state line="3" column="30" selection-start="131" selection-end="131" vertical-scroll-proportion="0.083591335" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="65" selection-start="509" selection-end="509" vertical-scroll-proportion="0.27863777" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about-json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="599" selection-end="599" vertical-scroll-proportion="0.44582042" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
