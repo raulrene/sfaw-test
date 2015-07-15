@@ -11,7 +11,7 @@ $user     = 'root';
 $pass     = '6636';
 $dbname   = 'site';
 
-include_once('database/database.php');
+include_once('database/database1.php');
 
 $db = new Database($host, $user, $pass,$dbname);
 
