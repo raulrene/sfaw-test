@@ -57,15 +57,16 @@
         <?php  } } ?>
 </div>
 <?php
+$count = $obj->rez();
 
 echo "<center ><a href='?page=1' style='color:#ccc;'>".'First<< '."</a> ";
 
-for ($p=1; $p<=3; $p++) {
+for ($p=1; $p<=$count; $p++) {
 
     echo "<a style='color:#00000f;' href='?page=".$p."'>".$p."</a> ";
 };
 
-echo "<a href='?page=3' style='color:#ccc;'>".'>>Last '."</a></center> ";
+echo "<a href='?page=$count' style='color:#ccc;'>".'>>Last '."</a></center> ";
 ?>
 
 <!-- courses section end -->

@@ -24,8 +24,8 @@ class Pagination {
 
     public function rez(){
         global $db;
-        $q = "SELECT * FROM courses";
-        $total_records = $db->query($q);
+        $query = "SELECT * FROM courses";
+        $total_records = $db->count($query);
         $total_pages = ceil($total_records / $this->per_page);
         return $total_pages;
     }

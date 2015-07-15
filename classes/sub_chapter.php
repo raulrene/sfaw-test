@@ -22,10 +22,8 @@ class SubChapter{
         global $db;
         $q = "SELECT *
             FROM $this->table
-            FULL OUTER JOIN sub_sub_ch
-            ON $this->table.id=sub_sub_ch.sub_ch_id
-            FULL OUTER JOIN content
-            ON $this->table.id=content.sub_sub_ch_id
+            FULL JOIN sub_sub_ch
+            ON $this->table.id = sub_sub_ch.sub_ch_id
             WHERE $this->table.friendly_url = $url
             ";
         $data = $db->fetch_rows($q);
