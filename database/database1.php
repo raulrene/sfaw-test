@@ -1,5 +1,16 @@
 <?php
-    class Database1{
+$host = 'localhost';
+$user = 'root';
+$pass = '6636';
+$db   = 'site';
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+/*    class Database1{
 
     private $host = 'localhost';
     private $user = 'root';
@@ -7,7 +18,7 @@
     private $db   = 'site';
     private $conn;
 
-    public function __construct($host,$user,$pass,$db){
+    public function __construct($host, $user, $pass, $db){
         $this->host   = $host;
         $this->user   = $user;
         $this->pass   = $pass;
@@ -29,6 +40,6 @@
         return $this->conn;
     }
 }
-
+*/
 
 ?>

@@ -1,6 +1,6 @@
 $(function(){
-    $('.tabs ul li').on('click',function(){
-        $('.tabs ul li').removeClass('current');
+    $('.tabs ul li ').on('click',function(){
+        $('.tabs ul li ').removeClass('current');
         $(this).addClass('current');
 
 

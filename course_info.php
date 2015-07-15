@@ -26,9 +26,9 @@ $obj= new SubChapter();
             </div>
             <div class="description_content">
                 <h4>Course Overview</h4>
-                <p>Maecenas a leo nisi. Nam pharetra imperdiet diam, ut consequat felis egestas sagittis. Donec at nunc augue, cursus iaculis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim lobortis ligula, quis fringilla justo dictum phasellus adipiscing dictum!</p>
+                <p><?php echo $c->course_overview; ?></p>
                 <h4>About the Author</h4>
-                <p>Nam sem nulla, mollis ac ullamcorper in, placerat eget lectus. Suspendisse in dui eu neque suscipit imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam lobortis.</p>
+                <p><?php echo $c->about_author; ?></p>
                 <a class="button large primary" target="_self" href=" ">
                     Take This Course | <?php echo $c->course_price; ?>
                 </a>
@@ -40,31 +40,52 @@ $obj= new SubChapter();
         <div class="tabs">
             <ul>
                 <?php
-                if(isset($_GET['url']) && !empty($_GET['url'])){
-                    $url = $_GET['url'];
-                }else{
-                    $url = '#online-learning';
-                }
-                $ll = $obj->getCombined($url);
-                if(isset($ll) && !empty($ll)){
-                    echo '<pre>';
-                    var_dump($ll);
-                } ?>
+                    if(isset($_GET['url']) && !empty($_GET['url'])){
+                        $url = $_GET['url'];
+                    }else{
+                        $url = 'online-learning';
+                    }
+                    include_once('database/database1.php');
+                    $s =  "SELECT * FROM sub_chapters";
+                    $l = mysqli_query($conn, $s);
+                    while($row = mysqli_fetch_assoc($l)){ ?>
 
+                            <li class="<?php echo $row['class']; ?>" id="<?php echo $row['id_html']; ?>">
+                                <a href="course_info.php?id=<?php echo $_GET['id'].'&url='.$row['friendly_url']; ?>">
+                                <?php echo $row['links']; ?>
+                                </a>
+                            </li>
+
+                    <?php } ?>
             </ul>
         </div>
+        <?php
+                    $q =   "SELECT *
+                            FROM sub_chapters A
+                            LEFT JOIN sub_sub_ch B
+                            ON A.id = B.sub_ch_id
+                            LEFT JOIN  content C
+                            ON B.id = C.sub_sub_ch_id
+                            WHERE A.friendly_url = " ."'". $url ."'
+                          ";
+                    $j = mysqli_query($conn, $q);
+                    while($row = mysqli_fetch_assoc($j)){
+        ?>
+
         <div class="tabs_content">
 
-            <h1><?php echo $row->h1; ?></h1>
-            <p><b><?php echo $row->p1; ?></b></p>
-            <p><?php echo $row->p2; ?></p>
-            <p><?php echo $row->p3; ?> </p>
+            <h1><?php echo $row['sub_sub_ch_name']; ?></h1>
+            <p><b><?php echo $row['text_1']; ?></b></p>
+            <p><?php echo $row['text_2']; ?></p>
+            <p><?php echo $row['text_3']; ?> </p>
             <a class="button large primary" target="_self" href=" ">
                 <img src="assets/img/image_66.png" alt="" />
                 Purchase now
             </a>
 
         </div>
+        <?php } ?>
+
         <div class="clear"></div>
     </div>
 </div>
