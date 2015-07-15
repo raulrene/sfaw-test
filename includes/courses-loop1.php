@@ -72,9 +72,9 @@ $dataPag = $pag->pagination();
 
 <?php
 $count = $pag->getResult();
-echo "<center ><a href='?page=1' style='color:#ccc;'>".'First<< '."</a> ";
+echo "<center ><a href='?page=1' style='color:#ccc;'>".'First  << '."</a> ";
 for ($p=1; $p<=$count; $p++) {
     echo "<a style='color:#00000f;' href='?page=".$p."'>".$p."</a> ";
 };
-echo "<a href='?page=$count' style='color:#ccc;'>".'>>Last '."</a></center> ";
+echo "<a href='?page=$count' style='color:#ccc;'>".'>>  Last '."</a></center> ";
 ?>

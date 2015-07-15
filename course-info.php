@@ -1,9 +1,11 @@
 <?php
 include('classes/Courses.php');
-include('config/config.php');
+include_once('config/config.php');
 include('classes/SubCapitol.php');
 include('classes/SubSubCapitol.php');
 include('classes/Content.php');
+
+
 ?>
 <!DOCTYPE html>
 
