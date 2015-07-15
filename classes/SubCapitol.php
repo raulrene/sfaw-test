@@ -13,6 +13,18 @@ class SubCapitol {
     private $html_id,$class,$friendly_url;
     private $table = 'sub_capitol';
 
+    public function getJoinedData($friendlyUrl){
+        global $db;
+
+        $query = "
+            SELECT * FROM $this->table X
+            LEFT JOIN sub_sub_capitol Y ON X.id = Y.sub_capitol_id
+            LEFT JOIN content C ON Y.id = C.sub_sub_capitol_id
+            WHERE X.friendly_url =" ."'". $friendlyUrl ."'";
+        $data = $db->fetch_rows($query);
+
+        return $data;
+    }
     public function getSubCapitole(){
         global $db;
 

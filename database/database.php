@@ -85,6 +85,8 @@ class Database {
             }
             $execute = $this->stmt->execute();
 
+
+
             // An extra check to see if the query executed without errors (first check is when we first prepare the query)
             if (!$execute) {
                 $debug_backtrace = debug_backtrace();
@@ -96,11 +98,15 @@ class Database {
                 return false;
             }
             if ($this->stmt->field_count) {
+
                 $fields = $this->stmt->result_metadata()->fetch_fields();
                 foreach ($fields as $key => $field) {
                     $fields_names[$field->name] = &$field->name;
                 }
+
+
                 call_user_func_array(array($this->stmt, "bind_result"), $fields_names);
+
                 return $fields_names;
             } else {
                 // Set or update info relating to the latest query

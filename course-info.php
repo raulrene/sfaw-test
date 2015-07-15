@@ -1,14 +1,15 @@
 <?php
-
-
+include('classes/Courses.php');
+include('config/config.php');
+include('classes/SubCapitol.php');
+include('classes/SubSubCapitol.php');
+include('classes/Content.php');
 ?>
 <!DOCTYPE html>
 
 <html>
 <head>
     <?php
-    include('classes/Courses.php');
-    include('config/config.php');
     include('includes/head.php');
     ?>
     <script language="javascript" src="assets/js/course-info.js"></script>

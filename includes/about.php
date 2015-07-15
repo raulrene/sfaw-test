@@ -5,12 +5,20 @@
  * Date: 7/13/15
  * Time: 3:52 PM
  */
+include('../config/config-old.php');
+$obj = new SubCapitol();
+$data = $obj->getJoinedData("online-learning");
 
-include('classes/About.php');
-
-$obj = new About();
-$data = $obj->getAllAbout();
-
+$friendlyUrl='online-learning';
+$q = "SELECT * FROM sub_capitol";
+$query = "
+            SELECT * FROM sub_capitol X
+            LEFT JOIN sub_sub_capitol Y ON X.id = Y.sub_capitol_id
+            LEFT JOIN content C ON Y.id = C.sub_sub_capitol_id
+            WHERE X.friendly_url =" ."'". $friendlyUrl ."'";
+$dd = mysqli_query($conn,$q);
+echo '<pre>';
+print_r($dd);
 ?>
 <div class="tabs-container vertical-tabs">
     <div class="column three-col tabs">
