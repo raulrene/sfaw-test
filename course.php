@@ -2,7 +2,7 @@
 
 include('config/config.php');
 include('classes/Courses.php');
-
+include('classes/Pagination.php');
 /*
 $obj = new Course();
 $data = $obj->getAll();

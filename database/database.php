@@ -52,6 +52,10 @@ class Database {
     }
 
     // Queries
+    public function count($query){
+        $data = count($this->fetch_rows($query));
+        return $data;
+    }
     // Used internally for all queries and externally for INSERT, UPDATE, DELETE, etc.
     public function query($query, $params = array()) {
         if ($this->filter_exists("query")) { $query = $this->apply_filter("query", array($query)); }

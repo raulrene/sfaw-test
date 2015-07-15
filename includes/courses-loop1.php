@@ -4,6 +4,8 @@
 $obj = new Course();
 $data = $obj->getAll();
 
+$pag = new Pagination();
+$dataPag = $pag->pagination();
 
 ?>
 
@@ -13,14 +15,10 @@ $data = $obj->getAll();
 
 <div class="course-list">
     <?php
-
-
-
-    if(isset($data) && !empty($data)){
+    if(isset($dataPag) && !empty($dataPag)){
         $no = 0;
-        foreach($data as $row){
+        foreach($dataPag as $row){
             $no++;
-
             ?>
             <div class = "column <?php if($no % 4 == 0)echo "last"?>">
                 <div class="column-content">
@@ -71,3 +69,12 @@ $data = $obj->getAll();
 
         <?php } } ?>
 </div>
+
+<?php
+$count = $pag->getResult();
+echo "<center ><a href='?page=1' style='color:#ccc;'>".'First<< '."</a> ";
+for ($p=1; $p<=$count; $p++) {
+    echo "<a style='color:#00000f;' href='?page=".$p."'>".$p."</a> ";
+};
+echo "<a href='?page=$count' style='color:#ccc;'>".'>>Last '."</a></center> ";
+?>
