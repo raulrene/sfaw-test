@@ -10,6 +10,7 @@
 <div style="margin-left: 50px;float:left;border-right: 1px dotted #000;padding-right:20px">
     <h1>Chapters</h1><br/>
     <form method="post" action="" id="">
+        <input type="hidden" name="chapters" value="chapters" />
         <div class="form_field">
             <input type="text" name="ch_name" size="18"  placeholder="Chapter Name" required>
         </div>
@@ -24,6 +25,7 @@
 <div style="margin-left: 50px;float:left;border-right: 1px dotted #000;padding-right:20px">
     <h1>Sub-Chapters</h1><br/>
     <form method="post" action="" id="">
+        <input type="hidden" name="sub_chapters" value="sub_chapters" />
         <div class="form_field">
             <input type="text" name="chapter_id" size="18"  placeholder="Chapter Id" required>
         </div>
@@ -41,6 +43,7 @@
 <div style="margin-left: 50px;float:left;border-right: 1px dotted #000;padding-right:20px">
     <h1>Sub-Sub-Chapters</h1><br/>
     <form method="post" action="" id="">
+        <input type="hidden" name="ss_chapters" value="ss_chapters" />
         <div class="form_field">
             <input type="text" name="sub_chapter_id" size="18"  placeholder="Sub-Chapter Id" required>
         </div>
@@ -58,6 +61,7 @@
 <div style="margin-left: 50px;float:left;border-right: 1px dotted #000;padding-right:20px">
     <h1>Content</h1><br/>
     <form method="post" action="" id="">
+        <input type="hidden" name="content" value="content" />
         <div class="form_field">
             <input type="text" name="sub_sub_chapter_id" size="18"  placeholder="Sub-Sub-Chapter Id" required>
         </div>
@@ -79,6 +83,7 @@
 <div style="margin-left: 50px;float:left;border-right: 1px dotted #000;padding-right:20px">
     <h1>Comments</h1><br/>
     <form method="post" action="" id="">
+        <input type="hidden" name="comments" value="comments" />
         <div class="form_field">
             <input type="text" name="author" size="18"  placeholder="Author Name" required>
         </div>
@@ -102,6 +107,7 @@
 <div style="margin-left: 50px;float:left;border-right: 1px dotted #000;padding-right:20px">
     <h1>Replies</h1><br/>
     <form method="post" action="" id="">
+        <input type="hidden" name="replies" value="replies" />
         <div class="form_field">
             <input type="text" name="author" size="18"  placeholder="Author Name" required>
         </div>
@@ -128,6 +134,7 @@
 <div style="margin-left: 50px;float:left;border-right: 1px dotted #000;padding-right:20px">
     <h1>Courses</h1><br/>
     <form method="post" action="" id="">
+        <input type="hidden" name="courses" value="courses" />
         <div class="form_field">
         <input type="text" name="name" size="18"  placeholder="Name" required>
         </div>

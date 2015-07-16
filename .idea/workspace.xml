@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f251bc04-0e67-416a-b078-244a1a72df0a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/migrations/10-06-2015.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/operations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/comm_page.php" afterPath="$PROJECT_DIR$/includes/comm_page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/course_loop1.php" afterPath="$PROJECT_DIR$/includes/course_loop1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/database.php" afterPath="$PROJECT_DIR$/database/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/forms.php" afterPath="$PROJECT_DIR$/admin/forms.php" />
     </list>
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="10-06-2015.sql" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/migrations/10-06-2015.sql">
+      <file leaf-file-name="forms.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/forms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.16666667" vertical-offset="0" max-vertical-offset="648">
+            <state line="161" column="6" selection-start="7210" selection-end="7210" vertical-scroll-proportion="0.943128" vertical-offset="2301" max-vertical-offset="3006">
               <folding />
             </state>
           </provider>
@@ -77,7 +71,6 @@
         <option value="$PROJECT_DIR$/includes/each_course.php" />
         <option value="$PROJECT_DIR$/classes/sub_chapter.php" />
         <option value="$PROJECT_DIR$/classes/pagination.php" />
-        <option value="$PROJECT_DIR$/admin/forms.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/database/database1.php" />
         <option value="$PROJECT_DIR$/migrations/15-06-2015.sql" />
@@ -96,6 +89,7 @@
         <option value="$PROJECT_DIR$/migrations/10-06-2015.sql" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/includes/comm_page.php" />
+        <option value="$PROJECT_DIR$/admin/forms.php" />
       </list>
     </option>
   </component>
@@ -148,20 +142,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,11 +349,6 @@
         <state line="3" column="17" selection-start="39" selection-end="81" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="2232" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/forms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="6" selection-start="6747" selection-end="6747" vertical-scroll-proportion="0.943128" vertical-offset="2175" max-vertical-offset="2880" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/sub_chapter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="540" selection-end="745" vertical-scroll-proportion="-13.333333" vertical-offset="36" max-vertical-offset="2466" />
@@ -556,6 +531,13 @@
     <entry file="file://$PROJECT_DIR$/migrations/10-06-2015.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.16666667" vertical-offset="0" max-vertical-offset="648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/forms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="6" selection-start="7210" selection-end="7210" vertical-scroll-proportion="0.943128" vertical-offset="2301" max-vertical-offset="3006">
           <folding />
         </state>
       </provider>
