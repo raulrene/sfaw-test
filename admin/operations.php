@@ -19,7 +19,7 @@ if(isset($_POST) && !empty($_POST)){
                 echo '<ul>';
                 foreach ($data as $row){
                     echo '<li style="font-size:20px">'.$row['id'] .' -> '.$row['chapter_name'].' | '.$row['url'].'</li>';
-                    echo '<a class="fg-button teal" href="">Edit</a>&nbsp<a class="button large primary" href="delete.php?id='.$row['id'].'&table='.$table.'">Delete</a>';
+                    echo '<a class="fg-button teal" href="edit.php?id='.$row['id'].'&table='.$table.'">Edit</a>&nbsp<a class="button large primary" href="delete.php?id='.$row['id'].'&table='.$table.'">Delete</a>';
                 }
                 echo '</ul>';
             } else {

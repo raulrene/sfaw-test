@@ -1,11 +1,16 @@
-<meta charset = "utf-8">
-<title>Forms</title>
-<link rel="stylesheet" href="../assets/css/style.css" type="text/css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link href="../assets/css/index.css" type="text/css" rel="stylesheet">
-<link href="../assets/css/slider.css" type="text/css" rel="stylesheet">
-<link href="../assets/css/main-content.css" type="text/css" rel="stylesheet">
-<link href="../assets/css/footer.css" type="text/css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="../assets/css/index.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/slider.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/main-content.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/footer.css" type="text/css" rel="stylesheet">
+</head>
+<body>
 
 <div style="margin-left: 50px;float:left;border-right: 1px dotted #000;padding-right:20px">
     <h1>Chapters</h1><br/>
@@ -160,3 +165,5 @@
         <input type="submit" name="submit" value="add" class="button large primary"/>
     </form>
 </div>
+</body>
+</html>
