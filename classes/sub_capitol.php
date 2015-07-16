@@ -6,7 +6,7 @@ class sub_capitol {
     private $sub_capitol;
     private $order;
 
-    / public function getSubCapitol(){
+    public function getSubCapitol(){
     global $db;
 
     $data = $db->fetch_all('Select * from sub_capitol');

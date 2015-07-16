@@ -23,7 +23,7 @@ $data1 = $obj1->getAllReplies();
 						<div class="comments_author"><a href="#" ><?php echo $row->name;?></a></div>
 						<div class="comments_date"><span><?php echo $row->date;?></span></div>
 						<div class="reply_link"><a href="#"><img src="assets/img/reply_icon.png" /><span>Reply</span></a></div>
-						<div class="comments_text"><p><?php echo $row->comments;?></p></div>
+						<div class="comments_text"><p><?php echo $row->comment;?></p></div>
                     </div>
                         <ul class="replies_list">
                             <?php
