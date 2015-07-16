@@ -31,7 +31,9 @@ include('includes/header.php');
             include('includes/courses-loop1.php');
             ?>
         </div>
+
     </div>
+
     <?php include('includes/footer.php'); ?>
 </div>
 </body>

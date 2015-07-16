@@ -41,15 +41,20 @@
                     </div>
                 </div>
             </div>
-
+    <?php
+        $obj2 = new Description();
+        //$data2 = $obj2->getDescriptionAll();
+        $data2 = $obj2->getDescription($_GET['id']);
+        //print_r($data2);
+    ?>
     <div class="sixcol column">
         <div class="course-description widget">
             <div class="widget-title"><h4 class="nomargin">Description</h4></div>
             <div class="widget-content">
                 <h4>Course Overview</h4>
-                <p>Maecenas a leo nisi. Nam pharetra imperdiet diam, ut consequat felis egestas sagittis. Donec at nunc augue, cursus iaculis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim lobortis ligula, quis fringilla justo dictum phasellus adipiscing dictum!</p>
+                <p><?php echo $data2[0]->course_text;?></p>
                 <h4>About the Author</h4>
-                <p>Nam sem nulla, mollis ac ullamcorper in, placerat eget lectus. Suspendisse in dui eu neque suscipit imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam lobortis.</p>
+                <p><?php echo $data2[0]->about_text;?></p>
             </div>
             <footer class="course-footer">
 

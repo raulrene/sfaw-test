@@ -33,8 +33,8 @@ $xx = mysqli_query($conn,$query);
             while($row = mysqli_fetch_assoc($dd)){
                 ?>
                 <a href="course-info.php?id=<?php echo $_GET['id']."&url=".$row['friendly_url']; ?>">
-                    <?php $friendlyUrl = $row['friendly_url']; ?>
-                    <li class="<?php echo $row['class'];?>">
+
+                    <li class="">
                         <?php echo $row['nume'];?>
                     </li>
                 </a>

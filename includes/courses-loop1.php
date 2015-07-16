@@ -68,13 +68,16 @@ $dataPag = $pag->pagination();
             </div>
 
         <?php } } ?>
+    <div class="clear"></div>
 </div>
-
-<?php
-$count = $pag->getResult();
-echo "<center ><a href='?page=1' style='color:#ccc;'>".'First  << '."</a> ";
-for ($p=1; $p<=$count; $p++) {
-    echo "<a style='color:#00000f;' href='?page=".$p."'>".$p."</a> ";
-};
-echo "<a href='?page=$count' style='color:#ccc;'>".'>>  Last '."</a></center> ";
-?>
+<div clas="row">
+    <?php
+    $count = $pag->getResult();
+    echo "<center ><a href='?page=1' style='color:#ccc;'>".'First  << '."</a> ";
+    for ($p=1; $p<=$count; $p++) {
+        echo "<a style='color:#00000f;' href='?page=".$p."'>".$p."</a> ";
+    };
+    echo "<a href='?page=$count' style='color:#ccc;'>".'>>  Last '."</a></center> ";
+    ?>
+</div>
+<div class="clear"></div>
