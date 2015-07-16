@@ -190,7 +190,7 @@ body{
 }
 /**   diff color price div and corner    **/    
 .corner_red{
-   background-color: #f3715d; !important;
+   background-color: #f3715d !important;
 }
 .corner_red .corner{
     border-color: #f3715d #f3715d #fff #fff;
@@ -316,7 +316,7 @@ body{
 .comment-text header time{
     color:#777;
     float: left;
-    margin:0px 10px 0px 0px;
+    margin:2px 10px 0px 0px;
     padding: 0px;
 }
 .comment-text header a{

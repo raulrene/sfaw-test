@@ -53,7 +53,9 @@
             </div>
         <?php  } } ?>
 </div>
+
 <?php
+//pagination links
 $count = $obj->rez();
 
 echo "<center ><a href='?page=1' style='color:#ccc;'>".'First<< '."</a> ";

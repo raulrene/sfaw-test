@@ -17,7 +17,11 @@
                             <h5>
                                 <a href="<?php echo $comment->author_link; ?>"><?php echo $comment->author; ?></a>
                             </h5>
-                            <time><?php echo $comment->date_posted; ?></time>
+                            <time>
+                                <?php
+                                    echo ' '.substr($comment->date_posted,8,10).', '.substr($comment->date_posted,0,4);
+                                ?>
+                            </time>
                             <a><img src="assets/img/reply_icon.png" alt="reply" />Reply</a>
                             <div class="clear"></div>
                         </header>
