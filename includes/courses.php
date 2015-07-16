@@ -1,7 +1,7 @@
 <?php
 
-$obj = new Courses();
-$data = $obj->getAll();
+$obj = new Pagination();
+$data = $obj->pagination();
 
 ?>
 	<h1>Popular courses</h1>

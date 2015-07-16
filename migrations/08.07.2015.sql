@@ -163,3 +163,66 @@ DROP COLUMN `sub_sub_capitol_id`;
 ALTER TABLE `primarydb`.`content`
 DROP COLUMN `sub_sub_capitol_id`,
 DROP INDEX `key3_idx` ;
+
+//tabel index
+
+
+CREATE TABLE `primarydb`.`index` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `title` VARCHAR(45) NULL COMMENT '',
+  `name` VARCHAR(45) NULL COMMENT '',
+  `text` VARCHAR(1500) NULL COMMENT '',
+  `img` VARCHAR(45) NULL COMMENT '',
+  `tag` VARCHAR(45) NULL COMMENT '',
+  PRIMARY KEY (`id`)  COMMENT '');
+  
+  INSERT INTO `primarydb`.`index` (`title`, `text`, `img`, `tag`) VALUES ('Learning Online Becomes Easier', 'Academy is a perfect theme for sharing and selling your knowledge online. It’s not just a theme, but learning management system that provides great features to make learning and teaching online easier for everyone.', 'slide_1.png', 'slide');
+INSERT INTO `primarydb`.`index` (`title`, `text`, `img`, `tag`) VALUES ('Learn Anything Online', 'Suspendisse ante mi, iaculis ac eleifend id, venenatis non eros. Sed rhoncus gravida elit, eu sollicitudin sem iaculis. Proin scelerisque, ipsum mollis posuere metus.', 'book.png', 'info');
+INSERT INTO `primarydb`.`index` (`title`, `text`, `img`, `tag`) VALUES ('Talk to Our Experts', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna mauris, sagittis tempus varius vel, eleifend ut metus. Pellentesque sapien tellus, accumsan.', 'book.png', 'info');
+INSERT INTO `primarydb`.`index` (`title`, `text`, `img`, `tag`) VALUES ('Communicate with People', 'Nullam viverra, magna vitae mollis venenatis, leo mi dignissim quam, et lacinia purus diam nec sapien. Cras aliquet, purus non rhoncus aliquet, dapibus.', 'book.png', 'info');
+INSERT INTO `primarydb`.`index` (`name`, `text`, `img`) VALUES ('Jessica White', 'Pellentesque pulvinar sodales quam a placerat. Vivamus quis vitae consectetur ligula. Ut bibendum eleifend quam eget fermentum. Nulla facilisi. Augue aliquam augue vel odio faucibus luctus!', 'avatar.jpg');
+INSERT INTO `primarydb`.`index` (`name`, `text`, `img`) VALUES ('John Dawson', 'Maecenas sed metus sem, ac varius ante. Nullam non mi tempor nisl varius consectetur vel in ipsum. Vestibulum sem diam, vehicula sit amet luctus adipiscing, viverra in sem. Proin molestie.', 'avatar.jpg');
+INSERT INTO `primarydb`.`index` (`name`, `text`, `img`) VALUES ('Mary Springs', 'Donec convallis, mauris quis tempor pulvinar, lorem neque rhoncus nisl, at hendrerit quam leo volutpat est. Quisque fringilla, nulla vitae vehicula fermentum, nibh dolor tristique, scelerisque.', 'avatar.jpg');
+
+
+//end tabel tindex
+
+//tabel courses 
+
+CREATE TABLE `primarydb`.`courses` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `name` VARCHAR(45) NULL COMMENT '',
+  `price` VARCHAR(45) NULL COMMENT '',
+  `img` VARCHAR(45) NULL COMMENT '',
+  `author` VARCHAR(45) NULL COMMENT '',
+  `users` VARCHAR(45) NULL COMMENT '',
+  `stars` VARCHAR(45) NULL COMMENT '',
+  PRIMARY KEY (`id`)  COMMENT '');
+  
+  INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Basic Cooking Techinques', '$128', 'Steven Granger', '12', '4');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Home Fitness Training', 'FREE', 'Mark Blackwood', '12', '4');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Digital Photography', '$142', 'Michael Lawson', '12', '3');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Architecture Basics', '$136', 'Steven Granger', '11', '4');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Spa Treatment at Home', '$126', 'Mark Blackwood', '14', '5');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Professional Singing', '$138', 'Steven Granger', '12', '4');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Business Management', '$146', 'Mark Blackwood', '10', '5');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Club Dance Course', '$125', 'Michael Lawson', '15', '4');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Mountain Hiking Course', '$122', 'Mark Blackwood', '14', '4');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('DJ Master Lessons', '$134', 'Steven Granger', '11', '4');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Steven Granger', 'FREE', 'Michael Lawson', '14', '3');
+INSERT INTO `primarydb`.`courses` (`name`, `price`, `author`, `users`, `stars`) VALUES ('Starting Online Business', '$132', 'Steven Granger', '12', '4');
+UPDATE `primarydb`.`courses` SET `img`='cook.jpg' WHERE `id`='1';
+UPDATE `primarydb`.`courses` SET `img`='fitt.jpg' WHERE `id`='2';
+UPDATE `primarydb`.`courses` SET `img`='picc.jpg' WHERE `id`='3';
+UPDATE `primarydb`.`courses` SET `img`='arch.jpg' WHERE `id`='4';
+UPDATE `primarydb`.`courses` SET `img`='spa.jpg' WHERE `id`='5';
+UPDATE `primarydb`.`courses` SET `img`='sing.jpg' WHERE `id`='6';
+UPDATE `primarydb`.`courses` SET `img`='business.jpg' WHERE `id`='7';
+UPDATE `primarydb`.`courses` SET `img`='club.jpg' WHERE `id`='8';
+UPDATE `primarydb`.`courses` SET `img`='mountain.jpg' WHERE `id`='9';
+UPDATE `primarydb`.`courses` SET `img`='dj.jpg' WHERE `id`='10';
+UPDATE `primarydb`.`courses` SET `img`='yoga.jpg' WHERE `id`='11';
+UPDATE `primarydb`.`courses` SET `img`='online.jpg' WHERE `id`='12';
+
+
+/end tabel courses

@@ -1,6 +1,7 @@
 <?php
 include('config/config.php');
 include('classes/courses_class.php');
+include('classes/pages_class.php');
 
 
 

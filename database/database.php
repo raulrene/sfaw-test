@@ -158,6 +158,11 @@ class Database {
             return false;
         }
     }
+	
+	function count($query){
+        $data = count($this->fetch_rows($query));
+        return $data;
+    }
     // Fetch multiple fields from multiple rows
     public function fetch_rows($query, $object = true, $params = array()) {
         $this->result = $this->query($query, $params);

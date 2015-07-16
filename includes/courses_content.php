@@ -1,7 +1,7 @@
 <?php
 
-$obj = new Courses();
-$data = $obj->getAll();
+$obj = new Pagination();
+$data = $obj->pagination();
 
 ?>
 	<h1>Popular courses</h1>
@@ -69,6 +69,13 @@ $data = $obj->getAll();
 		<!-- course last section end -->
 		<div class="clear"></div>					
 	</div>
-
+<?php
+$count = $obj->rez();
+echo "<center ><a href='?page=1' style='color:#ccc;'>".'First<< '."</a> ";
+for ($p=1; $p<=$count; $p++) {
+    echo "<a style='color:#00000f;' href='?page=".$p."'>".$p."</a> ";
+};
+echo "<a href='?page=$count' style='color:#ccc;'>".'>>Last '."</a></center> ";
+?>
 
 	<!-- courses section end -->
