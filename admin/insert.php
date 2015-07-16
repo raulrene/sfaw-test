@@ -15,8 +15,8 @@
         <div class="fourcol column">
             <div class="three-col">
                 <h2>Capitol</h2>
-                <form method="post" action="">
-
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="capitol">
                     <div class="form-field">
                         <input type="text" placeholder="nume" size="30" value="" name="nume">
                     </div>
@@ -25,7 +25,7 @@
                     </div>
 
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="button medium">
+                    <input type="submit" class="button medium">
                 </form>
             </div>
         </div>
@@ -33,9 +33,10 @@
         <div class="fourcol column">
             <div class="three-col">
                 <h2>SubCapitol</h2>
-                <form method="post" action="">
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="sub_capitol">
                     <div class="form-field">
-                        <input type="text" placeholder="sub_capitol_id" size="30" value="" name="sub_capitol_id">
+                        <input type="text" placeholder="capitol_id" size="30" value="" name="capitol_id">
                     </div>
                     <div class="form-field">
                         <input type="text" placeholder="nume" size="30" value="" name="nume">
@@ -51,7 +52,7 @@
                     </div>
 
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="button medium">
+                    <input type="submit" class="button medium">
                 </form>
             </div>
         </div>
@@ -59,9 +60,10 @@
         <div class="fourcol column last">
             <div class="three-col">
                 <h2>SubSubCapitol</h2>
-                <form method="post" action="">
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="sub_sub_capitol">
                     <div class="form-field">
-                        <input type="text" placeholder="capitol_id" size="30" value="" name="capitol_id">
+                        <input type="text" placeholder="sub_capitol_id" size="30" value="" name="sub_capitol_id">
                     </div>
                     <div class="form-field">
                         <input type="text" placeholder="nume" size="30" value="" name="nume">
@@ -69,11 +71,9 @@
                     <div class="form-field">
                         <input type="text" placeholder="order" size="30" value="" name="order">
                     </div>
-                    <div class="form-field">
-                        <input type="text" placeholder="class" size="30" value="" name="class">
-                    </div>
+
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="button medium">
+                    <input type="submit" class="button medium">
                 </form>
             </div>
         </div>
@@ -84,8 +84,8 @@
         <div class="fourcol column">
             <div class="three-col">
                 <h2>Content</h2>
-                <form method="post" action="">
-
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="content">
                     <div class="form-field">
                         <input type="text" placeholder="sub_sub_capitol_id" size="30" value="" name="sub_sub_capitol_id">
                     </div>
@@ -94,7 +94,7 @@
                     </div>
 
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="button medium">
+                    <input type="submit" class="button medium">
                 </form>
             </div>
         </div>
@@ -102,7 +102,8 @@
         <div class="fourcol column">
             <div class="three-col">
                 <h2>Testimonials</h2>
-                <form method="post" action="">
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="testimonials">
                     <div class="form-field">
                         <input type="text" placeholder="title" size="30" value="" name="title">
                     </div>
@@ -120,7 +121,7 @@
                     </div>
 
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="button medium">
+                    <input type="submit" class="button medium">
                 </form>
             </div>
         </div>
@@ -128,7 +129,8 @@
         <div class="fourcol column last">
             <div class="three-col">
                 <h2>Courses</h2>
-                <form method="post" action="">
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="courses">
                     <div class="form-field">
                         <input type="text" placeholder="name" size="30" value="" name="name">
                     </div>
@@ -148,7 +150,7 @@
                         <input type="text" placeholder="stars" size="30" value="" name="stars">
                     </div>
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="button medium">
+                    <input type="submit" class="button medium">
                 </form>
             </div>
         </div>
@@ -159,7 +161,8 @@
         <div class="fourcol column">
             <div class="three-col">
                 <h2>Comments</h2>
-                <form method="post" action="">
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="comments">
                     <div class="form-field">
                         <input type="text" placeholder="img" size="30" value="" name="img">
                     </div>
@@ -177,7 +180,7 @@
                     </div>
 
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="button medium">
+                    <input type="submit" class="button medium">
                 </form>
             </div>
         </div>
@@ -185,7 +188,8 @@
         <div class="fourcol column">
             <div class="three-col">
                 <h2>Replies</h2>
-                <form method="post" action="">
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="replies">
                     <div class="form-field">
                         <input type="text" placeholder="id_parent" size="30" value="" name="id_parent">
                     </div>
@@ -206,10 +210,32 @@
                     </div>
 
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="button medium">
+                    <input type="submit" class="button medium">
+                </form>
+            </div>
+        </div>
+        <div class="fourcol column last">
+            <div class="three-col">
+                <h2>Description</h2>
+                <form method="post" action="operations.php">
+                    <input type="hidden" name="hidden" value="description">
+
+                    <div class="form-field">
+                        <input type="text" placeholder="course_id" size="30" value="" name="course_id">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="course_text" size="30" value="" name="course_text">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="about_text" size="30" value="" name="about_text">
+                    </div>
+
+                    <input type="submit" class="button medium">
                 </form>
             </div>
         </div>
     </div>
+
+
     </body>
 </html>
