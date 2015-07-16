@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `siteDB` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `siteDB`;
+CREATE DATABASE  IF NOT EXISTS `newSite` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `newSite`;
 -- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (x86_64)
 --
--- Host: 127.0.0.1    Database: siteDB
+-- Host: 127.0.0.1    Database: newSite
 -- ------------------------------------------------------
 -- Server version	5.5.43-0ubuntu0.14.04.1
 
@@ -18,30 +18,27 @@ USE `siteDB`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `comentarii`
+-- Table structure for table `capitol`
 --
 
-DROP TABLE IF EXISTS `comentarii`;
+DROP TABLE IF EXISTS `capitol`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `comentarii` (
+CREATE TABLE `capitol` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `sub_sub_capitol_id` int(11) NOT NULL,
-  `comment_text` varchar(1500) DEFAULT NULL,
-  `date_added` datetime NOT NULL,
-  `tag` varchar(1500) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_comentariiSubSubCapitol_idx` (`sub_sub_capitol_id`)
+  `nume` varchar(1500) DEFAULT NULL,
+  `order` varchar(1500) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `comentarii`
+-- Dumping data for table `capitol`
 --
 
-LOCK TABLES `comentarii` WRITE;
-/*!40000 ALTER TABLE `comentarii` DISABLE KEYS */;
-/*!40000 ALTER TABLE `comentarii` ENABLE KEYS */;
+LOCK TABLES `capitol` WRITE;
+/*!40000 ALTER TABLE `capitol` DISABLE KEYS */;
+/*!40000 ALTER TABLE `capitol` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-07-09 13:20:25
+-- Dump completed on 2015-07-16 10:47:42

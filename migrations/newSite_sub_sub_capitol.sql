@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `siteDB` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `siteDB`;
+CREATE DATABASE  IF NOT EXISTS `newSite` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `newSite`;
 -- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (x86_64)
 --
--- Host: 127.0.0.1    Database: siteDB
+-- Host: 127.0.0.1    Database: newSite
 -- ------------------------------------------------------
 -- Server version	5.5.43-0ubuntu0.14.04.1
 
@@ -18,28 +18,30 @@ USE `siteDB`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `content`
+-- Table structure for table `sub_sub_capitol`
 --
 
-DROP TABLE IF EXISTS `content`;
+DROP TABLE IF EXISTS `sub_sub_capitol`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `content` (
+CREATE TABLE `sub_sub_capitol` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `sub_sub_capitol_id` int(11) NOT NULL,
-  `content_text` varchar(1500) DEFAULT NULL,
+  `sub_capitol_id` int(11) NOT NULL,
+  `nume` varchar(1500) NOT NULL,
+  `order` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_contentSubSubCapitol_idx` (`sub_sub_capitol_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `fk_subsubcapitolSubcapitol_idx` (`sub_capitol_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `content`
+-- Dumping data for table `sub_sub_capitol`
 --
 
-LOCK TABLES `content` WRITE;
-/*!40000 ALTER TABLE `content` DISABLE KEYS */;
-/*!40000 ALTER TABLE `content` ENABLE KEYS */;
+LOCK TABLES `sub_sub_capitol` WRITE;
+/*!40000 ALTER TABLE `sub_sub_capitol` DISABLE KEYS */;
+INSERT INTO `sub_sub_capitol` VALUES (1,1,'Learning Management',NULL),(2,2,'WooCommerce Integration',NULL),(3,3,'Personal User Profiles',NULL),(4,4,'Built-in Media Player',NULL);
+/*!40000 ALTER TABLE `sub_sub_capitol` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-07-09 13:20:25
+-- Dump completed on 2015-07-16 10:47:42

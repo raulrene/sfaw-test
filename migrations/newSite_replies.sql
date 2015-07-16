@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `siteDB` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `siteDB`;
+CREATE DATABASE  IF NOT EXISTS `newSite` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `newSite`;
 -- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (x86_64)
 --
--- Host: 127.0.0.1    Database: siteDB
+-- Host: 127.0.0.1    Database: newSite
 -- ------------------------------------------------------
 -- Server version	5.5.43-0ubuntu0.14.04.1
 
@@ -18,29 +18,32 @@ USE `siteDB`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `sub_capitol`
+-- Table structure for table `replies`
 --
 
-DROP TABLE IF EXISTS `sub_capitol`;
+DROP TABLE IF EXISTS `replies`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `sub_capitol` (
+CREATE TABLE `replies` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `capitol_id` int(11) NOT NULL,
-  `nume` varchar(1500) NOT NULL,
-  `order` int(11) DEFAULT NULL,
+  `id_parent` int(11) NOT NULL,
+  `img` varchar(1500) NOT NULL,
+  `author` varchar(1500) NOT NULL,
+  `date` datetime NOT NULL,
+  `text` varchar(1500) NOT NULL,
+  `author_link` varchar(1500) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `sub_capitol`
+-- Dumping data for table `replies`
 --
 
-LOCK TABLES `sub_capitol` WRITE;
-/*!40000 ALTER TABLE `sub_capitol` DISABLE KEYS */;
-INSERT INTO `sub_capitol` VALUES (1,1,'1.Inainte de a incepe',NULL),(2,1,'2.Ce inseamna server?',NULL),(3,1,'3.Ce inseamna PHP?',NULL),(4,1,'4.Instalare PHP',NULL),(5,2,'1.Notiuni de baza',NULL),(6,2,'2.Variabile .Constante',NULL);
-/*!40000 ALTER TABLE `sub_capitol` ENABLE KEYS */;
+LOCK TABLES `replies` WRITE;
+/*!40000 ALTER TABLE `replies` DISABLE KEYS */;
+INSERT INTO `replies` VALUES (1,1,'assets/img/herry.jpg','Herry','0000-00-00 00:00:00','Suspendisse varius, leo nec eleifend faucibus, neque ante molestie massa, eu vestibulum massa tortor non odio. Quisque porta velit vel purus blandit faucibus elementum.','#'),(2,1,'assets/img/marco.jpg','Marco','0000-00-00 00:00:00','Suspendisse varius, leo nec eleifend faucibus, neque ante molestie massa, eu vestibulum massa tortor non odio. Quisque porta velit vel purus blandit faucibus elementum.','#');
+/*!40000 ALTER TABLE `replies` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -52,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-07-09 13:20:25
+-- Dump completed on 2015-07-16 10:47:42

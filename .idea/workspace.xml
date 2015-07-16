@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c782e35-77d9-4673-9e17-a1bcd75ddadf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/about.php" afterPath="$PROJECT_DIR$/includes/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course-info.php" afterPath="$PROJECT_DIR$/course-info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course.php" afterPath="$PROJECT_DIR$/course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/courses-loop1.php" afterPath="$PROJECT_DIR$/includes/courses-loop1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/single-course.php" afterPath="$PROJECT_DIR$/includes/single-course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4c782e35-77d9-4673-9e17-a1bcd75ddadf" name="Default" comment="" />
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,10 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courses-loop1.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="courses-loop1.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/courses-loop1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.22222222" vertical-offset="970" max-vertical-offset="1584">
+            <state line="61" column="0" selection-start="2492" selection-end="2492" vertical-scroll-proportion="-4.740741" vertical-offset="970" max-vertical-offset="1584">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insert.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/insert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="189" column="101" selection-start="8375" selection-end="8375" vertical-scroll-proportion="5.341256" vertical-offset="256" max-vertical-offset="3960">
               <folding />
             </state>
           </provider>
@@ -594,11 +596,6 @@
         <state line="84" column="18" selection-start="2745" selection-end="2888" vertical-scroll-proportion="-10.740741" vertical-offset="1132" max-vertical-offset="1746" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="101" selection-start="8375" selection-end="8375" vertical-scroll-proportion="-8.740741" vertical-offset="3166" max-vertical-offset="3960" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Pagination.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="26" selection-start="666" selection-end="666" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="594" />
@@ -686,7 +683,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/courses-loop1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.22222222" vertical-offset="970" max-vertical-offset="1584">
+        <state line="61" column="0" selection-start="2492" selection-end="2492" vertical-scroll-proportion="-4.740741" vertical-offset="970" max-vertical-offset="1584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="101" selection-start="8375" selection-end="8375" vertical-scroll-proportion="5.341256" vertical-offset="256" max-vertical-offset="3960">
           <folding />
         </state>
       </provider>

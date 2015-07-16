@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `siteDB` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `siteDB`;
+CREATE DATABASE  IF NOT EXISTS `newSite` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `newSite`;
 -- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (x86_64)
 --
--- Host: 127.0.0.1    Database: siteDB
+-- Host: 127.0.0.1    Database: newSite
 -- ------------------------------------------------------
 -- Server version	5.5.43-0ubuntu0.14.04.1
 
@@ -18,29 +18,31 @@ USE `siteDB`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `capitol`
+-- Table structure for table `comments`
 --
 
-DROP TABLE IF EXISTS `capitol`;
+DROP TABLE IF EXISTS `comments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `capitol` (
+CREATE TABLE `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nume` varchar(1500) NOT NULL,
-  `url` varchar(1500) DEFAULT NULL,
-  `order` int(11) DEFAULT NULL,
+  `img` varchar(1500) NOT NULL,
+  `author` varchar(1500) NOT NULL,
+  `date` datetime NOT NULL,
+  `text` varchar(1500) NOT NULL,
+  `author_link` varchar(1500) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `capitol`
+-- Dumping data for table `comments`
 --
 
-LOCK TABLES `capitol` WRITE;
-/*!40000 ALTER TABLE `capitol` DISABLE KEYS */;
-INSERT INTO `capitol` VALUES (1,'I. Introducere',NULL,NULL),(2,'II. Notiuni de baza',NULL,NULL),(3,'III. Notiuni avansate',NULL,NULL);
-/*!40000 ALTER TABLE `capitol` ENABLE KEYS */;
+LOCK TABLES `comments` WRITE;
+/*!40000 ALTER TABLE `comments` DISABLE KEYS */;
+INSERT INTO `comments` VALUES (1,'assets/img/stevie.jpg','Stevie','0000-00-00 00:00:00','Phasellus id velit ante, quis elementum elit. Donec bibendum consequat massa, sit amet rhoncus sapien elementum vel. Suspendisse potenti. Donec semper dapibus nisl et pellentesque. Cras vel tempus.','#'),(2,'assets/img/zenith.jpg','Zenith','0000-00-00 00:00:00','Phasellus id velit ante, quis elementum elit. Donec bibendum consequat massa, sit amet rhoncus sapien elementum vel. Suspendisse potenti. Donec semper dapibus nisl et pellentesque. Cras vel tempus.','#'),(3,'assets/img/mitch.jpg','Mitch','0000-00-00 00:00:00','Phasellus id velit ante, quis elementum elit. Donec bibendum consequat massa, sit amet rhoncus sapien elementum vel. Suspendisse potenti. Donec semper dapibus nisl et pellentesque. Cras vel tempus.','#');
+/*!40000 ALTER TABLE `comments` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -52,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-07-09 13:20:25
+-- Dump completed on 2015-07-16 10:47:42
