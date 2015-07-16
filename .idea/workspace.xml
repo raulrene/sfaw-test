@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f251bc04-0e67-416a-b078-244a1a72df0a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connection.php" afterPath="$PROJECT_DIR$/connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/forms.php" afterPath="$PROJECT_DIR$/admin/forms.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/operations.php" afterPath="$PROJECT_DIR$/admin/operations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/slider.css" afterPath="$PROJECT_DIR$/assets/css/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,25 +32,52 @@
       <file leaf-file-name="forms.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/forms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="14" selection-start="5864" selection-end="5864" vertical-scroll-proportion="-22.11111" vertical-offset="1689" max-vertical-offset="3006">
+            <state line="20" column="82" selection-start="1101" selection-end="1121" vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="3006">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#7;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="operations.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/operations.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="73" selection-start="920" selection-end="920" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="2034">
+              <folding>
+                <marker date="1437048375867" expanded="true" signature="334:420" placeholder="INSERT INTO ..." />
+                <marker date="1437048375867" expanded="true" signature="587:609" placeholder="select * fro..Chapters..." />
+                <marker date="1437048375867" expanded="true" signature="1352:1461" placeholder="INSERT INTO ..." />
+                <marker date="1437048375867" expanded="true" signature="1823:1942" placeholder="INSERT INTO ..." />
+                <marker date="1437048375867" expanded="true" signature="2380:2488" placeholder="INSERT INTO ..." />
+                <marker date="1437048375867" expanded="true" signature="2991:3136" placeholder="INSERT INTO ..." />
+                <marker date="1437048375867" expanded="true" signature="3684:3851" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slider.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/slider.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="117" column="17" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.46363637" vertical-offset="1800" max-vertical-offset="2664">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="operations.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/operations.php">
+      <file leaf-file-name="delete.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="2" selection-start="3595" selection-end="3595" vertical-scroll-proportion="0.94427246" vertical-offset="1100" max-vertical-offset="1818">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="450">
               <folding>
-                <marker date="1437040144618" expanded="true" signature="229:296" placeholder="INSERT INTO ..." />
-                <marker date="1437040144618" expanded="true" signature="229:296" placeholder="INSERT INTO ..." />
-                <marker date="1437040144618" expanded="true" signature="229:315" placeholder="INSERT INTO ..." />
-                <marker date="1437040144618" expanded="true" signature="718:827" placeholder="INSERT INTO ..." />
-                <marker date="1437040144618" expanded="true" signature="1242:1361" placeholder="INSERT INTO ..." />
-                <marker date="1437040144618" expanded="true" signature="1799:1907" placeholder="INSERT INTO ..." />
-                <marker date="1437040144618" expanded="true" signature="2410:2555" placeholder="INSERT INTO ..." />
-                <marker date="1437040144618" expanded="true" signature="3103:3270" placeholder="INSERT INTO ..." />
+                <marker date="1437047619819" expanded="true" signature="323:362" placeholder="Delete from ..." />
               </folding>
             </state>
           </provider>
@@ -103,12 +134,14 @@
         <option value="$PROJECT_DIR$/migrations/10-06-2015.sql" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/includes/comm_page.php" />
-        <option value="$PROJECT_DIR$/admin/forms.php" />
         <option value="$PROJECT_DIR$/classes/sub_sub_chapter.php" />
         <option value="$PROJECT_DIR$/classes/chapter.php" />
         <option value="$PROJECT_DIR$/database/database1.php" />
+        <option value="$PROJECT_DIR$/admin/forms.php" />
         <option value="$PROJECT_DIR$/connection.php" />
+        <option value="$PROJECT_DIR$/admin/delete.php" />
         <option value="$PROJECT_DIR$/admin/operations.php" />
+        <option value="$PROJECT_DIR$/assets/css/slider.css" />
       </list>
     </option>
   </component>
@@ -175,6 +208,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,11 +343,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/course_loop.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="60" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="1134" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="232" column="35" selection-start="4869" selection-end="4869" vertical-scroll-proportion="0.0" vertical-offset="3786" max-vertical-offset="4572">
@@ -340,7 +414,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="745" selection-end="745" vertical-scroll-proportion="0.94650817" vertical-offset="335" max-vertical-offset="1080" />
+        <state line="54" column="0" selection-start="745" selection-end="745" vertical-scroll-proportion="0.94650817" vertical-offset="335" max-vertical-offset="1080">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main-content.css">
@@ -351,13 +427,6 @@
     <entry file="file://$PROJECT_DIR$/includes/main-content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="25" selection-start="3770" selection-end="3770" vertical-scroll-proportion="0.943128" vertical-offset="825" max-vertical-offset="1530" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="1" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.98267716" vertical-offset="1392" max-vertical-offset="2124">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/pagination.php">
@@ -379,7 +448,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/each_course.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="197" selection-end="208" vertical-scroll-proportion="0.1421801" vertical-offset="0" max-vertical-offset="792" />
+        <state line="5" column="33" selection-start="197" selection-end="208" vertical-scroll-proportion="0.1421801" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/links.js">
@@ -542,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/sub_chapter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="70" selection-start="42" selection-end="95" vertical-scroll-proportion="0.083591335" vertical-offset="0" max-vertical-offset="2466">
@@ -563,26 +627,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.33436534" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/forms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="14" selection-start="5864" selection-end="5864" vertical-scroll-proportion="-22.11111" vertical-offset="1689" max-vertical-offset="3006">
-          <folding />
+        <state line="20" column="82" selection-start="1101" selection-end="1121" vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="3006">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding>
+            <marker date="1437047619819" expanded="true" signature="323:362" placeholder="Delete from ..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/operations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="2" selection-start="3595" selection-end="3595" vertical-scroll-proportion="0.94427246" vertical-offset="1100" max-vertical-offset="1818">
+        <state line="21" column="73" selection-start="920" selection-end="920" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="2034">
           <folding>
-            <marker date="1437040144618" expanded="true" signature="229:296" placeholder="INSERT INTO ..." />
-            <marker date="1437040144618" expanded="true" signature="229:296" placeholder="INSERT INTO ..." />
-            <marker date="1437040144618" expanded="true" signature="229:315" placeholder="INSERT INTO ..." />
-            <marker date="1437040144618" expanded="true" signature="718:827" placeholder="INSERT INTO ..." />
-            <marker date="1437040144618" expanded="true" signature="1242:1361" placeholder="INSERT INTO ..." />
-            <marker date="1437040144618" expanded="true" signature="1799:1907" placeholder="INSERT INTO ..." />
-            <marker date="1437040144618" expanded="true" signature="2410:2555" placeholder="INSERT INTO ..." />
-            <marker date="1437040144618" expanded="true" signature="3103:3270" placeholder="INSERT INTO ..." />
+            <marker date="1437048375867" expanded="true" signature="334:420" placeholder="INSERT INTO ..." />
+            <marker date="1437048375867" expanded="true" signature="587:609" placeholder="select * fro..Chapters..." />
+            <marker date="1437048375867" expanded="true" signature="1352:1461" placeholder="INSERT INTO ..." />
+            <marker date="1437048375867" expanded="true" signature="1823:1942" placeholder="INSERT INTO ..." />
+            <marker date="1437048375867" expanded="true" signature="2380:2488" placeholder="INSERT INTO ..." />
+            <marker date="1437048375867" expanded="true" signature="2991:3136" placeholder="INSERT INTO ..." />
+            <marker date="1437048375867" expanded="true" signature="3684:3851" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="17" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.46363637" vertical-offset="1800" max-vertical-offset="2664">
+          <folding />
         </state>
       </provider>
     </entry>

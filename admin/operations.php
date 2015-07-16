@@ -1,3 +1,4 @@
+<link href="../assets/css/slider.css" type="text/css" rel="stylesheet">
 <?php
 
 include('../connection.php');
@@ -5,13 +6,22 @@ include('../connection.php');
 if(isset($_POST) && !empty($_POST)){
     switch($_POST['hidden']){
         case "chapters"     :
+            $table = 'Chapters';
             $ch_name = $_POST['ch_name'];
             $url = $_POST['url'];
             $q = "INSERT INTO Chapters (chapter_name,url)
                   VALUES  ('$ch_name', '$url')
             ";
             if ($conn->query($q) === TRUE) {
-                echo "New record created successfully";
+                echo "New record created successfully <br />now table looks like:";
+                $q = "select * from Chapters ";
+                $data = $conn->query($q);
+                echo '<ul>';
+                foreach ($data as $row){
+                    echo '<li style="font-size:20px">'.$row['id'] .' -> '.$row['chapter_name'].' | '.$row['url'].'</li>';
+                    echo '<a class="fg-button teal" href="">Edit</a>&nbsp<a class="button large primary" href="delete.php?id='.$row['id'].'&table='.$table.'">Delete</a>';
+                }
+                echo '</ul>';
             } else {
                 echo "Error: " . $q . "<br>" . $conn->error;
             }
@@ -24,7 +34,9 @@ if(isset($_POST) && !empty($_POST)){
                   VALUES  ('$ch_id', '$link','$url')
             ";
             if ($conn->query($q) === TRUE) {
-                echo "New record created successfully";
+
+
+
             } else {
                 echo "Error: " . $q . "<br>" . $conn->error;
             }
