@@ -1,5 +1,5 @@
 <?php
-class SubSUbChapter{
+class SubSubChapter{
 
     private $id, $sub_ch_id, $sub_sub_ch_name,$order;
     private $table = 'sub_sub_ch';
