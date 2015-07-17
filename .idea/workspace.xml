@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f251bc04-0e67-416a-b078-244a1a72df0a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/biss.jpg" afterPath="$PROJECT_DIR$/assets/img/biss.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/dance.jpg" afterPath="$PROJECT_DIR$/assets/img/dance.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/dj.jpg" afterPath="$PROJECT_DIR$/assets/img/dj.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/harry.jpg" afterPath="$PROJECT_DIR$/assets/img/harry.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/hike.jpg" afterPath="$PROJECT_DIR$/assets/img/hike.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/image_3.jpg" afterPath="$PROJECT_DIR$/assets/img/image_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/image_4.jpg" afterPath="$PROJECT_DIR$/assets/img/image_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/image_66.png" afterPath="$PROJECT_DIR$/assets/img/image_66.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/john.png" afterPath="$PROJECT_DIR$/assets/img/john.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/marcho.jpg" afterPath="$PROJECT_DIR$/assets/img/marcho.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/mary.png" afterPath="$PROJECT_DIR$/assets/img/mary.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/mb.jpg" afterPath="$PROJECT_DIR$/assets/img/mb.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/mitch.jpg" afterPath="$PROJECT_DIR$/assets/img/mitch.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/online.jpg" afterPath="$PROJECT_DIR$/assets/img/online.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/reply_icon.png" afterPath="$PROJECT_DIR$/assets/img/reply_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/sing.jpg" afterPath="$PROJECT_DIR$/assets/img/sing.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/spa.jpg" afterPath="$PROJECT_DIR$/assets/img/spa.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/stevie.jpg" afterPath="$PROJECT_DIR$/assets/img/stevie.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/yoga.jpg" afterPath="$PROJECT_DIR$/assets/img/yoga.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/zenith.jpg" afterPath="$PROJECT_DIR$/assets/img/zenith.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/17-06-2015.sql" afterPath="$PROJECT_DIR$/migrations/17-06-2015.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/login.php" afterPath="$PROJECT_DIR$/admin/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/users.php" afterPath="$PROJECT_DIR$/classes/users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/register.php" afterPath="$PROJECT_DIR$/admin/register.php" />
     </list>
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,15 +25,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="register.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="49" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.72136223" vertical-offset="794" max-vertical-offset="1620">
+              <folding>
+                <marker date="1437148819603" expanded="true" signature="2586:2702" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="5" selection-start="2151" selection-end="2151" vertical-scroll-proportion="0.943128" vertical-offset="429" max-vertical-offset="1584">
+            <state line="42" column="18" selection-start="1674" selection-end="1674" vertical-scroll-proportion="-12.111111" vertical-offset="429" max-vertical-offset="1584">
               <folding>
-                <element signature="e#603#676#0" expanded="true" />
-                <element signature="e#691#787#0" expanded="true" />
                 <marker date="1437147190319" expanded="true" signature="1994:2057" placeholder="SELECT * FRO..users..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="operations.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/operations.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="60" selection-start="1190" selection-end="1229" vertical-scroll-proportion="-14.777778" vertical-offset="69" max-vertical-offset="3294">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,13 +113,13 @@
         <option value="$PROJECT_DIR$/admin/edit.php" />
         <option value="$PROJECT_DIR$/classes/users.php" />
         <option value="$PROJECT_DIR$/migrations/17-06-2015.sql" />
-        <option value="$PROJECT_DIR$/admin/register.php" />
         <option value="$PROJECT_DIR$/admin/login/config.php" />
         <option value="$PROJECT_DIR$/admin/login/index-home.php" />
         <option value="$PROJECT_DIR$/admin/login/index.php" />
         <option value="$PROJECT_DIR$/admin/login/login.php" />
         <option value="$PROJECT_DIR$/admin/login/functii.php" />
         <option value="$PROJECT_DIR$/admin/login.php" />
+        <option value="$PROJECT_DIR$/admin/register.php" />
       </list>
     </option>
   </component>
@@ -250,7 +244,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19755103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19755103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -563,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="58" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.94427246" vertical-offset="2" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="0" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-49.074074" vertical-offset="7" max-vertical-offset="1476">
@@ -584,20 +571,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="18" selection-start="1674" selection-end="1674" vertical-scroll-proportion="-12.111111" vertical-offset="429" max-vertical-offset="1584">
+          <folding>
+            <marker date="1437147190319" expanded="true" signature="1994:2057" placeholder="SELECT * FRO..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/operations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.943128" vertical-offset="69" max-vertical-offset="3294">
+        <state line="26" column="60" selection-start="1190" selection-end="1229" vertical-scroll-proportion="-14.777778" vertical-offset="69" max-vertical-offset="3294">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/login.php">
+    <entry file="file://$PROJECT_DIR$/admin/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="5" selection-start="2151" selection-end="2151" vertical-scroll-proportion="0.943128" vertical-offset="429" max-vertical-offset="1584">
+        <state line="70" column="49" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.72136223" vertical-offset="794" max-vertical-offset="1620">
           <folding>
-            <element signature="e#603#676#0" expanded="true" />
-            <element signature="e#691#787#0" expanded="true" />
-            <marker date="1437147190319" expanded="true" signature="1994:2057" placeholder="SELECT * FRO..users..." />
+            <marker date="1437148819603" expanded="true" signature="2586:2702" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
