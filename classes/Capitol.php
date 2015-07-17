@@ -10,14 +10,13 @@ include('config/config.php');
 class Capitol {
     private $id;
     private $numeCapitol;
-    private $url;
     private $order;
 
+    private $table = 'capitol';
 
-    public function getCapitole(){
+    public function getCapitolAll(){
         global $db;
-
-        $data = $db->fetch_all('Select * from capitol');
+        $data = $db->fetch_rows("Select * from $this->table");
 
         return $data;
     }
@@ -25,7 +24,7 @@ class Capitol {
     public function getCapitol($id){
         global $db;
 
-        $data = $db->fetch_all('Select * from capitol where id =' . $id);
+        $data = $db->fetch_row("Select * from $this->table where id =" . $id);
 
         return $data;
     }

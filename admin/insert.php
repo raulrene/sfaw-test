@@ -25,7 +25,8 @@
                     </div>
 
                     <br>
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
@@ -52,7 +53,8 @@
                     </div>
 
                     <br>
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
@@ -73,7 +75,8 @@
                     </div>
 
                     <br>
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
@@ -94,7 +97,8 @@
                     </div>
 
                     <br>
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
@@ -121,7 +125,8 @@
                     </div>
 
                     <br>
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
@@ -150,7 +155,8 @@
                         <input type="text" placeholder="stars" size="30" value="" name="stars">
                     </div>
                     <br>
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
@@ -180,7 +186,8 @@
                     </div>
 
                     <br>
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
@@ -210,7 +217,8 @@
                     </div>
 
                     <br>
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
@@ -230,7 +238,8 @@
                         <input type="text" placeholder="about_text" size="30" value="" name="about_text">
                     </div>
 
-                    <input type="submit" class="button medium">
+                    <input type="submit" value="Insert" name="insert" class="button medium">
+                    <input type="submit" value="Edit" name="edit" class="button medium">
                 </form>
             </div>
         </div>
