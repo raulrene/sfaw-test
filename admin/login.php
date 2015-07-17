@@ -54,13 +54,14 @@ if(isset($_POST)){
         $q = "SELECT * FROM users WHERE name = '$name' AND password = '$pass'";
         $result = $conn->query($q);
 
-        if(mysqli_num_rows($conn,$result) == 1){
+        if($result->num_rows == 1){
              echo 'succesfully logged in';
              session_start();
              $info = array(
                  'username'     => $name,
                  'loggedin'     => TRUE,
                  'loginDate'    => time(),
+                 'lastlogged'   => time(),
                  'ip'           => $_SERVER[ 'REMOTE_ADDR' ],
                  'via'          => 'form',
                  'keepLoggedIn' => $keep

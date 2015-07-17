@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f251bc04-0e67-416a-b078-244a1a72df0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/register.php" afterPath="$PROJECT_DIR$/admin/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/login.php" afterPath="$PROJECT_DIR$/admin/login.php" />
     </list>
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="register.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="49" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.72136223" vertical-offset="794" max-vertical-offset="1620">
+            <state line="70" column="49" selection-start="2822" selection-end="2822" vertical-scroll-proportion="-17.25926" vertical-offset="794" max-vertical-offset="1620">
               <folding>
                 <marker date="1437148819603" expanded="true" signature="2586:2702" placeholder="INSERT INTO ..." />
               </folding>
@@ -36,12 +36,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="18" selection-start="1674" selection-end="1674" vertical-scroll-proportion="-12.111111" vertical-offset="429" max-vertical-offset="1584">
+            <state line="63" column="42" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.6540284" vertical-offset="720" max-vertical-offset="1602">
               <folding>
-                <marker date="1437147190319" expanded="true" signature="1994:2057" placeholder="SELECT * FRO..users..." />
+                <marker date="1437150028895" expanded="true" signature="1994:2057" placeholder="SELECT * FRO..users..." />
               </folding>
             </state>
           </provider>
@@ -118,8 +118,8 @@
         <option value="$PROJECT_DIR$/admin/login/index.php" />
         <option value="$PROJECT_DIR$/admin/login/login.php" />
         <option value="$PROJECT_DIR$/admin/login/functii.php" />
-        <option value="$PROJECT_DIR$/admin/login.php" />
         <option value="$PROJECT_DIR$/admin/register.php" />
+        <option value="$PROJECT_DIR$/admin/login.php" />
       </list>
     </option>
   </component>
@@ -235,7 +235,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="24" width="1225" height="776" extended-state="6" />
+    <frame x="55" y="24" width="1225" height="776" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -571,15 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="1674" selection-end="1674" vertical-scroll-proportion="-12.111111" vertical-offset="429" max-vertical-offset="1584">
-          <folding>
-            <marker date="1437147190319" expanded="true" signature="1994:2057" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/operations.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="60" selection-start="1190" selection-end="1229" vertical-scroll-proportion="-14.777778" vertical-offset="69" max-vertical-offset="3294">
@@ -589,9 +580,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="49" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.72136223" vertical-offset="794" max-vertical-offset="1620">
+        <state line="70" column="49" selection-start="2822" selection-end="2822" vertical-scroll-proportion="-17.25926" vertical-offset="794" max-vertical-offset="1620">
           <folding>
             <marker date="1437148819603" expanded="true" signature="2586:2702" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="42" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.6540284" vertical-offset="720" max-vertical-offset="1602">
+          <folding>
+            <marker date="1437150028895" expanded="true" signature="1994:2057" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
