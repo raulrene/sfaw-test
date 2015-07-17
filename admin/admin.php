@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,7 +10,7 @@
 			<div class="form">
 			<form class="index_form" action="operations.php" method="post" >
 			<h3>Index</h3>
-			<input type="hidden" name="hidden" value="index_f" />
+			<input type="hidden" name="hidden" value="index" />
 				<span>Title:</span><br/>
 				<input class= "input_form" type="text" name="title_index"/><br/>
 				<span>Name:</span><br/>
@@ -22,7 +21,8 @@
 				<input class= "input_form" type="text" name="img_index"/><br/>
 				<span>Tag:</span><br/>
 				<input class= "input_form" type="text" name="tag_index"/><br/>
-				<input class= "submit" type="submit" name="submit_index" value="Update"/>
+				<input class= "submit" type="submit" name="add" value="Add"/>
+				<input class= "submit" type="submit" name="update" value="Update"/>
 			</form>
 				<form class="index_form" action="operations.php" method="post">
 					<h3>Courses</h3>
@@ -39,7 +39,8 @@
 					<input class= "input_form" type="text" name="user_courses"/><br/>
 					<span>Stars:</span><br/>
 					<input class= "input_form" type="text" name="stars_courses"/><br/>
-					<input class= "submit" type="submit" name="submit_courses" value="Update"/>
+					<input class= "submit" type="submit" name="add" value="Add"/>
+					<input class= "submit" type="submit" name="update" value="Update"/>
 				</form>
 				<form class="index_form" action="operations.php" method="post">
 					<h3>Capitol</h3>
@@ -48,7 +49,8 @@
 					<input class= "input_form" type="text" name="capitol_capitol"/><br/>
 					<span>URL:</span><br/>
 					<input class= "input_form" type="text" name="url_capitol"/><br/>
-					<input class= "submit" type="submit" name="submit_capitol" value="Update"/>
+					<input class= "submit" type="submit" name="add" value="Add"/>
+					<input class= "submit" type="submit" name="update" value="Update"/>
 				</form>
 				<form class="index_form" action="operations.php" method="post">
 					<h3>Subcapitol</h3>
@@ -57,7 +59,8 @@
 					<input class= "input_form" type="text" name="subcapitol_subcapitol"/><br/>
 					<span>Id Capitol:</span><br/>
 					<input class= "input_form" type="text" name="id_capitol_subcapitol"/><br/>
-					<input class= "submit" type="submit" name="submit_subcapitol" value="Update"/>
+					<input class= "submit" type="submit" name="add" value="Add"/>
+					<input class= "submit" type="submit" name="update" value="Update"/>
 				</form>
 			</div>
 			<div class="form">
@@ -72,7 +75,8 @@
 					<input class= "input_form" type="text" name="text_3_content"/><br/>
 					<span>Id Subcapitol:</span><br/>
 					<input class= "input_form" type="text" name="sub_capitol_id"/><br/>
-					<input class= "submit" type="submit" name="submit_content" value="Update"/>
+					<input class= "submit" type="submit" name="add" value="Add"/>
+					<input class= "submit" type="submit" name="update" value="Update"/>
 				</form>
 				<form class="index_form" action="operations.php" method="post">
 					<h3>Comments</h3>
@@ -85,7 +89,8 @@
 					<input class= "input_form" type="text" name="date_comments"/><br/>
 					<span>Comment:</span><br/>
 					<input class= "input_form" type="text" name="comment_comments"/><br/>
-					<input class= "submit" type="submit" name="submit_comments" value="Update"/>
+					<input class= "submit" type="submit" name="add" value="Add"/>
+					<input class= "submit" type="submit" name="update" value="Update"/>
 				</form>
 				<form class="index_form" action="operations.php" method="post">
 					<h3>Replies</h3>
@@ -100,7 +105,8 @@
 					<input class= "input_form" type="text" name="reply_replies"/><br/>
 					<span>Id Comments:</span><br/>
 					<input class= "input_form" type="text" name="id_comment_replies"/><br/>
-					<input class= "submit" type="submit" name="submit_replies" value="Update"/>
+					<input class= "submit" type="submit" name="add" value="Add"/>
+					<input class= "submit" type="submit" name="update" value="Update"/>
 				</form>
 			</div>
 		</div>

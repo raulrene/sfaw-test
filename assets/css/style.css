@@ -438,9 +438,44 @@ body{
 	background-color:#aa99cc;
 	display:block;
 	height:35px;
-	width:100px;
+	width:80px;
 	color:#fff;
 	font-size:20px;
 	border-radius:5px;
 	margin-top:15px;
+	float:left;
+	margin-right:10px;
+}
+
+.submit:hover {
+	cursor:pointer;
+}
+#tabel{
+	margin:20px;
+}
+#tabel td {
+	text-align:center;
+	border:1px solid black;
+	
+}
+
+.container_tabel {
+	text-align:center;
+	width:33%;
+}
+
+.delete {
+	background-color:#aa99cc;
+	display:block;
+	height:35px;
+	width:80px;
+	color:#fff;
+	font-size:20px;
+	border-radius:5px;
+	margin:20px 0 50px 100px;	
+	float:left;
+}
+
+.delete:hover {
+	cursor:pointer;
 }

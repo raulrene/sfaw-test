@@ -1,19 +1,23 @@
-﻿<?php
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+	</head>
+	<body>
+<?php
 $host = "localhost";
 $user = "root";
 $password = "";
 $database = "primarydb";
-
 $conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
-
-var_dump($_POST);
-
+//var_dump($_POST);
+if (isset ($_POST['add'])){
 if (isset($_POST) && !empty($_POST)){
 	switch($_POST['hidden']){
-		case "index_f":
+		case "index":
 		$index_title = $_POST['title_index'];
 		$index_name = $_POST['name_index'];
 		$index_text = $_POST['text_index'];
@@ -123,34 +127,134 @@ if (isset($_POST) && !empty($_POST)){
 		
 		
 	}
-	
+
 } 
+}
+else {
+	if(isset($_POST['update'])){
+		if (isset($_POST) && !empty($_POST)){
+			switch($_POST['hidden']){
+			case "index":
+		$query_edit = "SELECT * FROM `index`";
+		$data = mysqli_query($conn, $query_edit);
+		echo '<div class="container_tabel">';
+		echo "<h4>INDEX</h4>";
+		echo '<table id="tabel">';
+			echo '<tr></tr>';
+			echo '<tr>';
+				echo '<td>ID</td>';
+				echo '<td>NAME</td>';
+				echo '<td>TITLE</td>';
+				echo '<td>IMG</td>';
+				echo '<td>TEXT</td>';
+				echo '<td>TAG</td>';
+			echo '</tr>';
+			echo '<form "index_form" action="delete.php" method="post">';
+			echo'<input type="hidden" name="hidden" value="index" />';
+			 foreach ($data as $row){
+			echo '<tr>';
+			echo '<td width="30px" align="center"><input class= "input_form" type="text" name="id" value="' . $row['id'] . '"/></td>';
+			echo '<td width="120px" align="center"><input class= "input_form" type="text" name="name" value="' . $row['name'] . '"/></td>';
+			echo '<td width="120px" align="center"><input class= "input_form" type="text" name="title" value="' . $row['title'] . '"/></td>';
+			echo '<td width="120px" align="center"><input class= "input_form" type="text" name="img" value="' . $row['img'] . '"/></td>';
+			echo '<td width="120px" align="center"><input class= "input_form" type="text" name="text" value="' . $row['text'] . '"/></td>';
+			echo '<td><input class= "input_form" type="text" name="tag" value="' . $row['tag'] . '"/></td></tr>';}
+		echo '</table>';
+		echo '<span>Delete by id:</span>';
+		echo '<input type="hidden" name="hidden" value="index" />';
+		echo '<input class= "input_form" type="text" name="id_index"/><br/>';
+		echo '<input class="delete" type="submit" name="delete" value="Delete" />';
+		echo '<input class="delete" type="submit" name="edit" value="Edit" />';
+		echo '</form>';
+			echo '</div>';
+		break;
+		
+			case "courses":
+			$query_edit = "SELECT * FROM `courses`";
+			$data = mysqli_query($conn, $query_edit);
+			echo '<div class="container_tabel">';
+			echo "<h4>COURSES</h4>";
+			echo '<table id="tabel">';
+			echo '<tr></tr>';
+			echo '<tr>';
+			echo '<td>ID</td>';
+			echo '<td>NAME</td>';
+			echo '<td>PRICE</td>';
+			echo '<td>IMG</td>';
+			echo '<td>AUTHOR</td>';
+			echo '<td>USERS</td>';
+			echo '<td>STARS</td>';
+			echo '</tr>';
+			echo '<form "index_form" action="delete.php" method="post">';
+			foreach ($data as $row){
+				echo '<tr>';
+				echo '<td width="30px" align="center">' .  $row['id'] . '</td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="name" value="' . $row['name'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="price" value="' . $row['price'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="img" value="' . $row['img'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="author" value="' . $row['author'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="users" value="' . $row['users'] . '"/></td>';
+				echo '<td><input class= "input_form" type="text" name="stars" value="' . $row['stars'] . '"/></td></tr>';}
+			echo '</table>';
+			echo '<span>Delete by id:</span>';
+			echo '<input type="hidden" name="hidden" value="courses" />';
+			echo '<input class= "input_form" type="text" name="id"/><br/>';
+			echo '<input class="delete" type="submit" name="delete" value="delete" />';
+			echo '<input class="delete" type="submit" name="edit" value="edit" />';
+			echo '</form>';
+			echo '</div>';
+			break;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+	}	
+}
+}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
+	
+	
+	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
+	
+	
+	

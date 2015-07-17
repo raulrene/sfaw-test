@@ -27,6 +27,61 @@ class Courses {
     }
 
 
+    public function insertCourse($name,$price,$img,$author,$users,$stars) {
+        global $db;
+        $result = $db->query("
+            INSERT INTO `courses`
+                (`name`, `price`, `img`, `author`, `users`, `stars`)
+            VALUES
+                ('$name', '$price', '$img', '$author', '$users', '$stars')
+        ");
+
+        if(!$result) {
+            return false;
+        }
+
+        return $db->insert_id;
+    }
+
+    public function updateCourse($id, $name,$price,$img,$author,$users,$stars) {
+        global $db;
+        $result = $db->query("
+            UPDATE `courses`
+                SET
+                    name = '$name',
+                    price = '$price',
+                    img = '$img',
+                    author = '$author',
+                    users = '$users',
+                    stars = '$stars'
+            WHERE
+                id = '$id'
+        ");
+
+        if(!$result) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function deleteCourse($id) {
+        global $db;
+        $result = $db->query("
+            DELETE
+            FROM `courses`
+            WHERE
+                id = '$id'
+        ");
+
+        if(!$result) {
+            return false;
+        }
+
+        return true;
+    }
+
+
     public function getId()
     {
         return $this->id;
