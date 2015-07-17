@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c782e35-77d9-4673-9e17-a1bcd75ddadf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Capitol.php" afterPath="$PROJECT_DIR$/classes/Capitol.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/insert.php" afterPath="$PROJECT_DIR$/admin/insert.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/operations.php" afterPath="$PROJECT_DIR$/admin/operations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4c782e35-77d9-4673-9e17-a1bcd75ddadf" name="Default" comment="" />
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
