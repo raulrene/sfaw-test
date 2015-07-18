@@ -424,6 +424,7 @@ body{
 	margin-right:100px;
 }
 
+
 .form_wrap {
 	margin:40px;
 }
@@ -432,6 +433,7 @@ body{
 	border-radius:5px;
 	margin:8px 0;
 	height:20px;
+	width:150px;
 }
 
 .submit {
@@ -450,10 +452,10 @@ body{
 .submit:hover {
 	cursor:pointer;
 }
-#tabel{
+.tabel{
 	margin:20px;
 }
-#tabel td {
+.tabel td {
 	text-align:center;
 	border:1px solid black;
 	
@@ -479,3 +481,5 @@ body{
 .delete:hover {
 	cursor:pointer;
 }
+
+.index

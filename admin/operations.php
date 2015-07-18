@@ -139,7 +139,8 @@ else {
 		$data = mysqli_query($conn, $query_edit);
 		echo '<div class="container_tabel">';
 		echo "<h4>INDEX</h4>";
-		echo '<table id="tabel">';
+		 foreach ($data as $row){
+		echo '<table class="tabel">';
 			echo '<tr></tr>';
 			echo '<tr>';
 				echo '<td>ID</td>';
@@ -149,23 +150,21 @@ else {
 				echo '<td>TEXT</td>';
 				echo '<td>TAG</td>';
 			echo '</tr>';
-			echo '<form "index_form" action="delete.php" method="post">';
-			echo'<input type="hidden" name="hidden" value="index" />';
-			 foreach ($data as $row){
+			
+			echo '<form class = "index_form" action="delete.php" method="post">';
 			echo '<tr>';
+			
+			echo'<input type="hidden" name="hidden" value="index" />';
 			echo '<td width="30px" align="center"><input class= "input_form" type="text" name="id" value="' . $row['id'] . '"/></td>';
 			echo '<td width="120px" align="center"><input class= "input_form" type="text" name="name" value="' . $row['name'] . '"/></td>';
 			echo '<td width="120px" align="center"><input class= "input_form" type="text" name="title" value="' . $row['title'] . '"/></td>';
 			echo '<td width="120px" align="center"><input class= "input_form" type="text" name="img" value="' . $row['img'] . '"/></td>';
 			echo '<td width="120px" align="center"><input class= "input_form" type="text" name="text" value="' . $row['text'] . '"/></td>';
-			echo '<td><input class= "input_form" type="text" name="tag" value="' . $row['tag'] . '"/></td></tr>';}
+			echo '<td><input class= "input_form" type="text" name="tag" value="' . $row['tag'] . '"/></td></tr>';
 		echo '</table>';
-		echo '<span>Delete by id:</span>';
-		echo '<input type="hidden" name="hidden" value="index" />';
-		echo '<input class= "input_form" type="text" name="id_index"/><br/>';
 		echo '<input class="delete" type="submit" name="delete" value="Delete" />';
 		echo '<input class="delete" type="submit" name="edit" value="Edit" />';
-		echo '</form>';
+			echo '</form>';}
 			echo '</div>';
 		break;
 		
@@ -174,36 +173,191 @@ else {
 			$data = mysqli_query($conn, $query_edit);
 			echo '<div class="container_tabel">';
 			echo "<h4>COURSES</h4>";
-			echo '<table id="tabel">';
-			echo '<tr></tr>';
-			echo '<tr>';
-			echo '<td>ID</td>';
-			echo '<td>NAME</td>';
-			echo '<td>PRICE</td>';
-			echo '<td>IMG</td>';
-			echo '<td>AUTHOR</td>';
-			echo '<td>USERS</td>';
-			echo '<td>STARS</td>';
-			echo '</tr>';
-			echo '<form "index_form" action="delete.php" method="post">';
 			foreach ($data as $row){
+				echo '<table class="tabel">';
+				echo '<tr></tr>';
 				echo '<tr>';
-				echo '<td width="30px" align="center">' .  $row['id'] . '</td>';
+				echo '<td>ID</td>';
+				echo '<td>NAME</td>';
+				echo '<td>PRICE</td>';
+				echo '<td>IMG</td>';
+				echo '<td>AUTHOR</td>';
+				echo '<td>USERS</td>';
+				echo '<td>STARS</td>';
+				echo '</tr>';
+				
+				echo '<form class="index_form" action="delete.php" method="post" >';
+				echo '<tr>';
+				
+				echo'<input type="hidden" name="hidden" value="courses" />';
+				echo '<td width="30px" align="center"><input class= "input_form" type="text" name="id" value="' . $row['id'] . '"/></td>';
 				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="name" value="' . $row['name'] . '"/></td>';
 				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="price" value="' . $row['price'] . '"/></td>';
 				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="img" value="' . $row['img'] . '"/></td>';
 				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="author" value="' . $row['author'] . '"/></td>';
-				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="users" value="' . $row['users'] . '"/></td>';
-				echo '<td><input class= "input_form" type="text" name="stars" value="' . $row['stars'] . '"/></td></tr>';}
-			echo '</table>';
-			echo '<span>Delete by id:</span>';
-			echo '<input type="hidden" name="hidden" value="courses" />';
-			echo '<input class= "input_form" type="text" name="id"/><br/>';
-			echo '<input class="delete" type="submit" name="delete" value="delete" />';
-			echo '<input class="delete" type="submit" name="edit" value="edit" />';
-			echo '</form>';
+				echo '<td><input class= "input_form" type="text" name="users" value="' . $row['users'] . '"/></td>';
+				echo '<td><input class= "input_form" type="text" name="stars" value="' . $row['stars'] . '"/></td></tr>';
+				echo '</table>';
+				echo '<input class="delete" type="submit" name="delete" value="Delete" />';
+				echo '<input class="delete" type="submit" name="edit" value="Edit" />';
+			echo '</form>';}
 			echo '</div>';
 			break;
+			
+			case "capitol":
+			$query_edit = "SELECT * FROM `capitol`";
+			$data = mysqli_query($conn, $query_edit);
+			echo '<div class="container_tabel">';
+			echo "<h4>CAPITOL</h4>";
+			foreach ($data as $row){
+				echo '<table class="tabel">';
+				echo '<tr></tr>';
+				echo '<tr>';
+				echo '<td>ID</td>';
+				echo '<td>CAPITOL</td>';
+				echo '<td>URL</td>';
+				echo '</tr>';	
+				echo '<form class="index_form" action="delete.php" method="post" >';
+				echo '<tr>';	
+				echo'<input type="hidden" name="hidden" value="capitol" />';
+				echo '<td width="30px" align="center"><input class= "input_form" type="text" name="id" value="' . $row['id'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="capitol" value="' . $row['capitol'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="url" value="' . $row['url'] . '"/></td></tr>';
+				echo '</table>';
+				echo '<input class="delete" type="submit" name="delete" value="Delete" />';
+				echo '<input class="delete" type="submit" name="edit" value="Edit" />';
+			echo '</form>';}
+			echo '</div>';
+			break;
+			
+			case "subcapitol":
+			$query_edit = "SELECT * FROM `sub_capitol`";
+			$data = mysqli_query($conn, $query_edit);
+			echo '<div class="container_tabel">';
+			echo "<h4>UBCAPITOL</h4>";
+			foreach ($data as $row){
+				echo '<table class="tabel">';
+				echo '<tr></tr>';
+				echo '<tr>';
+				echo '<td>ID</td>';
+				echo '<td>ID CAPITOL</td>';
+				echo '<td>URL</td>';
+				echo '</tr>';	
+				echo '<form class="index_form" action="delete.php" method="post" >';
+				echo '<tr>';	
+				echo'<input type="hidden" name="hidden" value="sub_capitol" />';
+				echo '<td width="30px" align="center"><input class= "input_form" type="text" name="id" value="' . $row['id'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="sub_capitol" value="' . $row['sub_capitol'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="capitol_id" value="' . $row['capitol_id'] . '"/></td></tr>';
+				echo '</table>';
+				echo '<input class="delete" type="submit" name="delete" value="Delete" />';
+				echo '<input class="delete" type="submit" name="edit" value="Edit" />';
+			echo '</form>';}
+			echo '</div>';
+			break;
+			
+			case "content":
+			$query_edit = "SELECT * FROM `content`";
+			$data = mysqli_query($conn, $query_edit);
+			echo '<div class="container_tabel">';
+			echo "<h4>CONTENT</h4>";
+			foreach ($data as $row){
+				echo '<table class="tabel">';
+				echo '<tr></tr>';
+				echo '<tr>';
+				echo '<td>ID</td>';
+				echo '<td>TEXT 1</td>';
+				echo '<td>TEXT 2</td>';
+				echo '<td>TEXT 3</td>';
+				echo '<td>ID SUBCAPITOL</td>';
+				echo '</tr>';
+				
+				echo '<form class = "index_form" action="delete.php" method="post">';
+				echo '<tr>';
+				
+				echo'<input type="hidden" name="hidden" value="content" />';
+				echo '<td width="30px" align="center"><input class= "input_form" type="text" name="id" value="' . $row['id'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="text_1" value="' . $row['text_1'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="text_2" value="' . $row['text_2'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="text_3" value="' . $row['text_3'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="sub_capitol_id" value="' . $row['sub_capitol_id'] . '"/></td>';
+				echo '</table>';
+				echo '<input class="delete" type="submit" name="delete" value="Delete" />';
+				echo '<input class="delete" type="submit" name="edit" value="Edit" />';
+			echo '</form>';}
+			echo '</div>';
+			break;
+			
+			case "comments":
+			$query_edit = "SELECT * FROM `comments`";
+			$data = mysqli_query($conn, $query_edit);
+			echo '<div class="container_tabel">';
+			echo "<h4>COMMENTS</h4>";
+			foreach ($data as $row){
+				echo '<table class="tabel">';
+				echo '<tr></tr>';
+				echo '<tr>';
+				echo '<td>ID</td>';
+				echo '<td>IMG</td>';
+				echo '<td>NAME</td>';
+				echo '<td>DATE</td>';
+				echo '<td>COMMENT</td>';
+				echo '</tr>';
+				
+				echo '<form class = "index_form" action="delete.php" method="post">';
+				echo '<tr>';
+				
+				echo'<input type="hidden" name="hidden" value="comments" />';
+				echo '<td width="30px" align="center"><input class= "input_form" type="text" name="id" value="' . $row['id'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="img" value="' . $row['img'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="name" value="' . $row['name'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="date" value="' . $row['date'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="comment" value="' . $row['comment'] . '"/></td>';
+				echo '</table>';
+				echo '<input class="delete" type="submit" name="delete" value="Delete" />';
+				echo '<input class="delete" type="submit" name="edit" value="Edit" />';
+			echo '</form>';}
+			echo '</div>';
+			break;
+			
+			
+			case "replies":
+			$query_edit = "SELECT * FROM `replies`";
+			$data = mysqli_query($conn, $query_edit);
+			echo '<div class="container_tabel">';
+			echo "<h4>REPLIES</h4>";
+			foreach ($data as $row){
+				echo '<table class="tabel">';
+				echo '<tr></tr>';
+				echo '<tr>';
+				echo '<td>ID</td>';
+				echo '<td>IMG</td>';
+				echo '<td>NAME</td>';
+				echo '<td>DATE</td>';
+				echo '<td>REPLY</td>';
+				echo '<td>COMMENT ID</td>';
+				echo '</tr>';
+				
+				echo '<form class = "index_form" action="delete.php" method="post">';
+				echo '<tr>';
+				
+				echo'<input type="hidden" name="hidden" value="replies" />';
+				echo '<td width="30px" align="center"><input class= "input_form" type="text" name="id" value="' . $row['id'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="img" value="' . $row['img'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="name" value="' . $row['name'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="date" value="' . $row['date'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="reply" value="' . $row['reply'] . '"/></td>';
+				echo '<td width="120px" align="center"><input class= "input_form" type="text" name="comment_id" value="' . $row['comment_id'] . '"/></td>';
+				echo '</table>';
+				echo '<input class="delete" type="submit" name="delete" value="Delete" />';
+				echo '<input class="delete" type="submit" name="edit" value="Edit" />';
+			echo '</form>';}
+			echo '</div>';
+			break;
+			
+			
+			
+		
 		
 		
 		
