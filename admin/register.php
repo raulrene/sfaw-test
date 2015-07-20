@@ -16,21 +16,50 @@
  */
 include_once('../config/config-old.php');
 
-if(isset($_POST)){
-    if( !empty($_POST['name']) &&
-        !empty($_POST['email']) &&
-        !empty($_POST['pass']) &&
-        !empty($_POST['pass_retyped']) ){
-        function clean_data($data) {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+if(isset($_POST) && !empty($_POST)){
+    $user_name    = "";
+    $email   = "";
+    $user_password    = "";
+    $pass_retyped  = "";
+    if( !empty($_POST['name']))
+        {
+            $user_name    = test_input($_POST['name']);
+            if (!preg_match("/^[a-zA-Z ]*$/",$user_name)) {
+                $nameErr = "Only letters and white space allowed";
+            }
+
         }
-        $user_name    = clean_data($_POST['name']);
-        $email   = clean_data($_POST['email']);
-        $user_password    = clean_data($_POST['pass']);
-        $pass_retyped  = clean_data($_POST['pass_retyped']);
+    else echo "Name can't be empty <br>";
+
+    if(!empty($_POST['email'])){
+        $email   = test_input($_POST['email']);
+        if (!preg_match("/^[a-zA-Z ]*$/",$email)) {
+            $nameErr = "Only letters and white space allowed";
+        }
+    }else echo "email can't be empty <br>";
+    if(!empty($_POST['pass'])){
+        $user_password    = test_input($_POST['pass']);
+        if (!preg_match("/^[a-zA-Z ]*$/",$user_password)) {
+            $nameErr = "Only letters and white space allowed";
+        }
+    }else
+        echo "password can't be empty <br>";
+
+    if(!empty($_POST['pass_retyped'])){
+        $pass_retyped  = test_input($_POST['pass_retyped']);
+        if (!preg_match("/^[a-zA-Z ]*$/",$pass_retyped)) {
+            $nameErr = "Only letters and white space allowed";
+        }
+    }else
+        echo "password can't be empty <br>";
+
         if($user_password == $pass_retyped){
 
             $user_password = sha1($user_password);
@@ -46,10 +75,8 @@ if(isset($_POST)){
         }else{
             echo 'passwords must match';
         }
-    }else{
-        echo 'please fill in fields !';
-    }
-}
+
+}else{}
 
 ?>
     <div class="loginForm">
