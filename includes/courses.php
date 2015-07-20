@@ -1,47 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset = "utf-8">
-	<title>Academy-Learning</title>
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">	
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]--> 	
-</head>
-<body>
-	<!-- begin  header  -->
-	<div id="header">
-		<div id="header_content">
-			<div id="logo">
-				<a href="#">
-					<img src="img/logo.png" alt="logo"/>
-				</a>
-			</div>
-			<div id="option">
-
-				<div class="search">
-					<input type="text" name="search" size="10" />
-					<i class="fa fa-search"></i>
-				</div>
-				<div class="login"><i class="fa fa-key"> Sign in</i></div>
-				<div class="register"><i class="fa fa-user"></i> Register</div>
-			</div>	
-			<div class="nav">
-				<ul>
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Courses</a></li>
-					<li><a href="#">Plans</a></li>
-				</ul>
-			</div>
-			<div class="clear"></div>	
-		</div>
-	</div>
-	<!-- end header  -->
-
-
-	
 	<!-- courses section header  -->
 	<h1>Popular courses</h1>
 	<!-- courses section  -->
@@ -52,7 +8,7 @@
 				<!-- course first section img -->
 				<div class="col-img">
 					<a href="#">
-						<img alt="cook" src="img/cook.jpg">
+						<img alt="cook" src="assets/img/cook.jpg">
 					</a>
 				</div>
 				<div class="crs-price">
@@ -72,13 +28,13 @@
 						<a class="author" href="#">Steven Granger</a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="img/user_icon.png" alt="user"/> 12</div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user"/> 12</div>
 						<div class="crs-star">
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-off.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-off.png" alt="star"/>
 						</div>
 					</footer>
 					<div class="clear"></div>
@@ -92,7 +48,7 @@
 				<!-- course second section image  -->
 				<div class="col-img">
 					<a href="#">
-						<img  alt="fittness" src="img/fitt.jpg">
+						<img  alt="fittness" src="assets/img/fitt.jpg">
 					</a>
 				</div>
 				<!-- course second section price div  -->
@@ -113,13 +69,13 @@
 						<a class="author" href="#">Mark Blackwood</a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="img/user_icon.png" alt="user"/> 12</div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user"/> 12</div>
 						<div class="crs-star">
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-off.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-off.png" alt="star"/>
 						</div>
 					</footer>
 					<div class="clear"></div>
@@ -133,7 +89,7 @@
 				<!-- course third section image  -->
 				<div class="col-img">
 					<a href="#">
-						<img  alt="picture" src="img/picc.jpg">
+						<img  alt="picture" src="assets/img/picc.jpg">
 					</a>
 				</div>
 				<!-- course third section price div  -->
@@ -154,13 +110,13 @@
 						<a class="author" href="#">Michael Lawson</a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="img/user_icon.png" alt="user" /> 12</div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user" /> 12</div>
 						<div class="crs-star">
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-off.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-off.png" alt="star"/>
 						</div>
 					</footer>
 					<div class="clear"></div>
@@ -174,7 +130,7 @@
 				<!-- course last section image  -->
 				<div class="col-img">
 					<a href="#">
-						<img alt="architect" src="img/arch.jpg">
+						<img alt="architect" src="assets/img/arch.jpg">
 					</a>
 				</div>
 				<!-- course last section price div  -->
@@ -195,13 +151,13 @@
 						<a class="author" href="#">Steven Granger</a>
 					</header>
 					<footer class="crs-footer">
-						<div class="crs-user"><img src="img/user_icon.png" alt="user"/> 12</div>
+						<div class="crs-user"><img src="assets/img/user_icon.png" alt="user"/> 12</div>
 						<div class="crs-star">
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-on.png" alt="star"/>
-							<img src="img/star-off.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-on.png" alt="star"/>
+							<img src="assets/img/star-off.png" alt="star"/>
 						</div>
 					</footer>
 					<div class="clear"></div>
@@ -212,5 +168,3 @@
 		<div class="clear"></div>					
 	</div>
 	<!-- courses section end -->
-</body>
-</html>
