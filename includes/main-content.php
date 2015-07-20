@@ -6,7 +6,7 @@ $obj = new Index();
 $data = $obj->getTag($tag);
 
 ?>
-<div class="sixcol column">
+<div class="experts_wrap">
     <h1>Top Experts</h1>
 
     <div class="experts">
@@ -55,7 +55,7 @@ $data = $obj->getTag($tag);
     </div>
 </div>
 
-<div class="sixcol column last">
+<div class="testimonials_wrap">
     <h1>Testimonials</h1>
     <div class="testimonials">
 	
@@ -69,9 +69,10 @@ $data = $obj->getTag($tag);
         <article class="testimonial">
             <div class="testimonial-image">
                 <div class="bubble-image">
-                    <img width="264" height="264" src="assets/img/avatar.jpg" class="attachment-small wp-post-image" alt="avatar_27">
+                   
                     <div class="substrate">
-                        <img src="http://themextemplates.com/demo/academy/wp-content/themes/academy/images/bgs/<?php echo $row->img;?>" alt="">
+                        <img src="assets/img/<?php echo $row->img;?>" alt="">
+						<img width="264" height="264" src="assets/img/testimonial_bg.png" class="bubble" alt="avatar_27">
                     </div>
                 </div>
             </div>

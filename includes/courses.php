@@ -4,7 +4,7 @@ $obj = new Pagination();
 $data = $obj->pagination();
 
 ?>
-	<h1>Popular courses</h1>
+	<h1 class="courses_title">Popular courses</h1>
 	<!-- courses section  -->
 
 	<div class="course-list">

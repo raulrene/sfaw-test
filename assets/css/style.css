@@ -97,7 +97,7 @@ body{
 }
 /***   course list    ***/
 .course-list{
-	padding:4px 0px 0px 4px;
+	padding:4px 0px 0px 70px;
 	overflow: auto;
 }
 /**   course list  columns  **/
@@ -106,7 +106,7 @@ body{
 	position: relative;
 	margin-right: 43px;
 	float: left;
-	width: 22%;	
+	width: 20%;	
 	height: auto;
 }
 .column_info{	
@@ -168,6 +168,10 @@ body{
 }
 .crs-star{
 	float:right;
+}
+
+.crs-star img {
+	margin:0 5px 0 0 !important;
 }
 /**   price div    **/
 .crs-price{
@@ -508,4 +512,54 @@ body{
 	width:200px;
 	margin:50px auto;
 	padding:15px;
+}
+
+.courses_title {
+	font-size:20px;
+	margin-left:70px;
+}
+
+.experts_wrap {
+	margin-left:70px;
+	float:left;
+	width:40%;
+}
+
+.experts_wrap h1 {
+	font-size:20px;
+}
+
+.testimonials_wrap{
+	float:right;
+	width:45%;
+	margin-right:30px;
+}
+
+.bubble{
+	z-index:9;
+}
+
+.comments_form{
+    margin:0px;
+    padding:0px;
+    width:45%;
+    font-size: 13px;
+    color:#444;
+}
+.form_field{
+    margin: 0px;
+    padding: 0px 10px;
+}
+.form_field input,textarea{
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(204, 204, 204, 0.4) inset;
+    color:#333;
+    margin:0px 0px 15px -10px;
+    padding:6px 9px;
+}
+.comments_form p input{
+    background: transparent;
+    border: none;
+    color:#fff;
 }

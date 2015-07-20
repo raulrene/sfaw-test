@@ -48,13 +48,21 @@ $data1 = $obj1->getAllReplies();
             </ul>
         </div>
 
-		<div class="formular_comments">
-			<form name="formular_comm" action="#" method="post">
-				<input class="input" type="text" name="name" value="Name"/><br />
-				<input class="input" type="text" name="email"value="Email"/><br />
-				<input class="input_area" type="text" name="comment" value="Comment"/><br />
-				<input type="submit" value="Add Comment" class="submit"/>
-			</form>
+		<div class="comments_form">
+        <form method="post" action="">
+            <div class="form_field">
+                <input id="author" type="text" placeholder="Name" size="30" value="" name="author">
+            </div>
+            <div class="form_field">
+                <input id="email" type="text" placeholder="Email" size="30" value="" name="email">
+					</div>
+            <div class="form_field">
+                <textarea id="comment" placeholder="Comment" rows="8" cols="45" name="comment"></textarea>
+            </div>
+            <p class="button large primary">
+                <input type="submit" value="Add Comment" name="submit" />
+            </p>
+        </form>
 		</div>
 
 

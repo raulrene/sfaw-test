@@ -20,6 +20,7 @@
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="courses.php">Courses</a></li>
 					<li><a href="comments.php">Comments</a></li>
+					<li><a href="admin/manage_content.php">Register/Login</a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>	
