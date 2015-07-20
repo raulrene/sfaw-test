@@ -1,0 +1,52 @@
+input[type=textLogin], input[type=password],input[type=email]{
+    margin: 5px;
+    padding: 0 10px;
+    width: 60%;
+    height: 34px;
+    color: #404040;
+    background: white;
+    border: 3px solid;
+    border-color: #0095cd;
+    border-radius: 2px;
+}
+input[type=textLogin]:focus, input[type=password]:focus,input[type=email]:focus {
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0; // WebKit sets this to -1 by default
+}
+
+.logbutton {
+    width: 60px;
+    height: 30px;
+    margin:8px 0px 0px 0px;
+    padding: 3px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+
+}
+.logbutton:hover {
+    text-decoration: none;
+    background: #007ead;
+}
+.logText{
+    color: #0095cd;
+}
+.loginForm {
+    background: #ffffff;
+    border: 2px solid #0095cd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 35%;
+    margin-right: 35%;
+    float:left;
+    width: 30%;
+}
