@@ -1,3 +1,79 @@
+<?php
+include_once '../connection.php';
+$name = $email = $phone = $pass = $pass_2 = '';
+$nameErr = $emailErr = $phoneErr = $passErr = $pass2Err = '';
+if(isset($_POST)){
+
+    function clean_data($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+    if(empty($_POST['name'])){
+        echo 'please fill in name filed!';
+    }else{
+        $name    = clean_data($_POST['name']);
+        if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+            $nameErr = "Only letters and white space allowed!";
+        }
+    }
+
+    if(empty($_POST['email'])){
+        echo 'email is required !';
+    }else{
+        $email   = clean_data($_POST['email']);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailErr = "Invalid email format!";
+        }
+    }
+
+    if(empty($_POST['phone'])){
+        echo 'phone is required !';
+    }else{
+        $phone   = clean_data($_POST['phone']);
+        if(!is_numeric($_POST["phone"])){
+            $phoneErr = "numbers only please!";
+        }
+    }
+
+    if(empty($_POST['pass'])){
+        echo 'password is required';
+    }else{
+        $pass    = clean_data($_POST['pass']);
+        if (!preg_match("/^[a-zA-Z ]*$/",$pass)) {
+            $passErr = "Only letters and white space allowed!";
+        }
+    }
+
+    if(empty($_POST['pass_2'])){
+        echo 'password retype is required';
+    }else{
+        $pass_2    = clean_data($_POST['pass_2']);
+        if (!preg_match("/^[a-zA-Z ]*$/",$pass_2)) {
+            $pass2Err = "Only letters and white space allowed!";
+        }
+    }
+
+    if($pass == $pass_2){
+        $pass = sha1($pass);
+
+        $q = "INSERT INTO users (name, password, email, phone)
+              VALUES ('$name', '$pass', '$email', '$phone')
+             ";
+        if($conn->query($q) == TRUE){
+            $msg = 'added success now please..';
+        }else{
+            echo "Error: " . $q . "<br>" . $conn->error;
+        }
+    }else{
+        echo 'passwords must match';
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,19 +94,19 @@
         <br />
         <form action="" method="post">
             <div class="form_field">
-                <input type="text" name="name" size="20"  placeholder="Username" required />
+                <input type="text" name="name" size="20"  placeholder="Username" required /><span><?php echo $nameErr; ?></span>
             </div>
             <div class="form_field">
-                <input type="email" name="email" size="20"  placeholder="Email" required />
+                <input type="email" name="email" size="20"  placeholder="Email" required /><span><?php echo $emailErr; ?></span>
             </div>
             <div class="form_field">
-                <input type="text" name="phone" size="20"  placeholder="Phone" required />
+                <input type="text" name="phone" size="20"  placeholder="Phone" required /><span><?php echo $phoneErr; ?></span>
             </div>
             <div class="form_field">
-                <input type="password" name="pass" size="20"  placeholder="Password" required />
+                <input type="password" name="pass" size="20"  placeholder="Password" required /><span><?php echo $passErr; ?></span>
             </div>
             <div class="form_field">
-                <input type="password" name="pass_2" size="20"  placeholder="Retype Password" required />
+                <input type="password" name="pass_2" size="20"  placeholder="Retype Password" required /><span><?php echo $pass2Err; ?></span>
             </div>
             <br /><br />
             <input type="submit" name="submit" value="Push" class="fg-button teal"/>
@@ -41,44 +117,6 @@
 </body>
 
 </html>
-<?php
-include_once '../connection.php';
-if(isset($_POST)){
-    if( !empty($_POST['name']) &&
-        !empty($_POST['email']) &&
-        !empty($_POST['phone']) &&
-        !empty($_POST['pass']) &&
-        !empty($_POST['pass_2']) ){
-            function clean_data($data) {
-                $data = trim($data);
-                $data = stripslashes($data);
-                $data = htmlspecialchars($data);
-                return $data;
-            }
-            $name    = clean_data($_POST['name']);
-            $email   = clean_data($_POST['email']);
-            $phone   = clean_data($_POST['phone']);
-            $pass    = clean_data($_POST['pass']);
-            $pass_2  = clean_data($_POST['pass_2']);
 
-            if($pass == $pass_2){
-                $pass = sha1($pass);
-
-                $q = "INSERT INTO users (name, password, email, phone)
-                      VALUES ('$name', '$pass', '$email', '$phone')
-                     ";
-                if($conn->query($q) == TRUE){
-                    $msg = 'added success now please..';
-                }else{
-                    echo "Error: " . $q . "<br>" . $conn->error;
-                }
-            }else{
-                echo 'passwords must match';
-            }
-    }else{
-        echo 'please fill in fields !';
-    }
-}
-?>
 
 
