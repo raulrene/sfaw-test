@@ -1,4 +1,57 @@
+<?php
+include_once '../connection.php';
+if(isset($_POST)){
+    if(!empty($_POST['name']) && !empty($_POST['pass'])){
+        $name = $_POST['name'];
+        $pass = $_POST['pass'];
+        $keep = $_POST['keep'];
+        function clean_data($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+        }
+        $name = clean_data($name);
+        $pass = clean_data($pass);
+        $pass = sha1($pass);
 
+        $q = "SELECT * FROM users WHERE name = '$name' AND password = '$pass'";
+        $result = $conn->query($q);
+        if($result->num_rows == 1){
+            $row = mysqli_fetch_object($result);
+            if($row->type == 'user'){
+                echo 'succesfully logged in';
+                session_start();
+                $info = array(
+                    'username'     => $name,
+                    'loggedin'     => TRUE,
+                    'loginDate'    => time(),
+                    'lastlogged'   => time(),
+                    'ip'           => $_SERVER[ 'REMOTE_ADDR' ],
+                    'via'          => 'form',
+                    'keepLoggedIn' => $keep,
+                    'type'         => 'user'
+                );
+                $_SESSION['LOGIN'] = $info;
+                echo'<pre>';
+                print_r($_SESSION['LOGIN']);
+                if($keep == 1){
+                    $cookie = setcookie( 'logindata', '1' . base64_encode( serialize($info) ), time() + 2592000, '/' );
+                    print_r($_COOKIE);
+                    exit();
+                }else{
+                    setcookie('logindata', '', time() - 36000, '/' );
+                    exit();
+                }
+            }elseif($row->type == 'admin'){
+                header('Location:forms.php');
+            }
+        }else{
+            echo 'Password and|or username do not match';
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,51 +87,3 @@
 
 </html>
 
-<?php
-include_once '../connection.php';
-if(isset($_POST)){
-    if(!empty($_POST['name']) && !empty($_POST['pass'])){
-        $name = $_POST['name'];
-        $pass = $_POST['pass'];
-        $keep = $_POST['keep'];
-        function clean_data($data) {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
-        }
-        $name = clean_data($name);
-        $pass = clean_data($pass);
-        $pass = sha1($pass);
-
-        $q = "SELECT * FROM users WHERE name = '$name' AND password = '$pass'";
-        $result = $conn->query($q);
-
-        if($result->num_rows == 1){
-             echo 'succesfully logged in';
-             session_start();
-             $info = array(
-                 'username'     => $name,
-                 'loggedin'     => TRUE,
-                 'loginDate'    => time(),
-                 'lastlogged'   => time(),
-                 'ip'           => $_SERVER[ 'REMOTE_ADDR' ],
-                 'via'          => 'form',
-                 'keepLoggedIn' => $keep
-             );
-             $_SESSION['LOGIN'] = $info;
-            echo'<pre>';
-            print_r($_SESSION['LOGIN']);
-            if($keep == 1){
-                $cookie = setcookie( 'logindata', '1' . base64_encode( serialize($info) ), time() + 2592000, '/' );
-            }else{
-                setcookie('logindata', '', time() - 36000, '/' );
-            }
-        }else{
-            echo 'Password and|or username do not match';
-        }
-    }else{
-        echo 'please fill in all fields';
-    }
-}
-?>
