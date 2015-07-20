@@ -1,3 +1,8 @@
+<?php session_start();
+if(!$_SESSION['isLogged']) {
+  header("location:login.php"); 
+  die(); 
+}?>
 <!DOCTYPE html>
 <html>
 	<head>
