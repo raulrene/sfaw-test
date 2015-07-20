@@ -51,3 +51,5 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2015-07-17 14:50:01
+ALTER TABLE `newSite`.`users` 
+ADD COLUMN `email` VARCHAR(45) NOT NULL AFTER `user_password`;
