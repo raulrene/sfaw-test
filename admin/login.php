@@ -39,7 +39,7 @@ if( isset($_POST['login']) ) {
             $error = getError(ERR_LOGIN_FAILED);
         } else {
             // daca s-a ajuns aici inseamna ca se poate loga
-            markLoggedIn();
+            markLoggedIn($conn);
         }
     }
 

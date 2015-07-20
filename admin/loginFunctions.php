@@ -139,7 +139,7 @@ function getAuthCode() {
 
 
 # definesc functia care marcheaza utilizatorul ca autentificat
-function markLoggedIn() {
+function markLoggedIn($conn) {
     $username = $_POST['user']; // user-ul din formular
     $keep = $_POST['keep']; // checkbox-ul din formular
     $ip = $_SERVER[ 'REMOTE_ADDR' ]; // ip-ul vizitatorului
@@ -173,9 +173,12 @@ function markLoggedIn() {
         setcookie( 'logindata', "", time() - 36000, '/' );
     }
 
+    echo checkRole($username,$conn);
     // acum ca am salvat datele pe sesiune (si posibil in cookies), redirectionez
-    header('Location: personalPage.php');
-
+    if(checkRole($username,$conn) == 'admin'){
+        header('Location: insert.php');
+    }else
+        header('Location: personalPage.php');
     // opresc executia scriptului curent
     exit;
 }
@@ -225,17 +228,32 @@ function checkUserPass($user, $pass,$conn) {
 
     $q = "SELECT ".'user_password'." FROM ".'users'." WHERE ".'user_name'." = '".$user."'";
     $res = mysqli_query($conn,$q);
-
+    $gotPass="";
     foreach($res as $row){
         //echo $row['user_password'];
         $gotPass = $row['user_password'];
     }
 
-
+    //$gotPass = sha1($gotPass);
     if( $pass == $gotPass) {
         return $user;
     } else {
         return null;
 
+    }
+}
+
+function checkRole($user,$conn){
+    $q = "SELECT ".'role'." FROM ".'users'." WHERE ".'user_name'." = '".$user."'";
+    $res = mysqli_query($conn,$q);
+    $role="";
+    foreach($res as $row){
+        //echo $row['user_password'];
+        $role = $row['role'];
+    }
+    if($role == 'admin'){
+        return 'admin';
+    }else{
+      return 'user';
     }
 }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c782e35-77d9-4673-9e17-a1bcd75ddadf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/newSite_admins.sql" afterPath="$PROJECT_DIR$/migrations/newSite_admins.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/newSite_users.sql" afterPath="$PROJECT_DIR$/migrations/newSite_users.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/login.php" afterPath="$PROJECT_DIR$/admin/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/loginFunctions.php" afterPath="$PROJECT_DIR$/admin/loginFunctions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sfaw-test.iws" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="62" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1476">
+            <state line="36" column="12" selection-start="753" selection-end="753" vertical-scroll-proportion="-6.6666665" vertical-offset="378" max-vertical-offset="1386">
               <folding />
             </state>
           </provider>
@@ -39,19 +39,10 @@
       <file leaf-file-name="loginFunctions.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/loginFunctions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="41" selection-start="6876" selection-end="6876" vertical-scroll-proportion="0.29641694" vertical-offset="3814" max-vertical-offset="4428">
+            <state line="236" column="6" selection-start="7312" selection-end="7312" vertical-scroll-proportion="0.1369863" vertical-offset="4168" max-vertical-offset="4752">
               <folding>
-                <marker date="1437229986176" expanded="true" signature="7148:7240" placeholder="..." />
+                <marker date="1437383633949" expanded="true" signature="7338:7430" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="personalPage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/personalPage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="594" selection-end="902" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="756">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -240,38 +231,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sfaw-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -317,14 +276,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17832437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17832437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -536,13 +495,6 @@
         <state line="15" column="61" selection-start="312" selection-end="312" vertical-scroll-proportion="0.19438446" vertical-offset="0" max-vertical-offset="2394" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/personalPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="594" selection-end="902" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="34" selection-start="341" selection-end="341" vertical-scroll-proportion="0.31101513" vertical-offset="0" max-vertical-offset="1512" />
@@ -585,7 +537,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/config-old.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="5" selection-start="170" selection-end="267" vertical-scroll-proportion="0.19438446" vertical-offset="0" max-vertical-offset="926" />
+        <state line="10" column="5" selection-start="170" selection-end="267" vertical-scroll-proportion="0.19438446" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/insert.php">
@@ -603,18 +557,25 @@
         <state line="16" column="18" selection-start="216" selection-end="324" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="1314" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/personalPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="7" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.5602606" vertical-offset="52" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="62" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1476">
+        <state line="36" column="12" selection-start="753" selection-end="753" vertical-scroll-proportion="-6.6666665" vertical-offset="378" max-vertical-offset="1386">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/loginFunctions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="41" selection-start="6876" selection-end="6876" vertical-scroll-proportion="0.29641694" vertical-offset="3814" max-vertical-offset="4428">
+        <state line="236" column="6" selection-start="7312" selection-end="7312" vertical-scroll-proportion="0.1369863" vertical-offset="4168" max-vertical-offset="4752">
           <folding>
-            <marker date="1437229986176" expanded="true" signature="7148:7240" placeholder="..." />
+            <marker date="1437383633949" expanded="true" signature="7338:7430" placeholder="..." />
           </folding>
         </state>
       </provider>
