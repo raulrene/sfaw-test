@@ -1,0 +1,113 @@
+
+/*--------------*/
+.featured-content{
+    width: 100%;
+    height: 485px;
+    position: relative;
+    overflow: hidden;
+    background: url("../img/site_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.featured-content h1{
+    margin-bottom: 0.7em;
+    font-size: 1.9em;
+}
+.row {
+    height: inherit;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 1140px;
+}
+
+.column {
+    position: relative;
+    float: left;
+    margin-right: 3.8%;
+    min-height: 1px;
+}
+
+.row .fivecol {
+    height: inherit;
+    width: 39.45%;
+    background: transparent;
+    color: #ffffff;
+}
+
+.button{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 3px;
+    background: #f3715d;
+    color: #fff!important;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.17);
+    white-space: nowrap;
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.15)), color-stop(100%,rgba(255,255,255,0)));
+}
+.button.large {
+    padding: 0 18px;
+    font-size: 1.4em;
+    line-height: 2.0em;
+    margin-top: 0.6em;
+}
+.button.large img {
+    margin: -4px 10px 0 0;
+}
+.button img {
+    position: relative;
+    display: inline!important;
+    margin: -2px 8px 0 0;
+    vertical-align: middle;
+}
+
+/*right image*/
+.row .sevencol {
+    width: 56.75%;
+}
+img, object, embed, iframe {
+    max-width: 100%;
+}
+.alignnone {
+    margin: 0.5em 0 0 0;
+}
+.last{
+    margin-right: 0!important;
+}
+
+.button:after {
+    content: " ";
+    display: block;
+    background: url(../img/button_bg.png) 0 0 repeat-x;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.button:hover:after {
+    background-color: rgba(255,255,255,0.05);
+}
+
+/*arrows*/
+.arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    margin-top: -12px;
+    width: 13px;
+    height: 23px;
+    background: url(../img/arrow.png) -13px 0 no-repeat;
+    cursor: pointer;
+}
+
+.arrow-left{
+    left:24px;
+}
+
+.arrow-right{
+    background-position: 0 0;
+    right:24px;
+}
