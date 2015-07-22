@@ -7,8 +7,8 @@
             <div class="footer-navigation right">
                 <ul id="footer-menu" class="menu">
                     <li class="footer-link"><a href="<?php echo base_url();?>">Home</a></li>
-                    <li class="footer-link"><a href="<?php echo base_url();?>welcome/crs">Courses</a></li>
-                    <li class="footer-link"><a href="<?php echo base_url();?>welcome/comm">Comments</a></li>
+                    <li class="footer-link"><a href="<?php echo base_url();?>crs">Courses</a></li>
+                    <li class="footer-link"><a href="<?php echo base_url();?>comm">Comments</a></li>
                 </ul>
             </div>
         </div>

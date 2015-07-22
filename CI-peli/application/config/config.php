@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = "http://localhost/FOR/";
+$config['base_url'] = "http://localhost/test1/sfaw-test/CI-peli/";
 
 /*
 |--------------------------------------------------------------------------

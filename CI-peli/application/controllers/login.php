@@ -4,11 +4,13 @@
 class Login extends CI_Controller {
 
 	public function __construct(){
+
 		parent::__construct();
 		$this->load->model('login_model');
 	}
 
 	public function index(){
+		
 		$this->form_validation->set_rules('name','Name','trim|xss_clean|required');
 		$this->form_validation->set_rules('pass','Password','trim|xss_clean|required|callback_check_login');
 		if($this->form_validation->run()== FALSE){

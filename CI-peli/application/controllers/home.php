@@ -7,7 +7,7 @@ class Home extends CI_Controller {
 		parent::__construct();
 
 		$this->load->model('courses');
-		$this->load->model('home');
+		$this->load->model('home_model');
 	}
 
 	public function index()	{
@@ -18,12 +18,12 @@ class Home extends CI_Controller {
 		$data = array();
 		$data['title'] = 'Academy-Learning';
 		$tag = 'slider';
-		$data['s'] = $this->home->getInfoByTag($tag);
+		$data['s'] = $this->home_model->getInfoByTag($tag);
 		$tag = 'sub_sl';
-		$data['ss'] = $this->home->getInfoByTag($tag);
-		$data['crs'] = $this->scoursesl->getCoursesHome();
+		$data['ss'] = $this->home_model->getInfoByTag($tag);
+		$data['crs'] = $this->courses->getCoursesHome();
         $tag = 'testimonials';
-        $data['t'] = $this->home->getInfoByTag($tag);
+        $data['t'] = $this->home_model->getInfoByTag($tag);
 		$this->load->view('index',$data);
 	
 	}

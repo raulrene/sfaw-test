@@ -32,9 +32,9 @@ class Login_model extends CI_Model{
             session_start();
             $this->session->set_userdata($sess_data);
             if($this->session->userdata('type') == 'admin'){
-                redirect('welcome/admin');  
+                redirect('admin');  
             }else{
-                redirect('welcome');
+                redirect('home');
             }
             /*
             if($keep == 1){

@@ -18,8 +18,8 @@
 			<div class="nav">
 				<ul>
 					<li class="active"><a href="<?php echo base_url();?>">Home</a></li>
-					<li><a href="<?php echo base_url();?>welcome/crs">Courses</a></li>
-					<li><a href="<?php echo base_url();?>welcome/comm">Comments</a></li>
+					<li><a href="<?php echo base_url();?>crs">Courses</a></li>
+					<li><a href="<?php echo base_url();?>comm">Comments</a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>	
