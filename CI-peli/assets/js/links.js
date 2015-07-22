@@ -1,11 +1,11 @@
 $(function(){
 
     $('.login').on('click',function(){
-        window.location = "welcome/login"; 
+        window.location = "login"; 
     });
 
     $('.register').on('click',function(){
-        window.location = "welcome/register"; 
+        window.location = "register"; 
     });
 
     $('.tabs ul li ').on('click',function(){

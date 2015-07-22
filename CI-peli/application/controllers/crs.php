@@ -19,7 +19,7 @@ class Crs extends CI_Controller {
 		$data['title'] = 'Courses';	
 		$config = array();
 		$config['base_url'] = base_url()."crs";
-		$total_row = $this->spaginator->count_all();
+		$total_row = $this->paginator->count_all();
 		$config['total_rows'] = $total_row;
 	    $config['per_page'] = 4;
 	    $config['num_links'] = 1;

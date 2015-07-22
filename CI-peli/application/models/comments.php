@@ -17,10 +17,11 @@ class comments extends CI_Model{
         $data = $db->get('comments');
         return $data->result();
     
-
+    }
     /**
      * @param mixed $author
      */
+
     public function setAuthor($author)
     {
         $this->author = $author;
