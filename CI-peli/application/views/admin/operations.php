@@ -1,32 +1,28 @@
-<link href="../assets/css/slider.css" type="text/css" rel="stylesheet">
-<?php
-
-include('../connection.php');
-
-if(isset($_POST) && !empty($_POST)){
-    switch($_POST['hidden']){
-        case "chapters"     :
-            $table = 'Chapters';
-            $ch_name = $_POST['ch_name'];
-            $url = $_POST['url'];
-            $q = "INSERT INTO ". $table ." (chapter_name,url)
-                  VALUES  ('$ch_name', '$url')
-            ";
-            if ($conn->query($q) === TRUE) {
-                echo "New record created successfully <br />now table looks like:";
-                $q = "select * from ". $table ."";
-                $data = $conn->query($q);
-                echo '<ul>';
-                foreach ($data as $row){
-                    echo '<li style="font-size:20px">'.$row['id'] .' -> '.$row['chapter_name'].' | '.$row['url'].'</li>';
-                    echo '<a class="fg-button teal" href="edit_form.php?id='.$row['id'].'&table='.$table.'">Edit</a>&nbsp
-                          <a class="button large primary" href="delete.php?id='.$row['id'].'&table='.$table.'">Delete</a>';
-                }
-                echo '</ul>';
-            } else {
-                echo "Error: " . $q . "<br>" . $conn->error;
-            }
-            break;
+<!DOCTYPE html>
+<html>
+<head>
+    <?php $this->load->view('includes/head'); ?>
+</head>
+<body>
+    <?php $this->load->view('includes/header.php'); ?>
+    <?php $this->load->view('includes/sub_header.php'); ?>
+    <div class="row">
+        <p>New record created successfully</p>
+        <p>now table looks like:</p>
+        <?php
+            echo '<ul>';
+        foreach ($result as $row){
+            echo '<li style="font-size:20px">'.$row->id .' -> '.$row->chapter_name.' | '.$row->url.'</li>';
+            echo '<a class="fg-button teal" href="edit_form/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
+                  <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
+        }
+        echo '</ul>';
+        ?>
+    </div>
+</body> 
+</html>
+<?php           
+/*
         case "sub_chapters" :
             $table = 'sub_chapters';
             $ch_id = $_POST['chapter_id'];
@@ -172,7 +168,5 @@ if(isset($_POST) && !empty($_POST)){
         case "courses"      :
             break;
     }
-}else{
-    echo 'No data posted';
-}
+*/
 ?>

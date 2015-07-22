@@ -16,8 +16,9 @@ class Subchapter extends CI_Model{
     public function getSubCHById($id){
         $this->db->where('id',$id);
         $$q = $this->db->get($this->table);
-        return $q->result();
+        return $q->row();
     }
+
 
     public function getCombined(){
         if(!$this->uri->segment('4')){

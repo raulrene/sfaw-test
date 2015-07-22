@@ -9,7 +9,7 @@
 <div class = "admin_form_wrapper">    
     <div  class = "admin_forms">
         <h1>Chapters</h1><br/>
-        <form method="post" action="operations.php" id="">
+        <form method="post" action="<?php echo base_url() ?>operation" id="">
             <input type="hidden" name="hidden" value="chapters" />
             <div class="form_field">
                 <input type="text" name="ch_name" size="18"  placeholder="Chapter Name" required />
@@ -24,7 +24,7 @@
 
     <div class = "admin_forms">
         <h1>Sub-Chapters</h1><br/>
-        <form method="post" action="operations.php" id="">
+        <form method="post" action="<?php echo base_url() ?>operation" id="">
             <input type="hidden" name="hidden" value="sub_chapters" />
             <div class="form_field">
                 <input type="text" name="chapter_id" size="18"  placeholder="Chapter Id" required />
@@ -42,7 +42,7 @@
 
     <div class = "admin_forms">
         <h1>Sub-Sub-Chapters</h1><br/>
-        <form method="post" action="operations.php" id="">
+        <form method="post" action="<?php echo base_url() ?>operation" id="">
             <input type="hidden" name="hidden" value="ss_chapters" />
             <div class="form_field">
                 <input type="text" name="sub_chapter_id" size="18"  placeholder="Sub-Chapter Id" required />
@@ -60,7 +60,7 @@
 
     <div class = "admin_forms">
         <h1>Content</h1><br/>
-        <form method="post" action="operations.php" id="">
+        <form method="post" action="<?php echo base_url() ?>operation" id="">
             <input type="hidden" name="hidden" value="content" />
             <div class="form_field">
                 <input type="text" name="sub_sub_chapter_id" size="18"  placeholder="Sub-Sub-Chapter Id" required />
@@ -82,7 +82,7 @@
 
     <div class = "admin_forms">
         <h1>Comments</h1><br/>
-        <form method="post" action="operations.php" id="">
+        <form method="post" action="<?php echo base_url() ?>operation" id="">
             <input type="hidden" name="hidden" value="comments" />
             <div class="form_field">
                 <input type="text" name="author" size="18"  placeholder="Author Name" required />
@@ -106,7 +106,7 @@
 
     <div class = "admin_forms">
         <h1>Replies</h1><br/>
-        <form method="post" action="operations.php" id="">
+        <form method="post" action="<?php echo base_url() ?>operation" id="">
             <input type="hidden" name="hidden" value="replies" />
             <div class="form_field">
                 <input type="text" name="author" size="18"  placeholder="Author Name" required />
@@ -133,7 +133,7 @@
 
     <div class = "admin_forms">
         <h1>Courses</h1><br/>
-        <form method="post" action="operations.php" id="">
+        <form method="post" action="<?php echo base_url() ?>operation" id="">
             <input type="hidden" name="hidden" value="courses" />
             <div class="form_field">
             <input type="text" name="name" size="18"  placeholder="Name" required />

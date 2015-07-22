@@ -5,21 +5,30 @@ class Chapter extends CI_Model{
     private $id;
     private $chapter_name;
     private $url;
+    private $table = 'Chapters';
 
     public function getChapters(){
-        global $db;
-        $q = 'SELECT * FROM Chapters';
-        $data = $db->fetch_all($q);
-        return $data;
+        $q = $this->db->get($this->table);
+        return $q->result();
     }
     public function getChapterById($id){
-        global $db;
-        $q = 'SELECT * FROM Chapters WHERE id =$id';
-        $data = $db->fetch_row($q);
-        return $data;
+        $this->db->where('id',$id);
+        $$q = $this->db->get($this->table);
+        return $q->row();
     }
 
-
+    public function addChapter($ch_name, $url){
+        $info = array(
+                'chapter_name'     =>  $ch_name,
+                'url'              =>  $url
+        );
+        $q =  $this->db->insert($this->table,$info); 
+        if(!$q){
+            return FALSE;
+        }else{
+            return TRUE; 
+        }  
+    }
 
     /**
      * @param mixed $chapter_name
