@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class paginator extends CI_Model{
+class Paginator extends CI_Model{
 
     public function paginate($limit,$start){
 
