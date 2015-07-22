@@ -61,7 +61,7 @@
         <?php } } ?>
         <div class="clear"></div>
     </div>
-    <?php $this->load->view('includes/footer.php'); ?>
+    
 </div>
 </body>
 </html>

@@ -14,7 +14,7 @@
 
             $this->db->where('id',$id);            
             $data = $this->db->get($this->table);
-            return $data->result();
+            return $data->row();
         }
 
         public function getCoursesHome(){

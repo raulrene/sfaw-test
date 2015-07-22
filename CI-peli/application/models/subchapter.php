@@ -19,14 +19,19 @@ class Subchapter extends CI_Model{
         return $q->result();
     }
 
-    public function getCombined($url){
-
+    public function getCombined(){
+        if(!$this->uri->segment('4')){
+            $url = 'online-learning';
+        }else{
+            $url = $this->uri->segment('4');
+        }
         $this->db->select('*');
         $this->db->from('sub_chapters');
         $this->db->join('sub_sub_ch', 'sub_sub_ch.sub_ch_id = sub_chapters.id','left');
         $this->db->join('content','sub_sub_ch.id = content.sub_sub_ch_id','left');
-        $this->db->where('suc_chapters.friendly_url', $url);
+        $this->db->where('sub_chapters.friendly_url', $url);
         $q = $this->db->get();
+          return $q->result();
 
     }
 

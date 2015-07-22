@@ -18,7 +18,7 @@ class Crs extends CI_Controller {
 		$data = array();
 		$data['title'] = 'Courses';	
 		$config = array();
-		$config['base_url'] = base_url()."crs";
+		$config['base_url'] = base_url()."crs/index";
 		$total_row = $this->paginator->count_all();
 		$config['total_rows'] = $total_row;
 	    $config['per_page'] = 4;
