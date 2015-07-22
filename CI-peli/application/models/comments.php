@@ -5,18 +5,18 @@ class comments extends CI_Model{
     private $id, $author, $author_img, $author_link,$date_posted, $comm_text;
     private $table = 'comments';
 
-    public function getComments(){
+     public function getComments(){
    
-        $data = $this->db->get($this->table);
+        $data = $this->db->get('comments');
         return $data->result();
     }
     
     public function getCommentsById($id){
 
         $this->db->where('id', $id);
-        $data = $db->get($this->table);
-        return $data->result
-    }
+        $data = $db->get('comments');
+        return $data->result();
+    
 
     /**
      * @param mixed $author

@@ -12,7 +12,7 @@ class Sitemodel extends CI_Model{
 
         $this->db->where('id', $id);
         $data = $db->get('comments');
-        return $data->result;
+        return $data->result();
     }
 
     public function getReplies(){

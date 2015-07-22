@@ -7,14 +7,14 @@ class replies extends CI_Model{
 
     public function getReplies(){
 
-        $data = $this->db->get($this->table);
+        $data = $this->db->get('replies');
         return $data->result();
     }
     
     public function getReplyById($id){
         
         $this->db->where('id', $id);
-        $data = $db->get($this->table);
+        $data = $db->get('replies');
         return $data->result();
     }
 
