@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class subhapter extends CI_Model{
+class Subchapter extends CI_Model{
 
     private $id, $chapter_id, $links, $id_html, $class, $friendly_url;
     private $table = 'sub_chapters';

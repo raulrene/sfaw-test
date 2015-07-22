@@ -12,7 +12,13 @@ class Comm extends CI_Controller {
 
 	public function index()	{
 
-		$data['title'] = 'Comments';	
+		if($this->session->userdata('validated') != TRUE){
+			redirect('login');
+		}	
+		$data = array();
+		$data['title'] = 'Comments';
+		$data['q'] = $this->comments->getComments();
+		$data['s'] = $this->replies->getReplies();	
 		$this->load->view('comments',$data);
 	
 	}

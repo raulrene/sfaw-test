@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-    class courses extends CI_Model{   
+    class Courses extends CI_Model{   
         
         private $id, $course_name,$course_price, $course_img, $course_author, $course_user, $course_stars, $img_alt;
         private $table = 'courses';
