@@ -10,7 +10,7 @@
     <div  class = "admin_forms">
         <h1>Chapters</h1><br/>
         <form method="post" action="<?php echo base_url() ?>operation" id="">
-            <input type="hidden" name="hidden" value="chapters" />
+            <input type="hidden" name="hidden" value="Chapters" />
             <div class="form_field">
                 <input type="text" name="ch_name" size="18"  placeholder="Chapter Name" required />
             </div>

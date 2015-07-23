@@ -1,5 +1,29 @@
-<link href="../assets/css/slider.css" type="text/css" rel="stylesheet">
-<?php
+<! DOCTYPE html>
+<html>
+<head>
+    <?php $this->load->view('includes/head'); ?>
+</head>
+<body>
+    <?php $this->load->view('includes/header.php'); ?>
+    <?php $this->load->view('includes/sub_header.php'); ?>
+    <div class="row">
+        <?php
+            if($table == 'Chapters'){
+                echo '<p class="resp_par"> Record successfully updated!</p><br/><br/><br/>';
+                echo '<a class="fg-button teal" href="'. base_url().'admin/index">Return</a>';
+            }elseif($table == 'sub_chapters'){
+                 echo '<p class="resp_par> Record successfully updated!</p><br/><br/><br/>';
+                 echo '<a class="fg-button teal" href="'. base_url().'admin/index">Return</a>';
+            }
+        ?>
+    </div>
+</body> 
+</html>
+
+
+
+
+<?php /*
 include_once('../connection.php');
 if(isset($_POST['update'])){
     if($_POST['table'] == 'Chapters'){
@@ -36,4 +60,5 @@ if(isset($_POST['update'])){
 }else{
     echo 'submit error';
 }
+*/
 ?>

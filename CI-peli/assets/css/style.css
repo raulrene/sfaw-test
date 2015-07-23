@@ -429,3 +429,9 @@ body{
     background: lightgreen;
     color:#fff;
 }
+.resp_par{
+    font-size: 25px;
+    color:blue;
+    margin :30px 0px 0px 30px;
+
+}

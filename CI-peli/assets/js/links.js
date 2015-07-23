@@ -1,11 +1,11 @@
 $(function(){
 
     $('.login').on('click',function(){
-        window.location = "login"; 
+        window.location = "<?php echo base_url(); ?>login"; 
     });
 
     $('.register').on('click',function(){
-        window.location = "register"; 
+        window.location = "<?php echo base_url(); ?>register"; 
     });
 
     $('.tabs ul li ').on('click',function(){

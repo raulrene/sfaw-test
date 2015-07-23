@@ -1,21 +1,23 @@
 <?php
-class SubSubChapter extends CI_Model{
+class Sub_sub_chapter extends CI_Model{
 
     private $id, $sub_ch_id, $sub_sub_ch_name,$order;
     private $table = 'sub_sub_ch';
 
 
     public function getSubSubCH(){
-        global $db;
-        $q = 'SELECT * FROM $this->table';
-        $data = $db->fetch_all($q);
-        return $data;
+
+        $q = $this->db->get($this->table);
+        return $q->result();
+
     }
+
     public function getSSChById($id){
-        global $db;
-        $q = 'SELECT * FROM $this->table WHERE id =$id';
-        $data = $db->fetch_row($q);
-        return $data;
+
+        $this->db->where('id',$id);
+        $$q = $this->db->get($this->table);
+        return $q->row();
+        
     }
     /**
      * @param mixed $id

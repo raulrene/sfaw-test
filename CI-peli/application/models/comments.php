@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class comments extends CI_Model{
+class Comments extends CI_Model{
     
     private $id, $author, $author_img, $author_link,$date_posted, $comm_text;
     private $table = 'comments';
@@ -15,7 +15,7 @@ class comments extends CI_Model{
 
         $this->db->where('id', $id);
         $data = $db->get('comments');
-        return $data->result();
+        return $data->row();
     
     }
     /**

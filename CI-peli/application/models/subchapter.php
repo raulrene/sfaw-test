@@ -14,9 +14,11 @@ class Subchapter extends CI_Model{
     }
 
     public function getSubCHById($id){
+
         $this->db->where('id',$id);
         $$q = $this->db->get($this->table);
         return $q->row();
+        
     }
 
 
@@ -35,6 +37,20 @@ class Subchapter extends CI_Model{
           return $q->result();
 
     }
+
+    public function addSubChapter($name,$link, $url){
+        $info = array(
+                'chapter_id'       =>  $name,
+                'links'            =>  $link,
+                'friendly_url'     =>  $url
+        );
+        $q =  $this->db->insert($this->table,$info); 
+        if(!$q){
+            return FALSE;
+        }else{
+            return TRUE; 
+        }  
+    }    
 
     /**
      * @param mixed $chapter_id

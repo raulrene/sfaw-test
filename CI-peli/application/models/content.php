@@ -7,16 +7,17 @@ class Content extends CI_Model{
 
 
     public function getContent(){
-        global $db;
-        $q = "SELECT * FROM $this->table";
-        $data = $db->fetch_rows($q);
-        return $data;
+
+        $q = $this->db->get($this->table);
+        return $q->result();
+
     }
     public function getContentById($id){
-        global $db;
-        $q = "SELECT * FROM $this->table WHERE id = $id";
-        $data = $db->fetch_row($q);
-        return $data;
+
+        $this->db->where('id',$id);
+        $$q = $this->db->get($this->table);
+        return $q->row();
+        
     }
 
     /**

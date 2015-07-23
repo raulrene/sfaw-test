@@ -1,7 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 
-class Register extends CI_Controller {
+interface Checking{
+	public function check_pass($pass,$pass_2);
+	public function check_name();
+	public function check_email();
+	public function check_phone();
+}
+
+class Register extends CI_Controller implements Checking{
 
 	public function __construct(){
 

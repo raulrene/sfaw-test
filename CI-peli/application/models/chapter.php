@@ -13,7 +13,7 @@ class Chapter extends CI_Model{
     }
     public function getChapterById($id){
         $this->db->where('id',$id);
-        $$q = $this->db->get($this->table);
+        $q = $this->db->get($this->table);
         return $q->row();
     }
 
@@ -28,6 +28,22 @@ class Chapter extends CI_Model{
         }else{
             return TRUE; 
         }  
+    }
+
+    public function updateChapter($id, $ch_name,$url){
+
+        $info = array(
+                'chapter_name'     =>  $ch_name,
+                'url'              =>  $url
+        );
+        $this->db->where('id', $id);
+        $q = $this->db->update($this->table,$info);
+        if(!$q){
+            return FALSE;
+        }else{
+            return TRUE;
+        }
+
     }
 
     /**

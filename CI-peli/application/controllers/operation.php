@@ -7,7 +7,7 @@ class Operation extends CI_Controller {
 		parent::__construct();
 
 		$this->load->model('chapter');
-		$this->load->model('');
+		$this->load->model('subchapter');
 		$this->load->model('');
 		$this->load->model('');
 		$this->load->model('');
@@ -23,7 +23,7 @@ class Operation extends CI_Controller {
 		$data = array();
 		
 		switch($this->input->post('hidden')){
-			case "chapters"     :
+			case "Chapters"     :
 			$ch_name = $this->input->post('ch_name');
             $url     = $this->input->post('url');
             if($this->chapter->addChapter($ch_name, $url) == TRUE){
@@ -35,6 +35,22 @@ class Operation extends CI_Controller {
             	echo 'error inserting.please try again !';
             }
             break;
+
+            case "sub_chapters"     :
+			$name    = $this->input->post('chapter_id');
+			$link    = $this->input->post('links');
+            $url     = $this->input->post('friendly_url');
+            if($this->subchapter->addSubChapter($name, $link, $url) == TRUE){
+            	$data['title']  = 'Operations';
+            	$data['result'] = $this->subchapter->getsubChapter();
+            	$data['table']  = 'sub_chapters';
+            	$this->load->view('admin/operations',$data);
+            }else{
+            	echo 'error inserting.please try again !';
+            }
+            break;
+
+       
 		}
 	
 	}

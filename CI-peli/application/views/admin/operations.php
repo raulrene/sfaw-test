@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html>
 <head>
     <?php $this->load->view('includes/head'); ?>
@@ -7,16 +7,25 @@
     <?php $this->load->view('includes/header.php'); ?>
     <?php $this->load->view('includes/sub_header.php'); ?>
     <div class="row">
-        <p>New record created successfully</p>
-        <p>now table looks like:</p>
+        <p class="resp_par">New record created successfully</p>
+        <p class="resp_par"> now table looks like:</p>
         <?php
-            echo '<ul>';
-        foreach ($result as $row){
-            echo '<li style="font-size:20px">'.$row->id .' -> '.$row->chapter_name.' | '.$row->url.'</li>';
-            echo '<a class="fg-button teal" href="edit_form/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
-                  <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
-        }
-        echo '</ul>';
+            if($table == 'Chapters'){
+                echo '<ul>';
+                foreach ($result as $row){
+                    echo '<li style="font-size:20px">'.$row->id .' -> '.$row->chapter_name.' | '.$row->url.'</li>';
+                    echo '<a class="fg-button teal" href="update_info/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
+                          <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
+                }
+                echo '</ul>';
+            }elseif($table == 'sub_chapters'){
+                echo '<ul>';
+                foreach ($result as $row){
+                    echo '<li style="font-size:20px">'.$row->id .' -> '.$row->chapter_id.'->'.$row->links .' | '.$row->friendly_url.'</li>';
+                    echo '<a class="fg-button teal" href="update_info/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
+                          <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
+                }
+                echo '</ul>';            }
         ?>
     </div>
 </body> 
