@@ -14,9 +14,11 @@ class Register extends CI_Controller implements Checking{
 
 		parent::__construct();
 		$this->load->model('register_model');
+		$this->load->library('encrypt');
 	}
 
-public function register(){
+public function index(){
+
 		$this->form_validation->set_rules('name','Name','trim|xss_clean|required|callback_check_name');
 		$this->form_validation->set_rules('email','Email','trim|xss_clean|required|callback_check_email|valid_email');
 		$this->form_validation->set_rules('phone','Phone','trim|xss_clean|required|numeric|callback_check_phone|min_length[10]|max_length[13]');
@@ -32,13 +34,12 @@ public function register(){
 			$data['title'] = 'Register';
 			$this->load->view('admin/register',$data);
 		}else{
+
 			$name   = $this->input->post('name');
 			$email  = $this->input->post('email');
 			$phone  = $this->input->post('phone');
 			$pass   = $this->input->post('pass');
-			$pass   = md5($pass);
-			$pass_2 = $this->input->post('pass_2');
-			$pass_2 = md5($pass_2);
+			$pass   = $this->encrypt->sha1($pass);
 			if($this->register_model->registering($name,$email,$phone,$pass) == TRUE){
 				redirect('welcome/login');
 			}else{
@@ -49,9 +50,7 @@ public function register(){
 
 	function check_pass($pass,$pass_2){
 			$pass   = $this->input->post('pass');
-			$pass   = md5($pass);
 			$pass_2 = $this->input->post('pass_2');
-			$pass_2 = md5($pass_2);
 			if($pass == $pass_2){
 				return TRUE;				
 			}else{

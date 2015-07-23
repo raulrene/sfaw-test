@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f251bc04-0e67-416a-b078-244a1a72df0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/models/chapter.php" afterPath="$PROJECT_DIR$/CI-peli/application/models/chapter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/models/comments.php" afterPath="$PROJECT_DIR$/CI-peli/application/models/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/models/content.php" afterPath="$PROJECT_DIR$/CI-peli/application/models/content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/views/admin/edit_form.php" afterPath="$PROJECT_DIR$/CI-peli/application/views/admin/edit_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/views/admin/operations.php" afterPath="$PROJECT_DIR$/CI-peli/application/views/admin/operations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/models/replies.php" afterPath="$PROJECT_DIR$/CI-peli/application/models/replies.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/models/sub_sub_chapter.php" afterPath="$PROJECT_DIR$/CI-peli/application/models/sub_sub_chapter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/models/subchapter.php" afterPath="$PROJECT_DIR$/CI-peli/application/models/subchapter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI-peli/application/views/includes/courses.php" afterPath="$PROJECT_DIR$/CI-peli/application/views/includes/courses.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sfaw-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +26,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit_form.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/edit_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.943128" vertical-offset="735" max-vertical-offset="1458">
+            <state line="74" column="0" selection-start="2986" selection-end="2986" vertical-scroll-proportion="-24.11111" vertical-offset="681" max-vertical-offset="1458">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database1.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/database1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="21" selection-start="225" selection-end="225" vertical-scroll-proportion="-0.6666667" vertical-offset="162" max-vertical-offset="936">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="0" selection-start="2407" selection-end="2407" vertical-scroll-proportion="0.17061612" vertical-offset="792" max-vertical-offset="3888">
               <folding />
             </state>
           </provider>
@@ -44,7 +56,7 @@
       <file leaf-file-name="edit.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="34" selection-start="112" selection-end="112" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="792">
+            <state line="2" column="34" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="792">
               <folding>
                 <marker date="1437596980893" expanded="true" signature="318:406" placeholder="UPDATE Chapt..." />
                 <marker date="1437596980893" expanded="true" signature="904:1019" placeholder="UPDATE sub_c..." />
@@ -56,7 +68,7 @@
       <file leaf-file-name="operations.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/operations.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="44" selection-start="2839" selection-end="2839" vertical-scroll-proportion="-22.11111" vertical-offset="483" max-vertical-offset="3294">
+            <state line="60" column="44" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="3294">
               <folding />
             </state>
           </provider>
@@ -101,7 +113,6 @@
         <option value="$PROJECT_DIR$/includes/sub_header.php" />
         <option value="$PROJECT_DIR$/comments.php" />
         <option value="$PROJECT_DIR$/includes/footer.php" />
-        <option value="$PROJECT_DIR$/database/database.php" />
         <option value="$PROJECT_DIR$/includes/course_loop1.php" />
         <option value="$PROJECT_DIR$/migrations/10-06-2015.sql" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
@@ -126,6 +137,7 @@
         <option value="$PROJECT_DIR$/migrations/20-07-2015.sql" />
         <option value="$PROJECT_DIR$/admin/register.php" />
         <option value="$PROJECT_DIR$/admin/login.php" />
+        <option value="$PROJECT_DIR$/database/database.php" />
       </list>
     </option>
   </component>
@@ -177,6 +189,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sfaw-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,11 +298,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -461,11 +487,6 @@
         <state line="1" column="13" selection-start="12" selection-end="19" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="2232" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/database1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="225" selection-end="225" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="936" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/sub_chapter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="70" selection-start="42" selection-end="95" vertical-scroll-proportion="0.083591335" vertical-offset="0" max-vertical-offset="2466" />
@@ -533,11 +554,6 @@
         <state line="13" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.3622291" vertical-offset="0" max-vertical-offset="646" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="1" selection-start="2221" selection-end="2221" vertical-scroll-proportion="-3.3744075" vertical-offset="2946" max-vertical-offset="3888" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/slider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="1" selection-start="2074" selection-end="2642" vertical-scroll-proportion="0.94545454" vertical-offset="1932" max-vertical-offset="2664" />
@@ -545,21 +561,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="16" selection-start="1389" selection-end="1730" vertical-scroll-proportion="0.6192733" vertical-offset="274" max-vertical-offset="1710">
-          <folding />
-        </state>
+        <state line="37" column="16" selection-start="1389" selection-end="1730" vertical-scroll-proportion="0.6192733" vertical-offset="274" max-vertical-offset="1710" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/operations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="44" selection-start="2839" selection-end="2839" vertical-scroll-proportion="-22.11111" vertical-offset="483" max-vertical-offset="3294">
+        <state line="60" column="44" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="3294">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="112" selection-end="112" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="792">
+        <state line="2" column="34" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="792">
           <folding>
             <marker date="1437596980893" expanded="true" signature="318:406" placeholder="UPDATE Chapt..." />
             <marker date="1437596980893" expanded="true" signature="904:1019" placeholder="UPDATE sub_c..." />
@@ -569,7 +583,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/edit_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.943128" vertical-offset="735" max-vertical-offset="1458">
+        <state line="74" column="0" selection-start="2986" selection-end="2986" vertical-scroll-proportion="-24.11111" vertical-offset="681" max-vertical-offset="1458">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/database1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="225" selection-end="225" vertical-scroll-proportion="-0.6666667" vertical-offset="162" max-vertical-offset="936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="2407" selection-end="2407" vertical-scroll-proportion="0.17061612" vertical-offset="792" max-vertical-offset="3888">
           <folding />
         </state>
       </provider>

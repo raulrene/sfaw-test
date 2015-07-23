@@ -7,6 +7,7 @@ class Login extends CI_Controller {
 
 		parent::__construct();
 		$this->load->model('login_model');
+		$this->load->library('encrypt');
 	}
 
 	public function index(){
@@ -19,7 +20,7 @@ class Login extends CI_Controller {
 		}else{
 
 			$name = $this->input->post('name');
-			$pass = md5($this->input->post('pass'));
+			$pass = $this->encrypt->sha1($this->input->post('pass'));
 			$keep = $this->input->post('keep');
 			
 			$this->login_model->loggingIn($name,$pass,$keep);
@@ -27,9 +28,10 @@ class Login extends CI_Controller {
 	}
 
 	function check_login(){
+			$this->load->library('encrypt');
 			$name = $this->input->post('name');
 			$name = strtolower($name); 
-			$pass = md5($this->input->post('pass'));
+			$pass = $this->encrypt->sha1($this->input->post('pass'));
 
 			if($this->login_model->check_login($name,$pass) == TRUE){
 				return TRUE;

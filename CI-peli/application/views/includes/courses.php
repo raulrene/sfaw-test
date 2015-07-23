@@ -12,7 +12,7 @@
                         <div class="column-content">
                             <!-- course first section img -->
                             <div class="col-img">
-                                <a href="course_info.php/<?php echo $row->id; ?>">
+                                <a href="#">
                                     <img src="<?php echo base_url().$row->course_img; ?>" alt="<?php echo $row->img_alt; ?>" />
                                 </a>
                             </div>

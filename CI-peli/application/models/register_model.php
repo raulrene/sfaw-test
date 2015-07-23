@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Registe_model extends CI_Model{
+class Register_model extends CI_Model{
 
    function registering($name,$email,$phone,$pass){
         $info = array(

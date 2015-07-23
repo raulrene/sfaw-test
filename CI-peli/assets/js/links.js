@@ -1,11 +1,11 @@
 $(function(){
 
     $('.login').on('click',function(){
-        window.location = "<?php echo base_url(); ?>login"; 
+        alert('you are already logged in !'); 
     });
 
     $('.register').on('click',function(){
-        window.location = "<?php echo base_url(); ?>register"; 
+        alert('you are already registered in !');
     });
 
     $('.tabs ul li ').on('click',function(){

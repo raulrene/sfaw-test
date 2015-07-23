@@ -10,7 +10,7 @@
         <div class="login_form">
             <h1>Register</h1>
             <br />
-            <form action="" method="post">
+            <form action="<?php echo base_url(); ?>register" method="post">
                 <div class="form_field">
                     <input type="text" name="name" size="20"  placeholder="Username" required />
                 </div>

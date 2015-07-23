@@ -29,7 +29,6 @@ class Login_model extends CI_Model{
                     'keepLoggedIn' => $keep,
                     'type'         => $row->type
              );
-            session_start();
             $this->session->set_userdata($sess_data);
             if($this->session->userdata('type') == 'admin'){
                 redirect('admin');  
