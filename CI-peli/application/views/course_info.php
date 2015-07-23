@@ -52,9 +52,9 @@
             <p><b><?php echo $row->text_1; ?></b></p>
             <p><?php echo $row->text_2; ?></p>
             <p><?php echo $row->text_3; ?> </p>
-            <a class="button large primary" target="_self" href=" ">
+            <a class="button large primary"  href="<?php echo base_url(); ?>comm">
                 <img src="<?php echo base_url(); ?>assets/img/image_66.png" alt="" />
-                Purchase now
+                Comments
             </a>
 
         </div>
