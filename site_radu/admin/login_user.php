@@ -1,9 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
-	<link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+		<?php
+			$this->load->view('includes/site_head.php');
+		?>
 	</head>
 	<body>
+		<?php 	
+			$this->load->view('includes/site_header.php');
+		?>
 	<div class="login_admin">
 	<h3>Login user</h3>
 	<form action="login_users.php" method="post">

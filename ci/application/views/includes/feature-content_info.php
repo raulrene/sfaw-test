@@ -1,4 +1,3 @@
-
     <div class="featured-content_info">
 		<div class = "column_info">
 			<div class="column-content">
@@ -59,24 +58,60 @@
             <div class="meniu_lateral">
                 <div class="meniu_lateral_content">
                     <ul>
-						<?php 
-						foreach ($data as $row1)
-						{?>
-                        <li class="active"><a href="<?php echo base_url();?>coursesinfo/index/<?php echo $this->uri->segment('3').'/'. $row1->url;?>"><?php echo $row1->capitol;?></a></li>
-                        
-						<?php }?>
+					<?php 
+						$capitol_curent = 0;
+						$ul_deschis = false;
+						foreach ($allSubcapitols as $row)
+						{
+								if($row->capitol_id != $capitol_curent) { 
+									
+									if($ul_deschis) {
+										?>
+										</ul >
+										</li>
+										<?php
+									}
+
+								?>
+									<li class="active"><a href=""><?php echo $row->capitol;?></a>
+									<ul class="subcapitol">
+								<?php
+									$ul_deschis = true;
+									$capitol_curent = $row->capitol_id ;
+								}
+								
+								if($row->sub_capitol_id == $selectedSubCapitol->sub_capitol_id) {
+									$clasaSubCapitolSelectat = 'sub_capitol_selectat';
+								}
+								else {
+									$clasaSubCapitolSelectat = '';
+								}
+								?>
+								<li class="active <?php echo $clasaSubCapitolSelectat; ?>" ><a href="<?php echo base_url();?>coursesinfo/index/<?php echo $row->sub_capitol_id ;?>"><?php echo $row->nume;?></a></li>
+								
+					<?php
+						}
+						
+						if($ul_deschis) {
+									?>
+									</ul >
+									</li>
+									<?php
+						}
+					?>
                     </ul>
                 </div>
             </div>
 			<div class="tabs-content">
-				<?php 
-					foreach ($data1 as $row2)
-					{?>
-					<h1><?php echo $row2->sub_capitol;?></h1>
-					<p><?php echo $row2->text_1;?></p>
-					<p><?php echo $row2->text_2;?></p>
-					<p><?php echo $row2->text_3;?></p>
-				<?php }?>
+				
+					<?php 
+					foreach ($contentForSubCapitol as $row)
+						{?>
+							<h4><?php echo $row->nume;?></h4>
+							<p><?php echo $row->content;?></p>
+		
+						
+					<?php }?>
                 <a class="button large primary" target="_self" href=" ">
                     Purchase now
                 </a>
