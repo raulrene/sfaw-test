@@ -3,12 +3,12 @@
     <div class="column three-col tabs">
         <ul>
             <?php
-            while($row = mysqli_fetch_assoc($selectAll)){
+            foreach($selectAll as $row){
                 ?>
-                <a href="<?php echo base_url();?>course-info.php?id=<?php echo $_GET['id']."&url=".$row['friendly_url']; ?>">
+                <a href="<?php echo base_url();?>course_info/index/<?php echo $this->uri->segment(3)."/".$row->friendly_url; ?>">
 
                     <li class="">
-                        <?php echo $row['nume'];?>
+                        <?php echo $row->nume;?>
                     </li>
                 </a>
 
@@ -18,10 +18,11 @@
 </div>
 <div class="tabs-content">
     <?php
-        while($row = mysqli_fetch_assoc($selectJoin)){
+
+    foreach($selectJoin as $row){
     ?>
-        <h1><?php echo $row['nume'];?></h1>
-        <p><?php echo $row['content_text']; ?></p>
+        <h1><?php echo $row->nume;?></h1>
+        <p><?php echo $row->content_text; ?></p>
         <a class="button large primary" target="_self" href=" ">
             Purchase now
         </a>

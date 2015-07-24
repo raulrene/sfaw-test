@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <link href="../assets/css/login.css" type="text/css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/css/login.css" type="text/css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 </head>
 </head>
-<body>
+<body class="formBG">
 
 <?php
 /**
@@ -14,7 +13,6 @@
  * Date: 7/16/15
  * Time: 10:52 AM
  */
-include_once('../config/config-old.php');
 
 function test_input($data) {
     $data = trim($data);
@@ -67,7 +65,7 @@ if(isset($_POST) && !empty($_POST)){
             $q = "INSERT INTO users (user_name, user_password, email)
                       VALUES ('$user_name', '$user_password', '$email')
                      ";
-            if($conn->query($q) == TRUE){
+            if($this->db->query($q) == TRUE){
                 echo 'Registration success';
             }else{
                 echo "Error: " . $q . "<br>" . $conn->error;
@@ -79,7 +77,7 @@ if(isset($_POST) && !empty($_POST)){
 }else{}
 
 ?>
-    <div class="loginForm">
+    <div class="loginForm ">
         <h1 class="logText">Register</h1>
         <form method="post" action="">
             <div class="form_field">
@@ -98,7 +96,7 @@ if(isset($_POST) && !empty($_POST)){
 
         </form>
         <br>
-        <a href="login.php"><h3 class="logText">Go to Login Page</h3></a>
+        <a href="login"><h3 class="logText">Go to Login Page</h3></a>
     </div>
 
 </body>

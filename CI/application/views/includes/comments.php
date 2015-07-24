@@ -1,80 +1,62 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: dan
- * Date: 7/13/15
- * Time: 11:23 AM
- */
-
-include('config/config.php');
-include('classes/Comments.php');
-include('classes/Replies.php');
-
-$obj1 = new Comments();
-$obj2 = new Replies();
-$data1 = $obj1->getComments();
-$data2 = $obj2->getReplies();
-
-?>
 
 <div class="post-comments">
     <h1>Comments</h1>
     <div class="comments-listing">
         <ul>
             <?php
-            if(isset($data1) && !empty($data1)){
-                foreach($data1 as $comm){
-            ?>
-            <li id="">
-                <div class="comment hidden-wrap">
-                    <div class="avatar-container">
-                        <div class="bordered-image">
-                            <a href="">
-                                <img alt="aaa" src="<?php echo $comm->img;?>" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="comment-text">
-                        <div class="comment-header hidden-wrap">
-                            <h3><?php echo $comm->author ." ". $comm->date;?></h3>
-                            <h4>
-                               <a class="comment-reply-link">
-                                   Reply
-                               </a>
-                            </h4>
-
-                        </div>
-                        <p><?php echo $comm->text;?></p>
-                    </div>
-                </div>
-                <ul class="children">
-                    <?php
-                    foreach($data2 as $reply){
-
-                        if($reply->id_parent == $comm->id){
+            if(isset($comments) && !empty($comments)){
+                foreach($comments as $comm){
                     ?>
-
                     <li id="">
                         <div class="comment hidden-wrap">
                             <div class="avatar-container">
                                 <div class="bordered-image">
                                     <a href="">
-                                        <img alt="" src="<?php echo $reply->img;?>">
+                                        <img alt="aaa" src="<?php echo base_url().$comm->img;?>" />
                                     </a>
                                 </div>
                             </div>
                             <div class="comment-text">
                                 <div class="comment-header hidden-wrap">
-                                    <h3><?php echo $reply->author ." ". $reply->date;?></h3>
+                                    <h3><?php echo $comm->author ." ". $comm->date;?></h3>
+                                    <h4>
+                                        <a class="comment-reply-link">
+                                            Reply
+                                        </a>
+                                    </h4>
+
                                 </div>
-                                <p><?php echo $reply->text;?></p>
+                                <p><?php echo $comm->text;?></p>
                             </div>
                         </div>
+                        <ul class="children">
+                            <?php
+                            foreach($replies as $reply){
+
+                                if($reply->id_parent == $comm->id){
+                                    ?>
+
+                                    <li id="">
+                                        <div class="comment hidden-wrap">
+                                            <div class="avatar-container">
+                                                <div class="bordered-image">
+                                                    <a href="">
+                                                        <img alt="" src="<?php echo base_url().$reply->img;?>">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="comment-text">
+                                                <div class="comment-header hidden-wrap">
+                                                    <h3><?php echo $reply->author ." ". $reply->date;?></h3>
+                                                </div>
+                                                <p><?php echo $reply->text;?></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <?php } }?>
+                        </ul>
                     </li>
-                     <?php } }?>
-                </ul>
-            </li>
-            <?php } }?>
+                <?php } }?>
         </ul>
     </div>
 

@@ -18,19 +18,17 @@ class Comments extends CI_Model{
 
     //retrieve table object using prepared statements
     public function getComments(){
-        global $db;
-        $data = $db->fetch_rows("Select * from $this->table");
+        $data = $this->db->get($this->table);
 
-        return $data;
+        return $data->result();
     }
 
     public function getComment($id){
-        global $db;
-
-        $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
-
-        return $data;
+        $this->db->where('id', $id);
+        $data = $this->db->get($this->table);
+        return $data->result();
     }
+
 
     /**
      * @param mixed $img

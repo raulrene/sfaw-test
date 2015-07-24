@@ -41,6 +41,7 @@ input[type=textLogin]:focus, input[type=password]:focus,input[type=email]:focus 
 }
 .loginForm {
     background: #ffffff;
+    opacity: 0.8;
     border: 2px solid #0095cd;
     padding: 20px;
     text-align: center;
@@ -49,4 +50,10 @@ input[type=textLogin]:focus, input[type=password]:focus,input[type=email]:focus 
     margin-right: 35%;
     float:left;
     width: 30%;
+}
+
+.formBG{
+    background:url("../img/formBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -5,32 +5,56 @@
  * Date: 7/17/15
  * Time: 10:26 PM
  */
-include('config/config.php');
 class User extends CI_Model{
     private $id,$user_name,$user_password,$email;
     private $tableName = 'users';
 
-    public function getPassByName($user){
-        global $db;
-        $q = "SELECT user_password FROM users WHERE user_name = ".$user;
-        $data = $db->fetch_row($q);
+    public function getRole($username){
+        $this -> db -> select('role');
+        $this -> db -> from('users');
+        $this -> db -> where('user_name', $username);
 
-        return $data;
+        $query = $this -> db -> get();
+        return $query->result();
+    }
+    function login($username, $password)
+    {
+        $this -> db -> select('id, user_name, user_password');
+        $this -> db -> from('users');
+        $this -> db -> where('user_name', $username);
+        $this -> db -> where('user_password', sha1($password));
+        $this -> db -> limit(1);
+
+        $query = $this -> db -> get();
+
+        if($query -> num_rows() == 1)
+        {
+            return $query->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public function getPassByName($user){
+
+        $q = "SELECT user_password FROM users WHERE user_name = ".$user;
+        $data = $this->db->get($q);
+
+        return $data->result();
     }
 
     public function getUsers(){
-        global $db;
-        $data = $db->fetch_rows("Select * from $this->table");
+        $data = $this->db->get($this->table);
 
-        return $data;
+        return $data->result;
     }
 
     public function getUser($id){
-        global $db;
-
-        $data = $db->fetch_row("Select * from $this->table where id =" . $id);
-
-        return $data;
+        $this->db->where('id', $id);
+        $data = $this->db->get($this->table);
+        return $data->result();
     }
 
     /**

@@ -14,7 +14,7 @@
                 <div class="column-content">
                     <!-- course first section img -->
                     <div class="col-img">
-                        <a href="<?php echo base_url();?>welcome/courseInfo/<?php echo $row->id; ?>">
+                        <a href="<?php echo base_url();?>course_info/index/<?php echo $row->id; ?>">
                             <img alt="cook" src="<?php echo base_url().$row->picture;?>">
                         </a>
                     </div>

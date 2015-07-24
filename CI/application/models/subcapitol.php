@@ -14,7 +14,22 @@ class SubCapitol extends CI_Model{
     private $table = 'sub_capitol';
 
     public function getJoinedData($friendlyUrl){
+        $this->db->select('*');
+        $this->db->from("$this->table X");
+        $this->db->join('sub_sub_capitol Y', 'X.id = Y.sub_capitol_id', 'left');
+        $this->db->join('content C', 'Y.id = C.sub_sub_capitol_id', 'left');
+        $this->db->where("X.friendly_url ='".$friendlyUrl."'");
 
+        $query = $this->db->get();
+        if($query->num_rows() != 0)
+        {
+            return $query->result();
+        }
+        else
+        {
+            return false;
+        }
+        /*
         $query = "
             SELECT * FROM $this->table X
             LEFT JOIN sub_sub_capitol Y ON X.id = Y.sub_capitol_id
@@ -23,6 +38,8 @@ class SubCapitol extends CI_Model{
         $data = $this->db->query($query);
 
         return $data->result();
+
+        */
     }
     public function getSubCapitole(){
         $data = $this->db->get($this->table);

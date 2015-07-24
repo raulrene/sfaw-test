@@ -29,12 +29,17 @@ $this->load->view('includes/header.php');
     <div class="main-content">
         <div class="row">
             <?php $this->load->view('includes/about.php'); ?>
-    </div>
+
+            <?php
+            $this->load->view("includes/comments.php");
+            ?>
+
+        </div>
 
         <?php $this->load->view('includes/footer.php'); ?>
 
 </div>
-
+</div>
     <script language="javascript" src="<?php echo base_url();?>assets/js/course-info.js"></script>
 </body>
 </html>

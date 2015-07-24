@@ -18,18 +18,15 @@ class Replies extends CI_Model{
 
     //retrieve table object using prepared statements
     public function getReplies(){
-        global $db;
-        $data = $db->fetch_rows("Select * from $this->table");
+        $data = $this->db->get($this->table);
 
-        return $data;
+        return $data->result();
     }
 
     public function getReply($id){
-        global $db;
-
-        $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
-
-        return $data;
+        $this->db->where('id', $id);
+        $data = $this->db->get($this->table);
+        return $data->result();
     }
     /**
      * @param mixed $author

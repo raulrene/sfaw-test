@@ -12,19 +12,15 @@ class SubSubCapitol extends CI_Model{
     private $sub_capitol_id;
     private $table = 'sub_sub_capitol';
     public function getSubSubCapitole(){
-        global $db;
+        $data = $this->db->get($this->table);
 
-        $data = $db->fetch_rows("Select * from $this->table");
-
-        return $data;
+        return $data->result;
     }
 
     public function getSubSubCapitol($id){
-        global $db;
-
-        $data = $db->fetch_rows("Select * from $this->table where id =" . $id);
-
-        return $data;
+        $this->db->where('id', $id);
+        $data = $this->db->get($this->table);
+        return $data->result();
     }
 
     /**
