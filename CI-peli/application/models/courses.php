@@ -17,12 +17,31 @@
             return $data->row();
         }
 
-        public function getCoursesHome(){
+    public function getCoursesHome(){
 
             $this->db->limit(4);
             $data = $this->db->get($this->table);
             return $data->result();
         }
+
+
+   public function addCourse($name, $price, $img, $aut, $user, $star, $alt){
+        $info = array(
+                'course_name'      =>  $name,
+                'course_price'     =>  $price,
+                'course_img'       =>  $img,
+                'course_author'    =>  $aut,
+                'course_user'      =>  $user,
+                'course_stars'     =>  $star,
+                'img_alt'          =>  $alt
+        );
+        $q =  $this->db->insert($this->table,$info); 
+        if(!$q){
+            return FALSE;
+        }else{
+            return TRUE; 
+        }  
+    }        
 
         /**
          * @param mixed $course_author

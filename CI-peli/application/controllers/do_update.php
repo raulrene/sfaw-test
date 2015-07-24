@@ -29,6 +29,18 @@ class Do_update extends CI_Controller {
             }else{
             	echo 'error updating.please try again !';
             }
-		}
+		}elseif($table == 'sub_chapters')
+			$name    = $this->input->post('chapter_id');
+			$link    = $this->input->post('links');
+            $url     = $this->input->post('friendly_url')
+            if($this->chapter->updateChapter($id,$ch_name,$url) == TRUE){
+            	$data['title']  = 'Edited';
+            	$data['table']  = $table;
+             	$this->load->view('admin/edit',$data);
+            }else{
+            	echo 'error updating.please try again !';
+            }
+         }   
+
 	}
 }		

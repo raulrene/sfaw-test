@@ -18,6 +18,23 @@ class Replies extends CI_Model{
         return $data->row();
     }
 
+   public function addReply($aid, $aut, $img, $link, $date, $text){
+        $info = array(
+                'comments_id'      =>  $aid,
+                'author'           =>  $aut,
+                'author_img'       =>  $img,
+                'author_link'      =>  $link,
+                'date_posted'      =>  $date,
+                'comm_text'        =>  $text
+        );
+        $q =  $this->db->insert($this->table,$info); 
+        if(!$q){
+            return FALSE;
+        }else{
+            return TRUE; 
+        }  
+    }    
+
     /**
      * @param mixed $author
      */

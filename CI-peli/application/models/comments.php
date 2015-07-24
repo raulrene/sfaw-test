@@ -21,9 +21,11 @@ class Comments extends CI_Model{
 
    public function addComment($aut, $img, $link, $date, $text){
         $info = array(
-                'sub_ch_id'           =>  $sid,
-                'sub_sub_ch_name'     =>  $sn,
-                'ord'                 =>  $ord
+                'author'           =>  $aut,
+                'author_img'       =>  $img,
+                'author_link'      =>  $link,
+                'date_posted'      =>  $date,
+                'comm_text'        =>  $text
         );
         $q =  $this->db->insert($this->table,$info); 
         if(!$q){
