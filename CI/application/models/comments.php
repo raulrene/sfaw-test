@@ -15,7 +15,21 @@ class Comments extends CI_Model{
     private $author_link;
     private $table = 'comments';
 
+    public function get_comm_by_sscid($sscid){
+        $this->db->select('*');
+        $this->db->from("$this->table X");
+        $this->db->where("X.subsubcapitol_id ='".$sscid."'");
 
+        $query = $this->db->get();
+        if($query->num_rows() != 0)
+        {
+            return $query->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
     //retrieve table object using prepared statements
     public function getComments(){
         $data = $this->db->get($this->table);

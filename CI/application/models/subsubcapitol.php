@@ -6,11 +6,28 @@
  * Time: 12:40 PM
  */
 
-class SubSubCapitol extends CI_Model{
+class subsubcapitol extends CI_Model{
     private $id;
     private $nume;
     private $sub_capitol_id;
     private $table = 'sub_sub_capitol';
+
+    public function get_sscid_by_scid($scid){
+        $this->db->select('id');
+        $this->db->from("$this->table X");
+        $this->db->where("X.sub_capitol_id ='".$scid."'");
+
+        $query = $this->db->get();
+        if($query->num_rows() != 0)
+        {
+            return $query->result();
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public function getSubSubCapitole(){
         $data = $this->db->get($this->table);
 

@@ -13,6 +13,23 @@ class SubCapitol extends CI_Model{
     private $html_id,$class,$friendly_url;
     private $table = 'sub_capitol';
 
+
+    public function getIdByUrl($url){
+        $this->db->select('id');
+        $this->db->from("$this->table X");
+        $this->db->where("X.friendly_url ='".$url."'");
+
+        $query = $this->db->get();
+        if($query->num_rows() != 0)
+        {
+            return $query->result();
+        }
+        else
+        {
+            return false;
+        }
+
+    }
     public function getJoinedData($friendlyUrl){
         $this->db->select('*');
         $this->db->from("$this->table X");
