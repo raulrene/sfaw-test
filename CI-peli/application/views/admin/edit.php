@@ -14,6 +14,21 @@
             }elseif($table == 'sub_chapters'){
                  echo '<p class="resp_par> Record successfully updated!</p><br/><br/><br/>';
                  echo '<a class="fg-button teal" href="'. base_url().'admin/index">Return</a>';
+            }elseif($table == 'sub_sub_ch'){
+                 echo '<p class="resp_par> Record successfully updated!</p><br/><br/><br/>';
+                 echo '<a class="fg-button teal" href="'. base_url().'admin/index">Return</a>';
+            }elseif($table == 'content'){
+                 echo '<p class="resp_par> Record successfully updated!</p><br/><br/><br/>';
+                 echo '<a class="fg-button teal" href="'. base_url().'admin/index">Return</a>';
+            }elseif($table == 'comments'){
+                 echo '<p class="resp_par> Record successfully updated!</p><br/><br/><br/>';
+                 echo '<a class="fg-button teal" href="'. base_url().'admin/index">Return</a>';
+            }elseif($table == 'replies'){
+                 echo '<p class="resp_par> Record successfully updated!</p><br/><br/><br/>';
+                 echo '<a class="fg-button teal" href="'. base_url().'admin/index">Return</a>';
+            }elseif($table == 'courses'){
+                 echo '<p class="resp_par> Record successfully updated!</p><br/><br/><br/>';
+                 echo '<a class="fg-button teal" href="'. base_url().'admin/index">Return</a>';
             }
         ?>
     </div>

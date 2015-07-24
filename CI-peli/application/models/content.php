@@ -20,6 +20,21 @@ class Content extends CI_Model{
         
     }
 
+    public function addContent($sid, $t1, $t2 ,$t3){
+        $info = array(
+                'sub_sub_ch_id'       =>  $sid,
+                'text_1'              =>  $t1,
+                'text_2'              =>  $t2,
+                'text_3'              =>  $t3
+        );
+        $q =  $this->db->insert($this->table,$info); 
+        if(!$q){
+            return FALSE;
+        }else{
+            return TRUE; 
+        }  
+    }
+
     /**
      * @param mixed $id
      */

@@ -33,7 +33,7 @@
                     if(isset($l) && !empty($l)){
                     foreach($l as $row){ ?>
                         <li class="<?php echo $row->class; ?>" id="<?php echo $row->id_html; ?>">
-                            <a href="<?php echo $this->uri->segment(3).'/'.$row->friendly_url; ?>">
+                            <a href="<?php echo base_url().'course_info/index/'. $this->uri->segment(3).'/'.$row->friendly_url; ?>">
                                 <?php echo $row->links; ?>
                                 </a>
                             </li>

@@ -25,7 +25,70 @@
                     echo '<a class="fg-button teal" href="update_info/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
                           <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
                 }
-                echo '</ul>';            }
+                echo '</ul>';           
+            }elseif($table == 'sub_sub_ch'){
+                echo '<ul>';
+                foreach ($result as $row){
+                    echo '<li style="font-size:20px">'.$row->id .' -> '.$row->sub_ch_id.'->'.$row->sub_sub_ch_name .' | '.$row->ord.'</li>';
+                    echo '<a class="fg-button teal" href="update_info/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
+                          <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
+                }
+                echo '</ul>'; 
+             }elseif($table == 'content'){
+                echo '<ul>';
+                foreach ($result as $row){
+                    echo '<li style="font-size:20px">'.$row->sub_sub_ch_id .' -> '
+                                                      .$row->text_1.'->'
+                                                      .$row->text_2 .' | '
+                                                      .$row->text_3
+                        .'</li>';
+                    echo '<a class="fg-button teal" href="update_info/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
+                          <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
+                }
+                echo '</ul>'; 
+             }elseif($table == 'comments'){
+                echo '<ul>';
+                foreach ($result as $row){
+                    echo '<li style="font-size:20px">'.$row->author .' -> '
+                                                      .$row->author_img.'->'
+                                                      .$row->author_link .' | '
+                                                      .$row->date_posted .' | '
+                                                      .$row->comm_text          
+                        .'</li>';
+                    echo '<a class="fg-button teal" href="update_info/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
+                          <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
+                }
+                echo '</ul>'; 
+             }elseif($table == 'replies'){
+                echo '<ul>';
+                foreach ($result as $row){
+                    echo '<li style="font-size:20px">'.$row->comments_id .' -> '
+                                                      .$row->author.'->'
+                                                      .$row->author_img .' | '
+                                                      .$row->author_link .' | '
+                                                      .$row->date_posted .' | '
+                                                      .$row->comm_text 
+                       .'</li>';
+                    echo '<a class="fg-button teal" href="update_info/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
+                          <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
+                }
+                echo '</ul>'; 
+             }elseif($table == 'courses'){
+                echo '<ul>';
+                foreach ($result as $row){
+                    echo '<li style="font-size:20px">'.$row->course_name .' -> '
+                                                      .$row->course_price.'->'
+                                                      .$row->course_img .' | '
+                                                      .$row->course_author.' | '
+                                                      .$row->course_user.' | '
+                                                      .$row->course_stars.' | '
+                                                      .$row->img_alt                                 
+                        .'</li>';
+                    echo '<a class="fg-button teal" href="update_info/index/'.$row->id.'/'.$table.'">Edit</a>&nbsp
+                          <a class="button large primary" href="delete_info/index/'.$row->id.'/'.$table.'">Delete</a>';
+                }
+                echo '</ul>'; 
+             }   
         ?>
     </div>
 </body> 

@@ -27,7 +27,7 @@
             <?php }elseif($table == 'sub_chapters'){ ?>
                 <div class = "admin_forms">
                     <form method="post" action="edit.php" id="">
-                        <input type="hidden" name="table" value="<?php echo $table ?>" />
+                        <input type="hidden" name="table" value="<?php echo $table; ?>" />
                         <input type="hidden" name="id" value="<?php echo $result->id; ?>" />
                         <div class="form_field">
                             <input type="text" name="chapter_id" size="18"  value="<?php echo $result->chapter_id; ?>" required />
@@ -46,15 +46,16 @@
         <?php }elseif($table == 'sub_sub_ch'){ ?>
             <div class = "admin_forms">
                 <form method="post" action="<?php echo base_url() ?>operation" id="">
-                    <input type="hidden" name="hidden" value="ss_chapters" />
+                    <input type="hidden" name="table" value="<?php echo $table; ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result->id; ?>" />
                     <div class="form_field">
-                        <input type="text" name="sub_chapter_id" size="18"  placeholder="Sub-Chapter Id" required />
+                        <input type="text" name="sub_chapter_id" size="18"  value="<?php echo $result->sub_ch_id; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="sub_sub_chapter_name" size="18"  placeholder="Sub_Sub-Chapter Name" required />
+                        <input type="text" name="sub_sub_chapter_name" size="18"  value="<?php echo $result->sub_sub_ch_name; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="order" size="18"  placeholder="Order" required />
+                        <input type="text" name="order" size="18"  value="<?php echo $result->ord; ?>" required />
                     </div>
                     <br />
                     <input type="submit" name="submit" value="add" class="button large primary"/>
@@ -63,18 +64,19 @@
         <?php }elseif($table == 'content'){ ?>   
             <div class = "admin_forms">
                 <form method="post" action="<?php echo base_url() ?>operation" id="">
-                    <input type="hidden" name="hidden" value="content" />
+                    <input type="hidden" name="table" value="<?php echo $table; ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result->id; ?>" />
                     <div class="form_field">
-                        <input type="text" name="sub_sub_chapter_id" size="18"  placeholder="Sub-Sub-Chapter Id" required />
+                        <input type="text" name="sub_sub_chapter_id" size="18"  value="<?php echo $result->sub_sub_ch_id; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="text_1" size="18"  placeholder="Text 1" required />
+                        <input type="text" name="text_1" size="18"  value="<?php echo $result->text_1; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="text_2" size="18"  placeholder="Text 2" required />
+                        <input type="text" name="text_2" size="18"  value="<?php echo $result->text_2; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="text_3" size="18"  placeholder="Text 3" required />
+                        <input type="text" name="text_3" size="18"  value="<?php echo $result->text_3; ?>" required />
                     </div>
                     <br />
                     <input type="submit" name="submit" value="add" class="button large primary"/>
@@ -83,21 +85,22 @@
          <?php }elseif($table == 'comments'){ ?>
              <div class = "admin_forms">
                 <form method="post" action="<?php echo base_url() ?>operation" id="">
-                    <input type="hidden" name="hidden" value="comments" />
+                    <input type="hidden" name="table" value="<?php echo $table; ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result->id; ?>" />
                     <div class="form_field">
-                        <input type="text" name="author" size="18"  placeholder="Author Name" required />
+                        <input type="text" name="author" size="18"  value="<?php echo $result->author; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="author_img" size="18"  placeholder="Author Image" required />
+                        <input type="text" name="author_img" size="18"  value="<?php echo $result->author_img; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="author_link" size="18"  placeholder="Author Link" required />
+                        <input type="text" name="author_link" size="18"  value="<?php echo $result->author_link; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="date_posted" size="18"  placeholder=" Today Date" required />
+                        <input type="text" name="date_posted" size="18"  value="<?php echo $result->date_posted; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="comm_text" size="18"  placeholder="Comment" required />
+                        <input type="text" name="comm_text" size="18"  value="<?php echo $result->comm_text; ?>" required />
                     </div>
                     <br />
                     <input type="submit" name="submit" value="add" class="button large primary"/>
@@ -106,24 +109,25 @@
         <?php }elseif($table == 'replies'){ ?>
             <div class = "admin_forms">
                 <form method="post" action="<?php echo base_url() ?>operation" id="">
-                    <input type="hidden" name="hidden" value="replies" />
+                    <input type="hidden" name="table" value="<?php echo $table; ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result->id; ?>" />
                     <div class="form_field">
-                        <input type="text" name="author" size="18"  placeholder="Author Name" required />
+                        <input type="text" name="author" size="18"  value="<?php echo $result->comments_id; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="author_id" size="18"  placeholder="Comment Author id" required />
+                        <input type="text" name="author_id" size="18"  value="<?php echo $result->author; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="author_img" size="18"  placeholder="Author Image" required />
+                        <input type="text" name="author_img" size="18"  value="<?php echo $result->author_img; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="author_link" size="18"  placeholder="Author Link" required />
+                        <input type="text" name="author_link" size="18"  value="<?php echo $result->author_link; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="date_posted" size="18"  placeholder=" Today Date" required />
+                        <input type="text" name="date_posted" size="18"  value="<?php echo $result->date_posted; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="comm_text" size="18"  placeholder="Reply" required />
+                        <input type="text" name="comm_text" size="18"  value="<?php echo $result->comm_text; ?>" required />
                     </div>
                     <br />
                     <input type="submit" name="submit" value="add" class="button large primary"/>
@@ -132,27 +136,28 @@
         <?php }elseif($table == 'courses'){ ?>    
             <div class = "admin_forms">
                 <form method="post" action="<?php echo base_url() ?>operation" id="">
-                    <input type="hidden" name="hidden" value="courses" />
+                    <input type="hidden" name="table" value="<?php echo $table; ?>" />
+                    <input type="hidden" name="id" value="<?php echo $result->id; ?>" />
                     <div class="form_field">
-                    <input type="text" name="name" size="18"  placeholder="Name" required />
+                    <input type="text" name="name" size="18"  value="<?php echo $result->course_name; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input  type="text" name="price" size="18"  placeholder="price" required />
+                        <input  type="text" name="price" size="18"  value="<?php echo $result->course_price; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input  type="text" name="img" size="18"  placeholder="image" required />
+                        <input  type="text" name="img" size="18"  value="<?php echo $result->course_img; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input  type="text" name="author" size="18"  placeholder="Author" required />
+                        <input  type="text" name="author" size="18"  value="<?php echo $result->course_author; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input  type="text" name="user" size="18"  placeholder="nr of users" required />
+                        <input  type="text" name="user" size="18"  value="<?php echo $result->course_user; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input  type="text" name="stars" size="18"  placeholder="Nr of stars" required />
+                        <input  type="text" name="stars" size="18"  value="<?php echo $result->course_stars; ?>" required />
                     </div>
                     <div class="form_field">
-                        <input type="text" name="alt" size="18"  placeholder="image alt" required />
+                        <input type="text" name="alt" size="18"  value="<?php echo $result->img_alt; ?>" required />
                     </div>
                         <br />
                     <input type="submit" name="submit" value="add" class="button large primary"/>

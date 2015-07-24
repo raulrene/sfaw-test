@@ -18,6 +18,22 @@ class Comments extends CI_Model{
         return $data->row();
     
     }
+
+   public function addComment($aut, $img, $link, $date, $text){
+        $info = array(
+                'sub_ch_id'           =>  $sid,
+                'sub_sub_ch_name'     =>  $sn,
+                'ord'                 =>  $ord
+        );
+        $q =  $this->db->insert($this->table,$info); 
+        if(!$q){
+            return FALSE;
+        }else{
+            return TRUE; 
+        }  
+    }
+
+
     /**
      * @param mixed $author
      */

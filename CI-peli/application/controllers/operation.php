@@ -8,11 +8,11 @@ class Operation extends CI_Controller {
 
 		$this->load->model('chapter');
 		$this->load->model('subchapter');
-		$this->load->model('');
-		$this->load->model('');
-		$this->load->model('');
-		$this->load->model('');
-		$this->load->model('');
+		$this->load->model('sub_sub_chapter');
+		$this->load->model('content');
+		$this->load->model('comments');
+		$this->load->model('replies');
+		$this->load->model('courses');
 	}
 
 	public function index()	{
@@ -21,6 +21,8 @@ class Operation extends CI_Controller {
 			redirect('login');
 		}	
 		$data = array();
+
+
 		
 		switch($this->input->post('hidden')){
 			case "Chapters"     :
@@ -50,6 +52,50 @@ class Operation extends CI_Controller {
             }
             break;
 
+            case "sub_sub_ch"     :
+			$sid     = $this->input->post('sub_chapter_id');
+			$sn      = $this->input->post('sub_sub_chapter_name');
+            $ord     = $this->input->post('order');
+            if($this->sub_sub_chapter->addSubSubChapter($sid, $sn, $ord) == TRUE){
+            	$data['title']  = 'Operations';
+            	$data['result'] = $this->sub_sub_chapter->getSubSubCH();
+            	$data['table']  = 'sub_sub_ch';
+            	$this->load->view('admin/operations',$data);
+            }else{
+            	echo 'error inserting.please try again !';
+            }
+            break;
+
+            case "content"     :
+			$sid     = $this->input->post('sub_sub_chapter_id');
+			$t1      = $this->input->post('text_1');
+            $t2      = $this->input->post('text_2');
+            $t3      = $this->input->post('text_3');
+            if($this->content->addContent($sid, $t1, $t2 ,$t3) == TRUE){
+            	$data['title']  = 'Operations';
+            	$data['result'] = $this->content->getContent();
+            	$data['table']  = 'content';
+            	$this->load->view('admin/operations',$data);
+            }else{
+            	echo 'error inserting.please try again !';
+            }
+            break; 
+
+            case "comments"     :
+			$aut       = $this->input->post('author');
+			$img       = $this->input->post('author_img');
+            $link      = $this->input->post('author_link');
+            $date      = $this->input->post('date_posted');
+            $text      = $this->input->post('comm_text');
+            if($this->comments->addComment($aut, $img, $link, $date, $text ) == TRUE){
+            	$data['title']  = 'Operations';
+            	$data['result'] = $this->content->getComment();
+            	$data['table']  = 'content';
+            	$this->load->view('admin/operations',$data);
+            }else{
+            	echo 'error inserting.please try again !';
+            }
+            break;                       
        
 		}
 	
