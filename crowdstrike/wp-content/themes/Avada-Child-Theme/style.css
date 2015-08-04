@@ -1,0 +1,259 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for the Avada
+Author: Your name here
+Template: Avada
+*/
+@import url('../Avada/style.css');
+/** falcon div black  **/
+
+#main{
+	padding:0px !important;
+}
+.falcon-int{
+    font-family: "karlaregular",​Helvetica,​Arial,​sans-serif;
+	text-align:	center;
+    vertical-align:baseline	;	
+    font-weight:400;
+}
+.falcon-int .avada-row h1.falcon{
+
+     font-size:64.4px;
+     color:#fff;
+     letter-spacing:0.6px;
+     line-height:77.2833px;
+     margin: 40px 0px 18px 0px;
+}
+.falcon-int .avada-row h1.falcon span{
+	font-weight: bold;
+}
+.falcon-int .avada-row p.falcon_par{
+	color:#fff;
+	font-size: 19.6px;
+	line-height: 31.3px;
+	margin: 0px 0px 20px 0px;
+}
+.falcon-int .avada-row a.falcon_btn{
+	background:#ec3728 !important;  
+	font-size:17px;
+    color:#fff;
+    line-height:23.8px;
+    margin: 15px 0px 50px 0px;
+    text-decoration:none;
+}
+
+/**  white backgreound pic  **/
+
+.white-pic .avada-row p.wh-pic-txt{
+	font-size:28px;
+	font-weight:400;
+	color:#3f3f3f;
+	letter-spacing:1px;
+	line-height:18px;
+	text-align:center;
+	vertical-align:baseline;
+}
+.white-pic .avada-row p.wh-pic-txt span{
+	color:#ec3728;
+}
+
+/** green writing div   **/
+.avada-row .green{
+	font-family:"karlaregular",​Helvetica,​Arial,​sans-serif;
+    font-size:39px;
+    font-weight:400;
+	color:	#fff;	
+    text-transform:uppercase;
+	line-height:42px;
+	text-align:center;	
+}
+.avada-row .green span{
+	color:#bacc4d;
+	width: 592px;
+}
+.avada-row .width-80{
+	font-size:22.4px;
+	font-weight:400;
+    color:#fff;	
+    line-height:38.0833px;
+    text-align:center;
+    vertical-align:baseline;
+    width: 856px;
+}
+
+.avada-row a.falcon_btn{
+	background:#ec3728 !important;  
+	font-size:17px;
+    color:#fff;
+    line-height:23.8px;
+    margin: 15px 0px 50px 0px;
+    text-decoration:none;
+}
+/**    **/
+.post-content .avada-row{
+	margin: 0 auto;
+	padding: 0px 15px;
+	text-align: center;
+	width: 887px;	
+}
+
+.avada-row p.karla-bold{
+	color:#5c5c5c;
+	font-size: 22.4px;
+	font-weight: 400;
+	line-height: 38px;
+
+}
+
+.avada-row h3.header_3{
+	color:#3f3f3f;
+	font-size: 34px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.fusion-column-wrapper{
+	background-color: #343436;
+	margin:0px 0px 20px;
+	padding: 20px;
+	text-align: center;
+}
+.fusion-column-wrapper p.limegreen{
+	color:	#bacc4d;
+	font-size: 24px;
+	font-weight: 400;
+	line-height :30px;
+	margin:0px 0px 10px 0px;
+	vertical-align: baseline;
+}
+.fusion-column-wrapper p.white{
+	color:#fff;
+	font-size:18px;
+	font-weight:400;
+	height: 210px;
+	line-height: 30px;
+	margin:0px;
+}
+/**  half red half white divs  **/
+.red-div{
+	margin: 0px !important;
+}
+.red-div .fusion-column-wrapper{
+	margin: 0px 0px 0px -30px;
+	padding: 90px 60px 90px 90px;
+}
+.white-div .fusion-column-wrapper{
+	font-weight	:400;
+	margin: 0px -30px 0px 0px;
+	padding: 90px 90px 90px 60px;
+	text-align: left;
+	vertical-align:	baseline;
+}	
+.red-div .fusion-column-wrapper p.avant-light{
+	font-size: 46px;
+	font-weight: 400;
+	color:#fff;
+	line-height: 42px;
+	vertical-align: baseline;
+}
+.red-div .fusion-column-wrapper p.avant-light span.yellow{
+	color:#faff76;
+}
+.white-div .fusion-column-wrapper p.caps-red{
+	color:#ec3728;
+	font-size: 22px;
+	line-height	:18px;
+	margin: 0px 0px 10px 0px;
+	text-transform: uppercase;
+}
+.white-div .fusion-column-wrapper p.grey{
+	color:#5c5c5c;	
+	font-size:18px;
+	line-height	:28px;
+	margin: 0px 0px 35px 0px;
+}
+
+/**  **/
+#blue_all .avada-row i.fa{
+	color:#fff;
+	font-size: 80px;
+	text-align: center;
+	margin:0px auto;
+	float: none;
+}
+
+#blue_all .avada-row h6.request{
+	font-family	:"karlaregular",​Helvetica,​Arial,​sans-serif;
+    font-size:39.2px;
+    font-weight:400;
+    color:#fff;	
+    line-height	:54.8833px;
+    margin: 0px 0px 6px 0px;
+    text-align	:center;
+    vertical-align	:baseline;
+} 
+#blue_all .avada-row p.req_par{
+	font-family	:"karlaregular",​Helvetica,​Arial,​sans-serif;
+    font-size :19.6px;
+    font-weight	:400;
+    color:#fff;
+    line-height	:31.3667px;
+    margin: 0px;
+    padding: 0px;
+    text-align	:center;
+    vertical-align	:baseline;	
+}  
+#blue_all .avada-row a.req_btn{
+	background:transparent;
+	background-color: rgba(255,​ 255,​ 255,​ 0.34);
+	border: 2px solid #fff;
+    color:rgb(255,​ 255,​ 255);
+    font-size:17px;
+    font-weight	:400;
+    line-height:23.8px;
+    margin:15px 0px;
+    padding: 15px 0px;
+    text-align:center;
+    text-decoration	:none;
+    vertical-align:baseline;
+    width: 320px;
+}
+#blue_all .avada-row a.req_btn:hover{
+	background-color: #fff;
+	color:rgb(43, 140, 167);
+}
+
+/**  footer left **/
+.textwidget p.footer-par1{	
+	font-family	:"karlaregular",​Helvetica,​Arial,​sans-serif;
+	font-size:14.3px;
+	font-weight:400;
+	color:#b9bcbe;	
+	text-transform:uppercase;
+	letter-spacing:0.8px;
+	line-height:17.1667px;
+	text-align:left;
+	vertical-align:baseline;
+	margin: 30px 0px 4px 0px;
+}
+.textwidget p.footer-par2{
+	font-family:"karlaregular",​Helvetica,​Arial,​sans-serif;
+	font-size:11px;
+	font-weight:400;
+	font-style	normal
+	color:#aaa;	
+	line-height:18px;
+	text-align:left;
+	vertical-align:baseline;
+}
+
+.textwidget a.footer-watch-btn{
+	font-family:"PT Sans",​Arial,​Helvetica,​sans-serif;
+	font-size:14px;
+	font-weight:700;
+	color:r#fff;
+	text-transform:uppercase;
+	text-decoration:none;
+	line-height:17px;
+	text-align:center;
+	background:#a0ce4e;
+}
