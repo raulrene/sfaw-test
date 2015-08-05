@@ -1,0 +1,254 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for the Avada
+Author: Your name here
+Template: Avada
+*/
+
+#div_red {
+	background-color: #ec3728;
+	padding: 30px 15px;
+	height: 377px;
+}
+
+#div_red .avada-row h1 {
+	font-size:  4.6em;
+	color: #fff;
+}
+
+.avant-bold {
+	font-weight: bold;
+}
+
+#div_red .avada-row p {
+	display: block;
+	width: 642px;
+	margin: 0 auto;
+	color:#fff;
+	font-size: 1.4em;
+	line-height: 1.6em;
+}
+
+#main {
+	padding-top: :0 !important;
+}
+#div_black .avada-row p {
+	font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.limegreen {
+	color:#bacc4d;
+}
+
+#round_container {
+	width:520px;
+	margin:0 auto 35px auto;
+}
+
+#round_div_1{
+	display: block;
+	width:150px;
+	height: 150px;
+	border-radius: 100%;
+	background-color: #fff;
+}
+
+#round_div_2{
+	display: block;
+	width:150px;
+	height: 150px;
+	border-radius: 100%;
+	background-color: #292929;
+	color: #bacc4d;
+    font-size: 3.5em;
+    line-height: 3.1em;
+}
+
+#round_div_3{
+	display: block;
+	width:150px;
+	height: 150px;
+	border-radius: 100%;
+	background-color: #bacc4d;
+	color: #292929;
+    font-size: 3.5em;
+    line-height: 3.1em;
+}
+#div_transparent{
+	width:776px;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin:0 auto 70px;
+}
+
+#div_transparent p {
+	font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #3f3f3f
+}
+
+#two_divs_wrap {
+	height: 878px;
+	display: inline-block;
+}
+
+#left_div_black {
+	background-color: #494949;
+	padding:90px 50px 0 130px;
+	margin:0 !important;
+	height: 878px;
+	width:50% !important;
+}
+
+#left_div_black p {
+	font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 34px;
+    color:#fff;
+}
+
+#titlu_span {
+	font-size: 55px;
+	color: #bacc4d;
+}
+
+#large_font {
+	font-size: 55px;
+	 color:#fff;
+	 font-weight: 100;
+}
+
+#right_div_white {
+	background-color:#f2f2f2;
+	display: block;
+	height: 878px;
+	padding:95px 130px 0 90px;
+}
+
+#right_div_white p {
+	font-size: 20px;
+	line-height: 32px;
+}
+.avada-row {
+	height:auto !important;
+}
+
+#text_wrap {
+	font-size: 22px;
+    line-height: 34px;
+    text-align: left;
+}
+
+#div_wrap_text_col{
+
+}
+
+#div_wrap_text_col_1{
+
+}
+
+.teal {
+	font-size: 1.6em;
+	color: #2e8baa;
+}
+
+.para {
+	font-size: :20px;
+	line-height: :2em;
+}
+
+.nch-lightbox-media {
+	padding:20px 34px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: :17px;
+	border:1px solid #c9c9c9;
+	background-color: #f00;
+	letter-spacing: 1px;
+}
+
+#blue_div {
+	display: block;
+	height:142px;
+}
+
+#globe {
+	margin: 0 auto;
+}
+
+.fusion-column-wrapper{
+	margin:0 auto;
+}
+
+#round_arrow {
+	display: block;
+	width:96px;
+	height: 58px;
+	border-bottom-right-radius: 58px;
+	border-bottom-left-radius: 58px;
+	margin:0 auto;
+	position: relative;
+}
+
+#round_arrow_white {
+	position: absolute;
+	top:-35px;
+}
+#blue_all{
+	text-align: center;
+}
+#blue_all .avada-row i.fa{
+	color:#fff;
+	font-size: 80px;
+	text-align: center;
+	margin:0px auto;
+	float: none;
+}
+
+#blue_all .avada-row h6.request{
+	font-family	:"karlaregular",​Helvetica,​Arial,​sans-serif;
+    font-size:39.2px;
+    font-weight:400;
+    color:#fff;	
+    line-height	:54.8833px;
+    margin: 0px 0px 6px 0px;
+    text-align	:center;
+    vertical-align	:baseline;
+} 
+#blue_all .avada-row p.req_par{
+	font-family	:"karlaregular",​Helvetica,​Arial,​sans-serif;
+    font-size :19.6px;
+    font-weight	:400;
+    color:#fff;
+    line-height	:31.3667px;
+    margin: 0px;
+    padding: 0px;
+    text-align	:center;
+    vertical-align	:baseline;	
+}  
+#blue_all .avada-row a.req_btn{
+	background:transparent;
+	background-color: rgba(255,​ 255,​ 255,​ 0.34);
+	border: 2px solid #fff;
+    color:rgb(255,​ 255,​ 255);
+    font-size:17px;
+    font-weight	:400;
+    line-height:23.8px;
+    margin:15px 0px;
+    padding: 15px 0px;
+    text-align:center;
+    text-decoration	:none;
+    vertical-align:baseline;
+    width: 320px;
+}
+#blue_all .avada-row a.req_btn:hover{
+	background-color: #fff;
+	color:rgb(43, 140, 167);
+	border: 2px solid #fff;
+}
