@@ -8,7 +8,8 @@ Template: Avada
 #div_red {
 	background-color: #ec3728;
 	padding: 30px 15px;
-	height: 377px;
+	height: auto;
+	text-align: center;
 }
 
 #div_red .avada-row h1 {
@@ -22,7 +23,6 @@ Template: Avada
 
 #div_red .avada-row p {
 	display: block;
-	width: 642px;
 	margin: 0 auto;
 	color:#fff;
 	font-size: 1.4em;
@@ -47,8 +47,9 @@ Template: Avada
 }
 
 #round_container {
-	width:520px;
+	width:50%;
 	margin:0 auto 35px auto;
+	padding-left: 80px !important;
 }
 
 #round_div_1{
@@ -81,30 +82,26 @@ Template: Avada
     line-height: 3.1em;
 }
 #div_transparent{
-	width:776px;
+	width:70%;
 	background-color: rgba(255, 255, 255, 0.4);
-	margin:0 auto 70px;
+	margin:0 auto 70px auto;
+	display: block;
 }
 
 #div_transparent p {
 	font-size: 18px;
-    line-height: 24px;
     text-align: center;
-    color: #3f3f3f
+    margin:0;
+    color: #3f3f3f;
+    line-height: 20px;
 }
 
 #two_divs_wrap {
-	height: 878px;
+	height: auto;
 	display: inline-block;
 }
 
-#left_div_black {
-	background-color: #494949;
-	padding:90px 50px 0 130px;
-	margin:0 !important;
-	height: 878px;
-	width:50% !important;
-}
+
 
 #left_div_black p {
 	font-size: 20px;
@@ -127,8 +124,6 @@ Template: Avada
 #right_div_white {
 	background-color:#f2f2f2;
 	display: block;
-	height: 878px;
-	padding:95px 130px 0 90px;
 }
 
 #right_div_white p {
@@ -192,13 +187,16 @@ Template: Avada
 	height: 58px;
 	border-bottom-right-radius: 58px;
 	border-bottom-left-radius: 58px;
-	margin:0 auto;
+	margin:0 auto !important;
 	position: relative;
+	background-position: 50% 0 !important;
 }
 
-#round_arrow_white {
-	position: absolute;
-	top:-35px;
+#round_arrow img{
+	margin-top: -35px;
+	display: :block;
+	max-width: 100%;
+	max-height: 100%;
 }
 #blue_all{
 	text-align: center;
@@ -252,3 +250,35 @@ Template: Avada
 	color:rgb(43, 140, 167);
 	border: 2px solid #fff;
 }
+
+.div_wrap_text_col_1 .fusion-column-wrapper #link_red {
+	padding:20px 34px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: :17px;
+	border:1px solid #c9c9c9;
+	background-color: #f00;
+	letter-spacing: 1px;
+}
+
+.fusion-column-wrapper{
+	line-height: ;
+}
+
+ .footer-links{
+	font-size:13px;
+	font-weight:400;
+    color:rgb(185,​ 188,​ 190);
+	text-decoration:none;
+	line-height:11px;
+	text-align:left;
+	vertical-align:baseline;
+	padding: 5px 0px 5px 20px;
+}
+.img-responsive {
+	display: block;
+	height: 75px;
+	width:100%;
+	margin-top: 30px;
+}
+
